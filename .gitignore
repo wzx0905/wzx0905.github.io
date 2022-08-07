@@ -9,7 +9,6 @@ lerna-debug.log*
 
 node_modules
 dist
-wzx0905
 dist-ssr
 *.local
 
