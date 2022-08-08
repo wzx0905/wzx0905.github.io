@@ -2,19 +2,31 @@
   "name": "wzx0905",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build && ren wzx0905 docs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint ./src/**/*.{js,jsx,vue,ts,tsx} --fix"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue-router": "4"
   },
   "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
     "@vitejs/plugin-vue": "^3.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "sass": "^1.49.9",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
+    "vite-plugin-eslint": "^1.3.0",
     "vue-tsc": "^0.38.4"
   }
 }
