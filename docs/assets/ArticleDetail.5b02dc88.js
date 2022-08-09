@@ -1,0 +1,1 @@
+import{d as o,h as r,_ as n,c as s,t as _,i,o as l}from"./index.bd36ec83.js";const d=o({__name:"ArticleDetail",setup(u){const a=i(),e=r();return n(()=>import(String(a.query.path+"?raw")),[]).then(t=>{e.value=t.default}),(t,c)=>(l(),s("div",null,_(e.value),1))}});export{d as default};

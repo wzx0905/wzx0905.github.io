@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build && ren wzx0905 docs",
+    "build": "vue-tsc --noEmit && rd /s/q docs && vite build && ren wzx0905 docs",
     "preview": "vite preview",
     "lint": "eslint ./src/**/*.{js,jsx,vue,ts,tsx} --fix"
   },
