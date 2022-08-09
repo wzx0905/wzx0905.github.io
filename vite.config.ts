@@ -9,7 +9,7 @@ function setDir (root, data) {
   dirArr.forEach(name => {
     const path = `${root}/${name}`
     const isDir = fs.statSync(path).isDirectory()
-    const current = { name, path: path.replace('./public', ''), isDir, children: [] }
+    const current = { name, path: `/wzx0905${path.replace('./public', '')}?raw`, isDir, children: [] }
     data.push(current)
     if (isDir) setDir(path, current.children)
   })
