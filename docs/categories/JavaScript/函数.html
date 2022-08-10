@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta name="keywords" content="前端,技术,代码" />
+       
+      <meta name="description" content="前端技术分享" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>函数 |  Hexo</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <script src="https://cdn.staticfile.org/mermaid/8.14.0/mermaid.min.js"></script>
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="page-"
+  class="article article-type-page"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  函数
+</h1>
+ 
+
+      
+    </header>
+       
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="函数概念"><a href="#函数概念" class="headerlink" title="函数概念"></a>函数概念</h3><ul>
+<li>函数（<code>function</code>），也叫作功能、方法，函数可以将一段代码一起封装起来，被封装起来的函数具备某一项特殊的功能，内部封装的一段代码作为一个完整的结构体，要执行就都执行，要不执行就都不执行。</li>
+<li>函数的作用就是封装一段代码，将来可以重复使用。</li>
+</ul>
+<h3 id="函数声明"><a href="#函数声明" class="headerlink" title="函数声明"></a>函数声明</h3><ul>
+<li>函数声明又叫函数定义，函数必须先定义然后才能使用。</li>
+<li>如果没有定义函数直接使用，会出现一个引用错误。</li>
+<li>函数声明语法</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> 函数名(参数)&#123;</span><br><span class="line">	封装的结构体；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>特点：函数声明的时候，函数体并不会执行，只有当函数被调用的时候才会执行。</li>
+</ul>
+<h3 id="函数调用"><a href="#函数调用" class="headerlink" title="函数调用"></a>函数调用</h3><ul>
+<li>调用方法：<code>函数名();</code></li>
+<li>函数调用也叫作函数执行，调用时会将函数内部封装的所有的结构体的代码立即执行。</li>
+<li>函数内部语句执行的位置，与函数定义的位置无关，与函数调用位置有关。</li>
+<li>函数可以一次定义，多次执行。</li>
+</ul>
+<h3 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h3><ul>
+<li><p>我们希望函数执行结果不是一成不变的，可以根据自定义的内容发生一些变化。</p>
+</li>
+<li><p>函数预留了一个接口，专门用于让用户自定义内容，使函数发生一些执行效果变化。</p>
+</li>
+<li><p>接口：就是函数的参数，函数参数的本质就是变量，可以接收任意类型的数据，导致函数执行结果根据参数不同，结果也不同。</p>
+</li>
+<li><p>一个函数可以设置 0 个或者多个参数，参数之间用逗号分隔。</p>
+</li>
+<li><p>函数的参数根据书写位置不同，名称也不同：</p>
+<ul>
+<li>形式参数：定义的 () 内部的参数，叫做形式参数，本质是变量，可以接收实际参数传递过来的数据。简称形参。</li>
+<li>实际参数：调用的 () 内部的参数，叫做实际参数，本质就是传递的各种类型的数据，传递给每个形参，简称实参。</li>
+</ul>
+</li>
+<li><p>函数执行过程，伴随着传参的过程：</p>
+<p><img src="https://pic.imgdb.cn/item/619cc3962ab3f51d911e25f0.png"></p>
+</li>
+</ul>
+<h3 id="函数的参数优点"><a href="#函数的参数优点" class="headerlink" title="函数的参数优点"></a>函数的参数优点</h3><ul>
+<li>不论使用自己封装的函数，还是其他人封装的函数，只需要知道传递什么参数，执行什么功能，没必要知道内部的结构什么。</li>
+<li>一般自己封装的函数或者其他人封装的函数需要有一个 API 接口说明，告诉用户参数需要传递什么类型的数据，实现什么功能。</li>
+</ul>
+<h3 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h3><ul>
+<li>函数能够通过参数接收数据，也能够将函数执行结果返回一个值。</li>
+<li>利用函数内部的一个 <code>return</code> 的关键字设置函数的返回值。</li>
+<li>作用 <code>①</code>：函数内部如果结构体执行到一个 <code>return</code> 的关键字，会立即停止后面代码的执行。</li>
+<li>作用 <code>②</code>：可以在 <code>return</code> 关键字后面添加空格，空格后面任意定义一个数据字面量或者表达式，函数在执行完自身功能之后，整体会被 <code>return</code> 矮化成一个表达式，表达式必须求出一个值继续可以参与程序，表达式的值就是 <code>return</code> 后面的数据。</li>
+</ul>
+<h3 id="函数的返回值应用"><a href="#函数的返回值应用" class="headerlink" title="函数的返回值应用"></a>函数的返回值应用</h3><ul>
+<li>函数如果有返回值，执行结果可以当成普通数据参与程序。</li>
+<li>函数如果有返回值，可以作为一个普通数据赋值给一个变量，甚至赋值给其他函数的实际参数。</li>
+<li>注意：如果函数没有设置 <code>return</code> 语句 ，那么函数有默认的返回值 <code>undefined</code>；如果函数使用 <code>return</code> 语句，但是 <code>return</code> 后面没有任何值，那么函数的返回值也是 <code>undefined</code>。</li>
+</ul>
+<h3 id="函数表达式"><a href="#函数表达式" class="headerlink" title="函数表达式"></a>函数表达式</h3><ul>
+<li>函数表达式是函数定义的另外一种方式。</li>
+<li>定义方法：就是将函数的定义、匿名函数赋值给一个变量。</li>
+<li>函数定义赋值给一个变量，相当于将函数整体矮化成了一个表达式。</li>
+<li>匿名函数：函数没有函数名。</li>
+<li>调用函数表达式，方法是给变量名加()执行，不能使用函数名加()执行。</li>
+</ul>
+<h3 id="函数的数据类型"><a href="#函数的数据类型" class="headerlink" title="函数的数据类型"></a>函数的数据类型</h3><ul>
+<li>函数是一种单独的数据类型 <code>Function</code>。</li>
+<li>由于函数是一种数据类型，可以参与其他程序。</li>
+<li>例如，可以把函数作为另一个函数的参数，在另一个函数中调用。</li>
+<li>或者，可以把函数可以作为返回值从函数内部返回。</li>
+</ul>
+<h3 id="arguments-对象"><a href="#arguments-对象" class="headerlink" title="arguments 对象"></a><code>arguments</code> 对象</h3><ul>
+<li><code>JavaScript</code> 中，<code>arguments</code> 对象是比较特别的一个对象，实际上是当前函数的一个内置属性。也就是说所有函数都内置了一个 <code>arguments</code> 对象，<code>arguments</code> 对象中存储了传递的所有的实参。<code>arguments</code> 是一个伪数组，因此及可以进行遍历。 </li>
+<li>函数的实参个数和形参个数可以不一致，所有的实参都会存储在函数内部的 <code>arguments</code> 类数组对象中。</li>
+</ul>
+<h3 id="函数递归"><a href="#函数递归" class="headerlink" title="函数递归"></a>函数递归</h3><ul>
+<li>函数内部可以通过函数名调用函数自身的方式，就是函数递归现象。 </li>
+<li>递归的次数太多容易出现错误：超出计算机的计算最大能力。 </li>
+<li>更多时候，使用递归去解决一些数学中的现象。 </li>
+<li>例如可以输出斐波那契数列的某一项的值。</li>
+</ul>
+<h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><ul>
+<li><p>作用域：变量可以起作用的范围。</p>
+</li>
+<li><p>如果变量定义在一个函数内部，只能在函数内部被访问到，在函数外部不能使用这个变量，函数就是变量定义的作用域。</p>
+</li>
+<li><p>任何一对花括号 <code>&#123;&#125;</code> 中的结构体都属于一个块，在这之中定义的所有变量在代码块外都是不可见的，我们称之为块级作用域。</p>
+</li>
+<li><p>在<code>es5</code>之前没有块级作用域的的概念,只有函数作用域，现阶段可以认为 <code>JavaScript</code> 没有块级作用域。</p>
+</li>
+</ul>
+<h3 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="headerlink" title="全局变量和局部变量"></a>全局变量和局部变量</h3><ul>
+<li>局部变量：定义在函数内部的变量，只能在函数作用域内部被访问到，在外面没有定义的。</li>
+<li>全局变量：从广义上来说，也是一种局部变量，定义在全局的变量，作用域范围是全局，在整个 <code>js</code> 程序任意位置都能够被访问到。</li>
+<li>变量退出作用域之后会销毁，全局变量关闭网页或浏览器才会销毁。</li>
+</ul>
+<h3 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h3><ul>
+<li>只有函数可以制造作用域结构，那么只要是代码，就至少有一个作用域, 即全局作用域。凡是代码中有函数，那么这个函数就构成另一个作用域。如果函数中还有函数，那么在这个作用域中就又可以诞生一个作用域。</li>
+<li>将这样的所有的作用域列出来，可以有一个结构: 函数内指向函数外的链式结构。就称作作用域链。</li>
+</ul>
+<h3 id="遮蔽效应"><a href="#遮蔽效应" class="headerlink" title="遮蔽效应"></a>遮蔽效应</h3><ul>
+<li>程序在遇到一个变量时，使用时作用域查找顺序，不同层次的函数内都有可能定义相同名字的变量，一个变量在使用时，会优先从自己所在层作用域查找变量，如果当前层没有变量定义会按照顺序从本层往外依次查找，直到找到第一个变量定义。整个过程中会发生内层变量遮蔽外层变量的效果，叫做“遮蔽效应” 。</li>
+</ul>
+<h3 id="参数也是局部变量"><a href="#参数也是局部变量" class="headerlink" title="参数也是局部变量"></a>参数也是局部变量</h3><ul>
+<li>函数的参数本质是一个变量，也有自己的作用域，函数的参数也是属于函数自己内部的局部变量，只能在函数内部被使用，在函数外面没有定义。</li>
+</ul>
+<h3 id="不写-var-关键字的影响"><a href="#不写-var-关键字的影响" class="headerlink" title="不写 var 关键字的影响"></a>不写 <code>var</code> 关键字的影响</h3><ul>
+<li>在函数内部想要定义新的变量，如果不加关键字 <code>var</code>，相当于定义的全局变量。如果全局也有相同的标识符，会被函数内部的变量影响，局部变量污染全局变量。</li>
+<li>注意：每次定义变量时都必须写 <code>var</code> 关键字，否则就会定义在全局，可能污染全局。</li>
+</ul>
+<h3 id="函数的作用域"><a href="#函数的作用域" class="headerlink" title="函数的作用域"></a>函数的作用域</h3><ul>
+<li>函数也有自己的作用域，定义在哪个作用域内部，只能在这个作用域范围内被访问，出了作用域不能被访问的。</li>
+<li>函数定义在另一个函数内部，如果外部函数没有执行时，相当于内部代码没写。</li>
+</ul>
+<h3 id="预解析"><a href="#预解析" class="headerlink" title="预解析"></a>预解析</h3><ul>
+<li><code>JavaScript</code> 代码的执行是由浏览器中的 <code>JavaScript</code> 解析器来执行的。<code>JavaScript</code> 解析器执行 <code>JavaScript</code> 代码的时候，分为两个过程：预解析过程和代码执行过程。</li>
+<li>预解析过程：<ul>
+<li>把函数的声明提升到当前作用域的最前面，只会提升声明，不会提升调用。</li>
+<li>把变量的声明提升到当前作用域的最前面，只会提升声明，不会提升赋值。</li>
+<li>先提升 <code>var</code> ，再提升<code>function</code>。</li>
+</ul>
+</li>
+<li><code>JavaScript</code> 的执行过程：在预解析之后，根据新的代码顺序，从上往下按照既定规律执行 <code>js</code> 代码。</li>
+</ul>
+<h3 id="变量声明提升"><a href="#变量声明提升" class="headerlink" title="变量声明提升"></a>变量声明提升</h3><ul>
+<li>在预解析过程中，所有定义的变量，都会将声明的过程提升到所在的作用域最上面，在将来的代码执行过程中，按照先后顺序会先执行被提升的声明变量过程。</li>
+<li>提升过程中，只提升声明过程，不提升变量赋值，相当于变量定义未赋值，变量内存储 <code>undefined</code> 值。</li>
+<li>因此，在 <code>js</code> 中会出现一种现象，在前面调用后定义的变量，不会报错，只会使用 <code>undefined</code> 值。</li>
+</ul>
+<h3 id="函数声明提升"><a href="#函数声明提升" class="headerlink" title="函数声明提升"></a>函数声明提升</h3><ul>
+<li>在预解析过程中，所有定义的函数，都会将声明的过程提升到所在的作用域最上面，在将来的代码执行过程中，按照先后顺序会先执行被提升的函数声明过程。</li>
+<li>在预解析之后的代码执行过程中，函数定义过程已经在最开始就会执行，一旦函数定义成功，后续就可以直接调用函数。</li>
+<li>因此，在 <code>js</code> 中会出现一种现象，在前面调用后定义的函数，不会报错，而且能正常执行函数内部的代码。</li>
+</ul>
+<h3 id="提升顺序"><a href="#提升顺序" class="headerlink" title="提升顺序"></a>提升顺序</h3><ul>
+<li>预解析过程中，先提升 <code>var</code> 变量声明，再提升 <code>function</code> 函数声明。</li>
+<li>假设出现变量名和函数名相同，那么后提升的函数名标识符会覆盖先提升的变量名，那么在后续代码中出现调用标识符时，内部是函数的定义过程，而不是 undefined。</li>
+<li>如果调用标识符的过程在源代码函数和变量定义后面，相当于函数名覆盖了一次变量名，结果在执行到变量赋值时，又被新值覆盖了函数的值，那么在后面再次调用标识符，用的就是变量存的新值。</li>
+<li>建议：不要书写相同的标识符给变量名或函数名，避免出现覆盖。</li>
+</ul>
+<h3 id="函数表达式的提升"><a href="#函数表达式的提升" class="headerlink" title="函数表达式的提升"></a>函数表达式的提升</h3><ul>
+<li>在预解析过程中，函数表达式进行的是<strong>变量声明提升</strong>，而不是函数声明提升。提升后变 量内部存的是一个 <code>undefined</code>。在前面进行函数方法调用，数据类型会提示错误。</li>
+<li>建议：定义函数时，最好使用 <code>function</code> 关键字定义方式，这样函数声明提升可以永远生效。</li>
+</ul>
+<h3 id="函数声明提升的应用"><a href="#函数声明提升的应用" class="headerlink" title="函数声明提升的应用"></a>函数声明提升的应用</h3><ul>
+<li>函数声明提升可以用于调整代码的顺序，将大段的定义过程放到代码最后，但是不影响 代码执行效果。</li>
+</ul>
+<h3 id="IIFE-自调用函数"><a href="#IIFE-自调用函数" class="headerlink" title="IIFE 自调用函数"></a><code>IIFE</code> 自调用函数</h3><ul>
+<li><code>IIFE</code>：<code>immediately-invoked function expression</code>，叫做即时调用的函数表达式，也叫做自调用函数，表示函数在定义时就立即调用。</li>
+<li>函数调用方式：函数名或函数表达式的变量名后面加 <code>()</code> 运算符。</li>
+<li>函数名定义的形式不能实现立即执行自调用，函数使用函数表达式形式可以实现立即执行，原因是因为函数表达式定义过程中，将一个函数矮化成了一个表达式，后面加<code>()</code>运算符就可以立即执行。</li>
+<li>启发：如果想实现 <code>IIFE</code>，可以想办法将函数矮化成表达式。</li>
+<li>函数矮化成表达式，就可以实现自调用。</li>
+<li>函数矮化成表达式的方法，可以让函数参与一些运算，也就是说给函数前面加一些运算符。 <ul>
+<li>数学运算符：<code>+</code> <code>-</code> <code>()</code> </li>
+<li>逻辑运算符：<code>！</code>非运算</li>
+</ul>
+</li>
+<li><code>IIFE</code> 结构可以关住函数的作用域，在结构外面是不能调用函数的。</li>
+<li><code>IIFE</code> 最常用的是 <code>()</code> 运算符，而且函数可以不写函数名，使用匿名函数。</li>
+</ul>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wzx0905.github.io/categories/JavaScript/%E5%87%BD%E6%95%B0.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.staticfile.org/valine/1.4.16/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "CbKIaUfp8DPa8CN4qJPir5Yp-gzGzoHsz",
+    app_key: "WmzsxKGcSfWDxr9r6cUyweDO",
+    path: window.location.pathname,
+    avatar: "mp",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+    
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2019-2022
+        <i class="ri-heart-fill heart_icon"></i> Wangzx
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="Hexo"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>觉得有帮助的话，可以鼓励一下~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://pic.imgdb.cn/item/60d30be4844ef46bb24e8567.png">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://pic.imgdb.cn/item/60d30be4844ef46bb24e854d.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=1901371647&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+</body>
+
+</html>
