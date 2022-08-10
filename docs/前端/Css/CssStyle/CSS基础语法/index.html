@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta name="keywords" content="前端,技术,代码" />
+       
+      <meta name="description" content="前端技术分享" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>CSS基础语法 |  Hexo</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <script src="https://cdn.staticfile.org/mermaid/8.14.0/mermaid.min.js"></script>
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-CssStyle/CSS基础语法"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  CSS基础语法
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/%E5%89%8D%E7%AB%AF/Css/CssStyle/CSS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="article-date">
+  <time datetime="2021-07-30T16:00:00.000Z" itemprop="datePublished">2021-07-31</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a> / <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/Css/">Css</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">5.7k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">20 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="产生背景"><a href="#产生背景" class="headerlink" title="产生背景"></a>产生背景</h3><ul>
+<li>从<code>HTML</code>被发明开始，样式就以各种形式存在，最初的<code>HTML</code>只包含很少的显示属性。</li>
+<li>随着<code>HTML</code>的成长，为了满足页面设计者的要求，<code>HTML</code>添加了很多显示功能，例如文本格式化标签。</li>
+<li>但是随着这些功能的增加，<code>HTML</code>变的越来越杂乱，而且<code>HTML</code>页面也越来越臃肿。</li>
+<li>于是<code>CSS</code>便诞生了。</li>
+</ul>
+<h3 id="发展过程"><a href="#发展过程" class="headerlink" title="发展过程"></a>发展过程</h3><table>
+<thead>
+<tr>
+<th>版本</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>CSS1</code></td>
+<td>1995年12月，层叠样式表的第一份正式标准（<code>Cascading style Sheets Level 1</code>）完成，成为 <code>w3c</code> 的推荐标准。</td>
+</tr>
+<tr>
+<td><code>CSS2</code></td>
+<td>1997年初，<code>W3C</code> 组织负责 <code>CSS</code> 的工作组开始讨论第一版中没有涉及到的问题。其讨论结果组成了1998年5月出版的 <code>CSS</code> 规范第二版。</td>
+</tr>
+<tr>
+<td><code>CSS3</code></td>
+<td><code>CSS3</code> 是 <code>CSS</code> 层叠样式表技术的升级版本，于1999年开始制订，2001年5月23日 <code>W3C</code> 完成了 <code>CSS3</code> 的工作草案，主要包括盒子模型、列表模块、超链接方式、语言模块、背景和边框、文字特效、多栏布局等模块 。</td>
+</tr>
+</tbody></table>
+<h3 id="CSS-概念"><a href="#CSS-概念" class="headerlink" title="CSS 概念"></a><code>CSS</code> 概念</h3><ul>
+<li><code>css</code> 全称 <code>cascading style sheets</code>，层叠式样式表，是一种用来表现 <code>HTML</code> 的文件样式的计算机语言。</li>
+<li>作用：静态地修饰网页，并且可以配合各种脚本语言动态地对网页各元素进行格式化。</li>
+<li><code>CSS</code> 的出现，实现了网页的结构和样式分离，拯救了混乱的 <code>HTML</code>，更加拯救了我们 <code>web</code> 开发者。</li>
+<li><code>CSS</code> 可以说是网页的美容师， 让我们的网页更加美观。</li>
+</ul>
+<h3 id="前端三层技术"><a href="#前端三层技术" class="headerlink" title="前端三层技术"></a>前端三层技术</h3><ul>
+<li><code>html</code><ul>
+<li>结构层</li>
+<li>从语义的角度搭建网页结构</li>
+</ul>
+</li>
+<li><code>css</code><ul>
+<li>样式层</li>
+<li>从美观的角度描述页面样式</li>
+</ul>
+</li>
+<li><code>JavaScript</code><ul>
+<li>行为层</li>
+<li>从交互的角度描述页面行为</li>
+</ul>
+</li>
+</ul>
+<h3 id="CSS-的组成"><a href="#CSS-的组成" class="headerlink" title="CSS 的组成"></a><code>CSS</code> 的组成</h3><ul>
+<li>层叠式：<code>css</code> 中贯穿始终的加载特性<ul>
+<li>层叠性</li>
+<li>继承性</li>
+</ul>
+</li>
+<li>样式：定义如何显示 HTML 元素<ul>
+<li>文字文本</li>
+<li>背景</li>
+<li>盒模型</li>
+<li>浮动</li>
+<li>定位</li>
+<li>其他</li>
+</ul>
+</li>
+</ul>
+<h3 id="CSS-语法"><a href="#CSS-语法" class="headerlink" title="CSS 语法"></a><code>CSS</code> 语法</h3><ul>
+<li><p><code>CSS</code> 规则</p>
+<ul>
+<li><code>CSS</code> 规则由两个主要的部分构成：选择器，以及一条或多条声明</li>
+</ul>
+</li>
+<li><p>书写位置</p>
+<ul>
+<li><p><code>css</code> 的代码根据书写位置不同分为四种书写方式：内联式、内嵌式、外联式、导入式。</p>
+</li>
+<li><p>内联式</p>
+<ul>
+<li>内联式，也被习惯叫做行内式。</li>
+<li>书写位置：在 <code>HTML</code> 标签之上的 <code>style</code> 属性中书写 <code>css</code> 样式。</li>
+<li>所有的 <code>css</code> 样式属性总体组成标签的 <code>style</code> 属性的属性值。</li>
+<li>缺点<ul>
+<li>内联式必须写在标签上，没有完全脱离 <code>HTML</code> 标签。</li>
+<li><code>css</code> 样式代码让标签结构繁重，不利于 <code>HTML</code> 结构的解读。 </li>
+<li>个内联式的 <code>css</code> 代码，只能给一个标签使用，如果多个标签有相同的样式，同样的 <code>css</code> 代码需要书写多次，增加代码量。</li>
+<li>因此，实际工作中不会使用内联式（行内式）编写 <code>css</code> 代码。 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>内嵌式</p>
+<ul>
+<li>书写位置：在 <code>HTML</code> 文件中，<code>&lt;head&gt;</code> 标签内部有一个 <code>&lt;style&gt;</code> 标签。 <code>&lt;style&gt;</code> 标签书写在<code>&lt;title&gt;</code> 标签后面，所有 <code>css</code> 代码书写在 <code>&lt;style&gt;</code> 标签内部 。</li>
+<li><code>&lt;style&gt;</code> 标签有一个标签属性叫做 <code>type</code>，属性值是 <code>”text/css”</code>。</li>
+<li>优点<ul>
+<li>实现了结构和样式的初步分离，<code>css</code> 只负责样式，<code>HTML</code> 负责结构。</li>
+<li>多个标签可以利用一段代码设置相同的样式，节省代码量。</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>结构和样式并没有完全分离，代码依旧书写在 <code>HTML</code> 文件的<code>&lt;style&gt;</code>标签内部。</li>
+<li><code>css</code> 样式只能给一个 <code>HTML</code> 文件使用，不能够被多个 <code>HTML</code> 文件同时利用。</li>
+<li>在 <code>HTML</code> 中如果 <code>css</code> 代码太多，会造成文件头重脚轻。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>外联式</p>
+<ul>
+<li><p>外联式 <code>CSS</code>，也可以叫做外链式 <code>CSS</code>、外部 <code>CSS</code>。</p>
+</li>
+<li><p>书写位置：在一个单独的扩展名为 <code>.css</code> 的文件中。</p>
+</li>
+<li><p>书写语法：内部代码与内嵌式样式表中 <code>&lt;style&gt;</code> 标签内部的代码一样的。需要通过选择器去选中标签，添加对应的样式。</p>
+</li>
+<li><p>注意：在 <code>.css</code> 文件中书写时，不需要再加 <code>&lt;style&gt;</code> 标签</p>
+</li>
+<li><p>引用</p>
+<ul>
+<li><p>外联式样式表必须引入到 <code>HTML</code> 文件中，才能正常进行加载。 </p>
+</li>
+<li><p>引入方式：在 HTML 中的 <code>&lt;head&gt;</code> 标签内部使用 <code>&lt;link&gt;</code> 标签进行引入。</p>
+</li>
+<li><p><code>&lt;link&gt;</code> 标签属性</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>rel</code></td>
+<td><code>stylesheet</code></td>
+<td>表示引入的外部文件与 <code>HTML</code> 之间的关系，样式表</td>
+</tr>
+<tr>
+<td><code>href</code></td>
+<td><code>css</code> 文件路径</td>
+<td><code>hypertext reference</code>，超文本引用</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td><code>text/css</code></td>
+<td>表示加载时代码按照纯文本形式的 <code>css</code> 代码加载。<code>HTML5</code> 中可以省略 <code>type</code> 属性不写。</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+<li><p>优点</p>
+<ul>
+<li>实现了 <code>HTML</code> 和 <code>css</code> 完全分离。</li>
+<li>多个 <code>HTML</code> 文件可以共用一个 <code>css</code> 文件，便于提取公共 <code>css</code>，减少代码量。 </li>
+<li>可以实现一个 <code>css</code> 变化，多个 <code>HTML</code> 页面同时变化，减少工作量。</li>
+<li>一个 <code>HTML</code> 文件可以引入多个 <code>css</code> 文件，可以实现同一个页面中 <code>css</code> 代码分层。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>导入式</p>
+<ul>
+<li>书写位置：在内嵌式样式表 <code>&lt;style&gt;</code> 标签内部，或者在外联式样式表内部，导入其他的外部的 <code>.css</code> 文件。</li>
+<li>导入方式：利用一条 <code>@import url(路径)</code> 语句进行引入。 </li>
+<li>问题<ul>
+<li>导入式样式表的作用与外联式样式表基本相同。</li>
+<li>但是由于导入式在浏览器中加载时，会在 <code>HTML</code> 结构加载完毕后再进行编译，如果网速比较慢时，会导致网页出现没有 <code>css</code> 样式的效果，给用户的体验不好。</li>
+<li>实际工作中，较少使用导入式，推荐使用外联式样式表。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>实际应用</p>
+<ul>
+<li>小型案例：可以使用内嵌式 <code>CSS</code>。</li>
+<li>实际工作、大型网站项目：推荐使用外联式 <code>CSS</code>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>样式规则</p>
+<ul>
+<li>以内嵌式样式表为例<ul>
+<li>所有的 <code>css</code> 代码都必须书写在 <code>&lt;head&gt;</code> 标签内部的一对 <code>&lt;style&gt;</code> 标签内。</li>
+<li><code>css</code> 在给某个标签设置样式前，必须使用选择器先选中标签。</li>
+<li><code>css</code> 样式的属性，属性名和属性值的键值对写法为 <code>k:v;</code> 。 </li>
+<li>给每个选择器添加的样式属性都必须写在一对大括号 <code>&#123;&#125;</code> 之内。</li>
+<li>给一个标签添加的所有需要的样式，都要在 <code>&#123;&#125;</code> 内部一一罗列出来 </li>
+</ul>
+</li>
+<li>注意事项<ul>
+<li>分号必要性：每条属性后面的分号必须写，如果不写，会导致后面所有的代码加载错误。</li>
+<li><code>css</code> 中所有属性与属性之间对空格、换行、缩进不敏感。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>CSS</code> 注释语法</p>
+<ul>
+<li>一个清晰易读的 <code>CSS</code> 代码，离不开 <code>CSS</code> 注释的合理添加。</li>
+<li>语法格式：<code>/*中间部分为注释内容*/</code></li>
+<li><code>vs code</code>快捷键：<code>ctrl+/</code> 。</li>
+</ul>
+</li>
+<li><p><code>CSS</code> 样式格式</p>
+<ul>
+<li>代码风格是实际开发中的书写方式，并非强制标准。</li>
+<li>展开格式：开发过程使用，代码可读性强，便于调错。</li>
+<li>紧凑格式：上传服务器时使用，减少不必要的空白字符，压缩文件大小，利于传输。</li>
+<li>英文大小写<ul>
+<li><code>CSS</code> 中的英文可以使用大写，也可以使用小写。</li>
+<li>建议：<code>css</code> 中的选择器和样式属性名、属性值等都使用小写英文，特殊情况除外。</li>
+</ul>
+</li>
+<li>空格规范<ul>
+<li>选择器与大括号 <code>&#123;&#125;</code> 之间保留一个空格。</li>
+<li>冒号后面，属性值前面，保留一个空格。 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="CSS-常用样式"><a href="#CSS-常用样式" class="headerlink" title="CSS 常用样式"></a><code>CSS</code> 常用样式</h3><ul>
+<li><p>颜色 <code>color</code></p>
+<ul>
+<li><p>作用：给文字设置颜色。</p>
+</li>
+<li><p>属性名 <code>k</code> ：<code>color</code></p>
+</li>
+<li><p>属性值 <code>v</code> ：颜色名、颜色值。</p>
+</li>
+<li><p>颜色名</p>
+<ul>
+<li><p>颜色名就是使用颜色的英文单词进行表示。 </p>
+</li>
+<li><p>需要记忆一些最常用的颜色名：</p>
+<table>
+<thead>
+<tr>
+<th>颜色</th>
+<th>色值</th>
+<th>颜色</th>
+<th>色值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>红色</td>
+<td><code>red</code></td>
+<td>黑色</td>
+<td><code>black</code></td>
+</tr>
+<tr>
+<td>橙色</td>
+<td><code>orange</code></td>
+<td>白色</td>
+<td><code>white</code></td>
+</tr>
+<tr>
+<td>黄色</td>
+<td><code>yellow</code></td>
+<td>金色</td>
+<td><code>gold</code></td>
+</tr>
+<tr>
+<td>绿色</td>
+<td><code>green</code></td>
+<td>粉色</td>
+<td><code>pink</code></td>
+</tr>
+<tr>
+<td>青色</td>
+<td><code>cyan</code></td>
+<td>浅黄色</td>
+<td><code>lightyellow</code></td>
+</tr>
+<tr>
+<td>蓝色</td>
+<td><code>blue</code></td>
+<td>黄绿色</td>
+<td><code>yellowgreen</code></td>
+</tr>
+<tr>
+<td>紫色</td>
+<td><code>purple</code></td>
+<td>天蓝色</td>
+<td><code>skyblue</code></td>
+</tr>
+</tbody></table>
+<p>更多的颜色名可以通过查询手册得到</p>
+</li>
+</ul>
+</li>
+<li><p>颜色值</p>
+<ul>
+<li><p>颜色值指使用具体颜色的数值表示。</p>
+</li>
+<li><p>包括： <code>rgb</code> 模式和十六进制模式写法。</p>
+<ul>
+<li><p><code>rgb</code> 模式</p>
+<ul>
+<li><p><code>rgb</code> 模式：是根据红绿蓝三原色进行混合而成的颜色模式。</p>
+</li>
+<li><p>每个原色的取值范围是0-255，一共256个数值。三个原色共能混合成1677多万种颜色。</p>
+</li>
+<li><p>书写方法：<code>rgb(红,绿,蓝)</code> </p>
+</li>
+<li><p>常用颜色的 <code>rgb</code> 色值： </p>
+<table>
+<thead>
+<tr>
+<th>颜色</th>
+<th>色值</th>
+<th>颜色</th>
+<th>色值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>红色</td>
+<td><code>rgb(255,0,0)</code></td>
+<td>黑色</td>
+<td><code>rgb(0,0,0)</code></td>
+</tr>
+<tr>
+<td>绿色</td>
+<td><code>rgb(0,255,0)</code></td>
+<td>白色</td>
+<td><code>rgb(255,255,255)</code></td>
+</tr>
+<tr>
+<td>蓝色</td>
+<td><code>rgb(0,0,255)</code></td>
+<td>灰色</td>
+<td><code>rgb(128,128,128)</code></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+<li><p>十六进制模式</p>
+<ul>
+<li><p>十六进制模式：是 <code>rgb</code> 模式的一种简化写法，使用十六进制的数字字符去替换十进制的 <code>0-255</code> 的数字。</p>
+</li>
+<li><p>十六进制：逢十六进一，每个数位上只能出现 <code>0-9</code>，<code>a-f</code> 之间的字符。 </p>
+</li>
+<li><p>书写为颜色值时，红、绿、蓝每个色值都要使用两位数的十六进制进行替换。</p>
+<ul>
+<li><code>0→00</code> </li>
+<li><code>255→ff</code> </li>
+</ul>
+</li>
+<li><p>书写方式：使用 <code>#</code> 开头，后面连续书写红、绿、蓝三个颜色的十六进制的两位数值。</p>
+</li>
+<li><p>常用颜色的十六进制色值：</p>
+<table>
+<thead>
+<tr>
+<th>颜色</th>
+<th>色值</th>
+<th>颜色</th>
+<th>色值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>红色</td>
+<td><code>#ff0000</code></td>
+<td><code>黑色</code></td>
+<td><code>#000000</code></td>
+</tr>
+<tr>
+<td>绿色</td>
+<td><code>#00ff00</code></td>
+<td>白色</td>
+<td><code>#ffffff</code></td>
+</tr>
+<tr>
+<td>蓝色</td>
+<td><code>#0000ff</code></td>
+<td>灰色</td>
+<td><code>#808080</code></td>
+</tr>
+</tbody></table>
+</li>
+<li><p>十六进制颜色值简写模式：如果红、绿、蓝三个原色的色值每一个都是由重叠的数字组成，可以将重叠的数字简化成一个进行书写。</p>
+<ul>
+<li>红色<code>#f00</code> </li>
+<li>绿色<code>#0f0</code> </li>
+<li>蓝色<code>#00f</code> </li>
+<li>类似 <code>#808080</code> 是不能进行简化的。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>字体 <code>font-family</code></p>
+<ul>
+<li>作用：定义元素内文字的字体。</li>
+<li>属性名 <code>k</code> ：<code>font-family</code>，字体属于 <code>font</code> 综合属性的一个单一属性。</li>
+<li>属性值 <code>v</code> ：字体名称，必须包裹在一对引号中，属性值可以有多个，值之间用逗号分隔。</li>
+<li>常用字体<ul>
+<li>常用的中文字体<ul>
+<li>宋体 <code>SimSun</code></li>
+<li>微软雅黑 <code>Microsoft Yahei</code> </li>
+</ul>
+</li>
+<li>常用的英文字体<ul>
+<li><code>Arial</code></li>
+<li><code>consolas</code></li>
+</ul>
+</li>
+<li>如果不设置字体属性，不同的浏览器有自己的默认字体。</li>
+</ul>
+</li>
+<li>注意事项<ul>
+<li><code>font-family</code> 可以设置多个字体名称，在实际加载时只会选择一种加载，选择的依据是按书写顺序进行，如果浏览器不支持第一个字体，则会尝试下一个，直到找到第一个支持的字体。</li>
+<li>浏览器中加载的字体是用户机器中自带的，如果用户的电脑中没有设置的字体则加载失败，需要查找下一个，因此，必须在最后设置一个所有机器都具备的通用字体作为后路。</li>
+<li>中文字体中一般带有英文可以加载的字体效果，为了避免对英文字的字体影响，建议将英文字体写在属性值最前面。</li>
+</ul>
+</li>
+<li>实际应用<ul>
+<li>首选字体需要根据设计图确定，最后需要设置备用字体。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>字号 <code>font-size</code></p>
+<ul>
+<li><p>作用：设置文字的大小。</p>
+</li>
+<li><p>属性名 <code>k</code> ：<code>font-size</code>，字号属于 <code>font</code> 综合属性的一个单一属性。 </p>
+</li>
+<li><p>属性值 <code>v</code> ：可以使用相对长度单位，也可以使用绝对长度单位。推荐使用相对长度单位。</p>
+</li>
+<li><p>单位</p>
+<table>
+<thead>
+<tr>
+<th>相对长度单位</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>px</code></td>
+<td>像素值，最常使用的单位</td>
+</tr>
+<tr>
+<td><code>em</code></td>
+<td>倍数，继承自祖先元素设置的字号的倍数</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>百分比，继承自祖先元素设置的字号的百分比</td>
+</tr>
+<tr>
+<td><strong>绝对长度单位</strong></td>
+<td><strong>说明</strong></td>
+</tr>
+<tr>
+<td><code>in</code></td>
+<td>英寸</td>
+</tr>
+<tr>
+<td><code>cm</code></td>
+<td>厘米</td>
+</tr>
+<tr>
+<td><code>mm</code></td>
+<td>毫米</td>
+</tr>
+<tr>
+<td><code>pt</code></td>
+<td>点</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>注意事向</p>
+<ul>
+<li>如果 <code>HTML</code> 中不设置字号，不同的浏览器有自己默认的加载字号，比如 <code>chrome</code>、<code>IE</code>，默认显示字号为 <code>16px</code>。</li>
+<li>不同的浏览器也有自己最小加载显示字号，如果设置的字号低于最小字号，都以最小字号加载，0除外。<code>chrome</code> 浏览器最小加载显示字号为<code>8px</code>，<code>IE</code> 浏览器最小可以支持<code>1px</code>的字号。</li>
+</ul>
+</li>
+<li><p>实际应用</p>
+<ul>
+<li>网页中最小设置字号必须是<code>12px</code>，如果低于<code>12px</code>会出现兼容问题。现在网页中普遍使用<code>14px+</code>。</li>
+<li>尽量使用<code>12px</code>、<code>14px</code>、<code>16px</code>等偶数的数字字号，<code>ie6</code> 等老式浏览器支持奇数会有 <code>bug</code>。</li>
+<li>实际工作中的字号，需要以设计图为准。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>实体化属性</p>
+<ul>
+<li><p>如果想在浏览器中具体看到一个盒子占有的实际位置，需要设置盒子可以实体化的三属性。</p>
+</li>
+<li><table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>width</code></td>
+<td><code>px</code>单位的数值</td>
+<td>定义元素占有的宽度</td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td><code>px</code>单位的数值</td>
+<td>定义元素占有的高度</td>
+</tr>
+<tr>
+<td><code>background-color</code></td>
+<td>颜色名、颜色值</td>
+<td>定义元素的背景颜色</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="CSS-选择"><a href="#CSS-选择" class="headerlink" title="CSS 选择"></a><code>CSS</code> 选择</h3><ul>
+<li>在内嵌式和外部<code>css</code>中，要想将 <code>CSS</code> 样式应用于特定的 <code>HTML</code> 元素，首先需要找到该目标元素，这时需要用到 <code>CSS</code> 中的选择器。 </li>
+<li>选择器<ul>
+<li>选择器：选择要添加样式的 <code>HTML</code> 标签的一种方法、模式。 </li>
+<li>首先学习 <code>css2.1</code> 版本的七种选择器<ul>
+<li>基础选择器：标签选择器、<code>id</code> 选择器、类选择器、通配符选择器。</li>
+<li>高级选择器：后代选择器、交集选择器、并集选择器。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>标签选择器<ul>
+<li>通过标签名去选择标签元素。</li>
+<li>书写方式：标签名。 </li>
+<li>选择范围：选中的是<code>HTML</code>文件中所有的同名标签。</li>
+<li>注意：标签选择器可以选择所有的同名标签，会忽视 <code>HTML</code> 元素的嵌套关系，不管嵌套多深，都能被选中。</li>
+<li>特点<ul>
+<li>优点：可以选中所有的同名标签，设置所有同名标签的公共样式。</li>
+<li>缺点：只能实现全选，不能对局部的标签添加特殊样式。 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>基础选择器<ul>
+<li><code>id</code> 选择器<ul>
+<li>通过标签上的 <code>id</code> 属性去选择标签。</li>
+<li>书写方式：<code>#id</code> 属性值 </li>
+<li>选择范围：只能选中一个标签。</li>
+<li><code>id</code> 命名规则：必须以字母开头，后面可以有字母、数字、下划线、横线，严格区分大小写。每个 <code>id</code> 属性值必须是唯一的，不能与其他的 <code>id</code> 同名。</li>
+<li>注意：如果希望多个标签设置相同的样式，使用<code>id</code>选择器的话，必须给这多个标签取不同的 <code>id</code> 名，分别选中设置。</li>
+<li>特点<ul>
+<li>缺点：<code>id</code> 选择器只能实现单选，不能帮我们完成多选的功能。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>类选择器<ul>
+<li>通过标签的 <code>class</code> 属性去选择标签。</li>
+<li>书写方式：<code>.class</code>属性值。</li>
+<li>选择范围：是页面中所有 <code>class</code> 属性值相同的标签。 </li>
+<li><code>class</code> 命名规则：必须以字母开头，后面可以有字母、数字、下划线、横线，严格区分大小写。<code>class</code> 属性值可以与其他的<code>class</code>相同。</li>
+<li>特点<ul>
+<li>多个不同的标签，不区分标签类型，只要 <code>class</code> 属性值相同，都可以被同一个类选择器选中。</li>
+<li>一个标签的 <code>class</code> 属性可以有多个属性值，值之间用空格分隔，每个属性值组成的选择器，都可以选中这一个标签，每个选择器后面的样式都会添加给同一个标签。 </li>
+</ul>
+</li>
+<li>特殊应用<ul>
+<li>原子类：在<code>css</code>中提前设置一些类名，每个类选择器后面只添加一条<code>css</code>样式属性，这些属性会在页面中常被使用，后期可以不需要多次书写属性，只要将对应的类名添加给需要的标签即可。</li>
+</ul>
+</li>
+<li>优点<ul>
+<li>通过一个类选择器进行多选，选中多个标签，添加公共样式。</li>
+<li>个标签可以被多个类选择器选中，可以将所有样式进行分离，分别提取公共样式和单独样式，节省代码量。</li>
+</ul>
+</li>
+<li>实际工作中，通常我们有一个使用规律：类上样式(<code>CSS</code>)，<code>id</code> 上行为(<code>JavaScript</code>)。</li>
+</ul>
+</li>
+<li>通配符选择器<ul>
+<li>通过一个特殊符号选择页面内所有的标签。</li>
+<li>书写方式：<code>*</code> </li>
+<li>选择范围：包含 <code>&lt;html&gt;</code>标签在内的所有标签。</li>
+<li>特点和应用<ul>
+<li>优点：可以实现全选，简化书写。</li>
+<li>缺点：通配符选择效率低，设置的部分公共样式不是所有标签都需要添加，如果使用通配符选择，会让不需要的标签也加载一次样式，导致浏览器多做无用的工作。</li>
+<li>注意：实际上线的网站不允许使用 <code>*</code> 去清除默认内外边距。</li>
+<li>不过普通的案例，代码量较少时，为了节省书写，可以使用通配符。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>高级选择器<ul>
+<li>由于基础选择器不能实现所有选择情况，后期在基础选择器的基础上衍生出了几种高级选择器。高级选择器的组成部分是基础选择器。</li>
+<li>后代选择器<ul>
+<li>通过标签之间存的嵌套关系（族谱关系）去选择元素，基本组成部分就是基础选择器。</li>
+<li>后代选择器也叫包含选择器。</li>
+<li>书写方式：空格表示后代，基础选择器中间使用空格分隔，空格前面的选择器选中的标签必须是后面选择器选中标签的祖先级。 </li>
+<li>选择范围：通过后代选择器中前面的一系列基础选择器缩小选择范围，最终由最后一个选择器确定选中的标签。</li>
+<li>注意：后代选择器必须满足所有的后代关系才能够被选中，后代关系不一定只能是父子关系。</li>
+<li>优点：减少 <code>class</code> 属性的定义使用，选择效率更高。</li>
+</ul>
+</li>
+<li>交集选择器<ul>
+<li>通过一个标签之上满足所有的基础选择器的需求去选择标签。</li>
+<li>书写方式：基础选择器进行连续书写，如果有标签选择器参与交集，必须书写在开头。</li>
+<li>选择范围：选择的是满足所有基础选择器需求的标签，如果一个条件不满足都不能被选中。</li>
+<li>比较常见的是标签与类的交集。</li>
+<li>更多写法<ul>
+<li>交集选择器可以进行类名的连续交集，需要满足更多的条件才能选中标签。</li>
+<li><code>IE6</code> 不支持类名连续交集写法。</li>
+<li>交集选择器可以作为其他高级选择器的组成部分。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>并集选择器<ul>
+<li>不同选择器选中的元素都要设置相同的样式，多次书写相同的样式属性对代码造成浪费，可以将前面六种选择器可以进行并集书写，相当于一种简化写法。</li>
+<li>书写方式：将多个选择器中间用逗号进行分隔，最后一个后面不能加逗号。</li>
+<li>选择范围：是所有的单独选择器选中的标签的并集集合。</li>
+<li>用途<ul>
+<li>如果多个标签具有公共样式，但是不能用一个选择器选中，可以使用并集写法。</li>
+<li>可以使用标签选择器的并集写法，进行默认样式的清除，替换通配符的功能。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="CSS-层叠式"><a href="#CSS-层叠式" class="headerlink" title="CSS 层叠式"></a><code>CSS</code> 层叠式</h3><ul>
+<li><code>CSS</code> 的概念中，除了前面提到的样式外，还有一个重要的概念就是层叠式，层叠式是贯穿整个<code>css</code>的一个性质，包含继承性和层叠性。 </li>
+<li>继承性<ul>
+<li>如果一个标签没有设置过一些样式，它的某个祖先级曾经设置过，在浏览器中该标签也加载了这些样式，这些样式都是从祖先级继承而来，这种现象就是继承性。</li>
+<li>能够被继承的样式是所有的<strong>文字相关样式属性</strong>，其他的属性都不能被继承。</li>
+<li>继承性是一个很好的性质，可以将页面中出现最多的文字样式设置给一个较大的祖先级标签比如 <code>&lt;body&gt;</code>，后期所有的后代标签都可以从 <code>&lt;body&gt;</code> 进行继承。</li>
+</ul>
+</li>
+<li>层叠性<ul>
+<li>思考问题：同一个标签可以被多个选择器选中，如果选择器后面设置了相同的样式属性，标签最终该加载哪个？或者，在继承性中，如果多个祖先都设置了相同的文字样式，后代中该继承哪个祖先级的？</li>
+<li>解决方法：就是使用层叠性去解决冲突。多个选择器在进行对比的过程中，最终只有一个属性会成功加载，它会层叠、覆盖掉其他的属性。</li>
+<li>判断最终胜出的属性是谁，需要依赖判断<strong>优先级</strong>。</li>
+<li>判断方法<ul>
+<li>选中目标标签<ul>
+<li><strong>第一步：比较多个选择器的权重，权重高的层叠权重低的。</strong></li>
+<li>基础选择器的权重：根据选择范围，范围越大权重越小，<code>*</code> &lt; 标签选择器 &lt; 类选择器 &lt; <code>id</code> 选择器。</li>
+<li>高级选择器权重比较方法：依次比较组成高级选择器的 <code>id</code> 的个数，类的个数，标签的个数，如果前面能够比较出大小就不再比较后面，如果前面相等就往后比较，直到比较出大小。</li>
+<li>比较顺序：( <code>id</code> 个数, 类的个数, 标签的个数 ) </li>
+<li><strong>第二步：如果选择器权重都相同，需要比较 <code>CSS</code> 中代码的书写顺序，后写的层叠先写的。</strong></li>
+</ul>
+</li>
+<li>选中目标标签的组先级<ul>
+<li>如果选择器选中的是祖先元素，文字的样式可以被继承。</li>
+<li>第一步：比较就近原则，比较选择器选中的祖先级在 <code>HTML</code> 结构中距离目标标签的远近，近的层叠远的。</li>
+<li>第二步：如果选中的祖先级距离目标一样近（同一个祖先级），比较选择器权重，权重大的层叠小的。</li>
+<li>第三步：如果距离一样近，权重也相同，最后比较 <code>CSS</code> 中的书写顺序，后面的层叠前面的。</li>
+</ul>
+</li>
+<li><code>!important</code> 关键字<ul>
+<li>如果在比较选择器权重的过程中，遇见一个 <code>!important</code> 关键字，可以将某条 <code>CSS</code> 样式属性的权重提升到最大。 </li>
+<li>书写位置：在某个<code>css</code>属性的属性值后面空格加 <code>!important</code> 。</li>
+<li>注意：<ul>
+<li>就近原则中，不需要比较选择器权重，所有 <code>important</code> 会失效。</li>
+<li> <code>important</code> 不能提升选择器的权重，只能提升某条属性的权重到最大。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>行内式权重<ul>
+<li> 行内式样式与内嵌式或外链式样式比较权重时，行内式的权重最高。</li>
+<li>但是，与 <code>!important</code> 关键字相比权重要低。</li>
+</ul>
+</li>
+<li>总结<img src="https://pic.imgdb.cn/item/616581512ab3f51d91348fd8.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wzx0905.github.io/%E5%89%8D%E7%AB%AF/Css/CssStyle/CSS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/%E5%89%8D%E7%AB%AF/Css/CssStyle/CSS%E5%B8%B8%E7%94%A8%E6%A0%B7%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89%E5%AD%97%E4%BD%93%E7%B1%BB%E6%A0%B7%E5%BC%8F/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            CSS常用样式（一）字体类样式
+          
+        </div>
+      </a>
+    
+    
+      <a href="/%E5%89%8D%E7%AB%AF/Html/Html/Html%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89HTML%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Html基础（三）HTML常用标签</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.staticfile.org/valine/1.4.16/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "CbKIaUfp8DPa8CN4qJPir5Yp-gzGzoHsz",
+    app_key: "WmzsxKGcSfWDxr9r6cUyweDO",
+    path: window.location.pathname,
+    avatar: "mp",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2019-2022
+        <i class="ri-heart-fill heart_icon"></i> Wangzx
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="Hexo"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>觉得有帮助的话，可以鼓励一下~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://pic.imgdb.cn/item/60d30be4844ef46bb24e8567.png">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://pic.imgdb.cn/item/60d30be4844ef46bb24e854d.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=1901371647&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+</body>
+
+</html>
