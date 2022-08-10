@@ -4,18 +4,16 @@ menu:
   归档: /archives
   分类: /categories
   标签: /tags
-  旅行: /tags/旅行/
-  摄影: http://shenyu-vip.lofter.com
   友链: /friends
-  关于我: /2019/about
+  关于我: /about
 
 # 站点次标题和打字动效
 # https://github.com/mattboldt/typed.js
 subtitle:
   enable: true # 是否开启动效
-  text: 面朝大海，春暖花开 # 显示的文字
-  text2: 愿你一生努力，一生被爱 # 滚动播放，如果不需要可以留空
-  text3: 想要的都拥有，得不到的都释怀 # 最多支持三段文字
+  text: 不要等待机会，而要创造机会 # 显示的文字
+  text2: 与其顾虑太多，倒不如放手一搏 # 滚动播放，如果不需要可以留空
+  text3: 长路浩浩荡荡，万事皆可期待 # 最多支持三段文字
   startDelay: 0 # 延迟时间
   typeSpeed: 200 # 打字速度
   loop: true # 是否循环
@@ -46,7 +44,7 @@ broadcast:
 # 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
 excerpt_link: 阅读更多...
 # 如果你嫌每篇文章手动加more标记比较麻烦，又不想在首页全文显示，可以把excerpt_all设置成true，这样首页只会显示文章归档
-excerpt_all: false
+excerpt_all: true
 
 # 是否开启代码复制按钮
 copy_btn: true
@@ -82,11 +80,11 @@ word_count:
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2
 # 打赏wording
-reward_wording: "请我喝杯咖啡吧~"
+reward_wording: "觉得有帮助的话，可以鼓励一下~"
 # 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
-alipay: /images/alipay.jpg
+alipay: https://pic.imgdb.cn/item/60d30be4844ef46bb24e8567.png
 # 微信二维码图片地址
-weixin: /images/wechat.jpg
+weixin: https://pic.imgdb.cn/item/60d30be4844ef46bb24e854d.png
 
 # 版权声明
 # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
@@ -108,7 +106,7 @@ canvas_bg: 0
 
 # 自定义鼠标样式，直接替换/images/mouse.cur文件
 mouse:
-  enable: false
+  enable: true
   path: /images/mouse.cur
 
 # 鼠标点击效果：0-关闭，1-爱心，2-爆炸烟花，3-粒子烟花
@@ -123,14 +121,14 @@ layout:
 github:
   # (关闭请设置为false)
   enable: true
-  url: https://github.com/Shen-Yu/hexo-theme-ayer
+  url: https://github.com/wzx0905
 
 # 网易云音乐插件
 music:
-  enable: false
+  enable: true
   # 播放器尺寸类型(1：小尺寸、2：大尺寸)
   type: 1
-  id: 22707008 # 网易云分享的音乐ID(更换音乐请更改此配置项)
+  id: 1901371647 # 网易云分享的音乐ID(更换音乐请更改此配置项)
   autoPlay: true # 是否开启自动播放
 
 # 访问量统计(不蒜子)
@@ -139,7 +137,7 @@ busuanzi:
 
 # 友盟cnzz统计(url填js代码src链接)
 cnzz:
-  enable: true
+  enable: false
   url: https://s9.cnzz.com/z_stat.php?id=1278069914&web_id=1278069914
 
 # Google Analytics
@@ -159,57 +157,52 @@ katex:
 
 # mermaid流程图 三个选项缺一不可(https://mermaid-js.github.io/mermaid/)
 mermaid:
-  enable: false
+  enable: true
   cdn: https://cdn.staticfile.org/mermaid/8.14.0/mermaid.min.js
   theme: forest
 
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
-since: 2015
+since: 2019
 
 # ICP备案信息尾部显示
 icp:
   enable: false
   url: "https://beian.miit.gov.cn/" # 备案链接
-  text: "浙ICP备88888888" # 备案信息
+  text: "浙ICP备20007208号-1" # 备案信息
 # 公安备案信息尾部显示
 gongan:
   enable: false
   img: /images/beian.png #公安备案图片
-  url: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" #公安备案链接
-  text: "浙公网安备01234567890123号" #公安备案信息
+  url: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002014485" #公安备案链接
+  text: "浙公网安备33011002014485号" #公安备案信息
 
 # 友情链接
 friends_link:
-  Ayer主题: #网站名称
-    #网站地址
+  Hexo:
+    url: https://hexo.io
+    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/hexo.png
+  Ayer:
     url: https://github.com/Shen-Yu/hexo-theme-ayer
-    #网站图片(可忽略不写)
     img: /images/ayer.png
   GitHub:
-    url: https://github.com/Shen-Yu
-    img: /images/github.png
-  码云:
-    url: https://gitee.com/shen-yu
-    img: /images/gitee.png
-  Hexo官网:
-    url: https://hexo.io
-    img: /images/hexo.png
-  Hexo图表插件:
-    url: https://github.com/Shen-Yu/hexo-tag-chart
-    img: /images/hexo-tag-chart.png
+    url: https://github.com/wzx0905
+    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/github.png
+  Gitee:
+    url: https://gitee.com/wzx0905
+    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/gitee.png
 
 # 评论：1、Valine(推荐)；2、Gitalk；3、Twikoo; 4.MiniValine
 
 # 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
 # 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
 leancloud:
-  enable: false
-  app_id: #
-  app_key: #
+  enable: true
+  app_id: CbKIaUfp8DPa8CN4qJPir5Yp-gzGzoHsz
+  app_key: WmzsxKGcSfWDxr9r6cUyweDO
 # Valine配置
 valine:
-  enable: false # 是否启用
-  avatar: monsterid # 头像样式(https://valine.js.org/avatar.html)
+  enable: true # 是否启用
+  avatar: mp # 头像样式(https://valine.js.org/avatar.html)
   placeholder: 给我的文章加点评论吧~ # placeholder
 
 # 2、Gitalk(https://github.com/gitalk/gitalk)
@@ -223,7 +216,7 @@ gitalk:
 
 # 3、Twikoo(https://github.com/imaegoo/twikoo)
 twikoo:
-  enable: true
+  enable: false
   envId: #
 
 # 4、MiniValine
@@ -238,16 +231,16 @@ minivaline:
 # 首页广告配置
 # 可以根据需要自行增加ad_3，ad_4...，留空则不显示，建议图片和url不要带ad等关键词，否则可能会被adblock等插件屏蔽
 ads:
-  ad_1:
-    title: 云服务器限时秒杀
-    img: https://pic.imgdb.cn/item/62174b452ab3f51d912a5ccc.jpg
-    url: https://curl.qcloud.com/kvO7hb43
-    width: 300
-  ad_2:
-    title: vultr优惠vps
-    img: https://pic.imgdb.cn/item/62174b452ab3f51d912a5cd7.png
-    url: https://www.vultr.com/?ref=8630075
-    width: 300
+  # ad_1:
+  #   title: 云服务器限时秒杀
+  #   img: https://pic.imgdb.cn/item/62174b452ab3f51d912a5ccc.jpg
+  #   url: https://curl.qcloud.com/kvO7hb43
+  #   width: 300
+  # ad_2:
+  #   title: vultr优惠vps
+  #   img: https://pic.imgdb.cn/item/62174b452ab3f51d912a5cd7.png
+  #   url: https://www.vultr.com/?ref=8630075
+  #   width: 300
 
 # 网站开启加密访问，密码可设置任何字符
 lock:
