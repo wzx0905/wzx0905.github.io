@@ -24,14 +24,14 @@ subtitle:
 
 # 网站图标和侧边栏logo
 favicon: /favicon.ico
-logo: /wzx0905/images/ayer-side.svg
+logo: /images/ayer-side.svg
 
 # 封面配置
 # enable-是否启用封面；path-封面背景图；logo-封面logo
 cover:
   enable: true
-  path: /wzx0905/images/bg.jpg # /source/wzx0905/images目录下附送多张美图，可更换
-  logo: false #/wzx0905/images/ayer.svg，如果不要直接设置成false
+  path: /images/bg.jpg # /source/images目录下附送多张美图，可更换
+  logo: false #/images/ayer.svg，如果不要直接设置成false
 
 # 页面顶部进度条
 progressBar: true
@@ -83,10 +83,10 @@ word_count:
 reward_type: 2
 # 打赏wording
 reward_wording: "请我喝杯咖啡吧~"
-# 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/wzx0905/images/alipay.jpg
-alipay: /wzx0905/images/alipay.jpg
+# 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
+alipay: /images/alipay.jpg
 # 微信二维码图片地址
-weixin: /wzx0905/images/wechat.jpg
+weixin: /images/wechat.jpg
 
 # 版权声明
 # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
@@ -106,10 +106,10 @@ darkmode: true
 # 动态背景效果: 0-关闭，1-动态线条(跟随鼠标)
 canvas_bg: 0
 
-# 自定义鼠标样式，直接替换/wzx0905/images/mouse.cur文件
+# 自定义鼠标样式，直接替换/images/mouse.cur文件
 mouse:
   enable: false
-  path: /wzx0905/images/mouse.cur
+  path: /images/mouse.cur
 
 # 鼠标点击效果：0-关闭，1-爱心，2-爆炸烟花，3-粒子烟花
 click_effect: 0
@@ -119,7 +119,7 @@ layout:
   article_width: 80rem
   sidebar_width: 8rem
 
-# GitHub Ribbons-封面右上角的forkme，换样式直接在source/wzx0905/images目录下替换forkme图片
+# GitHub Ribbons-封面右上角的forkme，换样式直接在source/images目录下替换forkme图片
 github:
   # (关闭请设置为false)
   enable: true
@@ -174,7 +174,7 @@ icp:
 # 公安备案信息尾部显示
 gongan:
   enable: false
-  img: /wzx0905/images/beian.png #公安备案图片
+  img: /images/beian.png #公安备案图片
   url: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" #公安备案链接
   text: "浙公网安备01234567890123号" #公安备案信息
 
@@ -184,19 +184,19 @@ friends_link:
     #网站地址
     url: https://github.com/Shen-Yu/hexo-theme-ayer
     #网站图片(可忽略不写)
-    img: /wzx0905/images/ayer.png
+    img: /images/ayer.png
   GitHub:
     url: https://github.com/Shen-Yu
-    img: /wzx0905/images/github.png
+    img: /images/github.png
   码云:
     url: https://gitee.com/shen-yu
-    img: /wzx0905/images/gitee.png
+    img: /images/gitee.png
   Hexo官网:
     url: https://hexo.io
-    img: /wzx0905/images/hexo.png
+    img: /images/hexo.png
   Hexo图表插件:
     url: https://github.com/Shen-Yu/hexo-tag-chart
-    img: /wzx0905/images/hexo-tag-chart.png
+    img: /images/hexo-tag-chart.png
 
 # 评论：1、Valine(推荐)；2、Gitalk；3、Twikoo; 4.MiniValine
 

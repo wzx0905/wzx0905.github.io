@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="https://wzx0905.github.io/wzx0905/atom.xml" rel="self"/>
+  <link href="https://wzx0905.github.io/atom.xml" rel="self"/>
   
-  <link href="https://wzx0905.github.io/wzx0905/"/>
+  <link href="https://wzx0905.github.io/"/>
   <updated>1985-10-26T08:15:00.000Z</updated>
-  <id>https://wzx0905.github.io/wzx0905/</id>
+  <id>https://wzx0905.github.io/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://wzx0905.github.io/wzx0905/2022/08/10/hello-world/"/>
-    <id>https://wzx0905.github.io/wzx0905/2022/08/10/hello-world/</id>
+    <link href="https://wzx0905.github.io/2022/08/10/hello-world/"/>
+    <id>https://wzx0905.github.io/2022/08/10/hello-world/</id>
     <published>2022-08-10T13:55:57.882Z</published>
     <updated>1985-10-26T08:15:00.000Z</updated>
     
@@ -28,7 +28,7 @@
       
         
         
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\wzx0905\assets\css\APlayer.min.css&quot;&gt;&lt;script</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
         
       
     
