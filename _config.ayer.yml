@@ -23,7 +23,7 @@ subtitle:
 
 # 网站图标和侧边栏logo
 favicon: /favicon.ico
-logo: /images/ayer-side.svg
+logo: /images/logo.svg
 
 # 封面配置
 # enable-是否启用封面；path-封面背景图；logo-封面logo
@@ -37,7 +37,7 @@ progressBar: true
 
 # 告示板模块
 broadcast:
-  enable: true # true开启，false关闭
+  enable: false # true开启，false关闭
   type: 2 # 1：自定义输入，2：一言api(https://hitokoto.cn/)
   text: 一个安静优雅的hexo主题，快速且响应式。 # type为1时有效
 

@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 千颂
+title: kiloP
 subtitle: ''
 description: '前端技术分享'
-keywords: '前端,技术,代码'
+keywords: '生活,前端,技术,代码,博客'
 author: Wangzx
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://wzx0905.github.io/
+url: https://www.wzx0905.top/
 permalink: :year/:month/:hash/
 permalink_defaults:
 pretty_urls:
@@ -134,3 +134,9 @@ encrypt:
 # hexo-tag-aplayer
 aplayer:
   meting: true
+
+# sitemap
+sitemap:
+	path: sitemap.xml
+baidusitemap:
+	path: baidusitemap.xml
