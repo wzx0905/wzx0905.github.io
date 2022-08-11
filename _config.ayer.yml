@@ -185,12 +185,6 @@ friends_link:
   Ayer:
     url: https://github.com/Shen-Yu/hexo-theme-ayer
     img: /images/ayer.png
-  GitHub:
-    url: https://github.com/wzx0905
-    img: /images/github.png
-  Gitee:
-    url: https://gitee.com/wzx0905
-    img: /images/gitee.png
 
 # 评论：1、Valine(推荐)；2、Gitalk；3、Twikoo; 4.MiniValine
 
