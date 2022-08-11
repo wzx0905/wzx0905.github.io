@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta name="keywords" content="前端,技术,代码" />
+       
+      <meta name="description" content="前端技术分享" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>Html基础（二）认识HTML |  Hexo</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <script src="https://cdn.staticfile.org/mermaid/8.14.0/mermaid.min.js"></script>
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-Html/Html基础（二）认识HTML"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Html基础（二）认识HTML
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/07/ba66d0ff8ee2/" class="article-date">
+  <time datetime="2021-07-28T16:00:00.000Z" itemprop="datePublished">2021-07-29</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a> / <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/Html/">Html</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">2.3k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">8 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="HTML概念"><a href="#HTML概念" class="headerlink" title="HTML概念"></a><code>HTML</code>概念</h3><ul>
+<li><code>Hypertext Markup Language</code>：<strong>超文本标记语言</strong>。是用来制作网页的一种标记语言<ul>
+<li><strong>超文本</strong>：是超级文本的缩写，简单来说超文本就是用于链接另一个文本或多媒体内容的文本，比如链接到图片、链接、音频、视频、程序等</li>
+<li><strong>标记</strong>：又叫做标签（<code>HTML tag</code>），有特殊的书写规范，是写给浏览器的一种语法格式，结合普通的文字信息，实现特殊的语义或显示内容。在编辑器中可以编辑和查看，在浏览器中不显示</li>
+</ul>
+</li>
+<li><strong>纯文本格式的文件</strong>，内部只能书写文字内容，不能添加图片、音频、视频等，但是在网页中给用户呈现的效果却包含了文字以外的内容，这种效果就是<code>HTML</code>语言区别于其他文件的不同之处</li>
+<li><strong>功能</strong>：利用标记给普通的文本添加语义、描述超文本内容，搭建网页的基本结构</li>
+<li><strong>语义化</strong><ul>
+<li><code>HTML</code>文件中，如果没有使用特殊语义的标记，也可以实现网页显示效果，但是利用标记给普通的文字添加了不同的语义，能够让网站的结构划分更加清晰</li>
+<li>优势<ul>
+<li>方便代码的阅读和后期维护</li>
+<li>便于浏览器或是网络爬虫更好地解析网站内容</li>
+<li>使用语义化标签有利于<code>SEO</code>搜索引擎优化，提高网站的搜索排名</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="HTML语法"><a href="#HTML语法" class="headerlink" title="HTML语法"></a><code>HTML</code>语法</h3><ul>
+<li><p><code>HTML</code>规范版本</p>
+<ul>
+<li><p><code>W3C</code>：<code>world wide web consortium</code>，万维网联盟。专门发布和维护互联网的规范和标准</p>
+</li>
+<li><table>
+<thead>
+<tr>
+<th>版本</th>
+<th>发布时间</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>HTML1.0</code></td>
+<td>1993.06</td>
+<td>互联网工程小组（<code>IETF</code>）发布的工作草案</td>
+</tr>
+<tr>
+<td><code>HTML2.0</code></td>
+<td>1995.01</td>
+<td>2000年6月发布之后被宣布已经过时</td>
+</tr>
+<tr>
+<td><code>HTML3.2</code></td>
+<td>1997.01.14</td>
+<td><code>W3C</code>推荐标准</td>
+</tr>
+<tr>
+<td><code>HTML4.0</code></td>
+<td>1997.12.18</td>
+<td><code>W3C</code>推荐标准，引入了样式表<code>CSS</code>，实现了结构和样式分离</td>
+</tr>
+<tr>
+<td><code>HTML4.01</code></td>
+<td>1999.12.24</td>
+<td><code>W3C</code>推荐标准，修复了<code>HTML4.0</code>中的漏洞</td>
+</tr>
+<tr>
+<td><code>XHTML1.0</code></td>
+<td>2000.01.20</td>
+<td>在<code>HTML4.01</code>基础上进行的升级拓展和严格化</td>
+</tr>
+<tr>
+<td><code>HTML5</code></td>
+<td>2008.01.22</td>
+<td><code>HTML5</code>在2012年已形成稳定的版本</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+<li><p><code>HTML</code>标签</p>
+<ul>
+<li><code>HTML</code>标记通常被成为<code>HTML</code>标签（<code>HTML tag</code>）。标签在书写和使用过程中，必须遵循特定的语法。</li>
+<li><code>HTML</code>标签语法<ul>
+<li>标签名必须书写在一堆尖括号&lt;&gt;内部</li>
+<li>标签分为单标签和双标签，双标签必须成对出现</li>
+<li>双标签包含开始标签和结束标签，结束标签必须书写关闭符号<code>/</code>，单标签也需要进行自封闭书写。在<code>HTML5</code>中，单标签可以不写关闭符号。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>HTML</code>元素</p>
+<ul>
+<li><code>HTML</code>元素指的是从开始标签到结束标签的所有内容，包含开始标签、元素内容、结束标签。</li>
+<li>元素内容<ul>
+<li>元素内容可以是纯文本，也可以是其他的<code>HTML</code>元素。这种元素内容包含其他<code>HTML</code>元素的情况，我们可以称为嵌套</li>
+<li>一个<code>HTML</code>元素<code>div</code>的内容可能是多个其他元素组成</li>
+<li>单标签是不能添加其他元素内容的，可以称为空元素</li>
+</ul>
+</li>
+<li>标签级别<ul>
+<li>根据标签内容可以存放的元素内容不同，可以将双标签划分为两个级别<ul>
+<li>容器级：标签内部可以存放任意内容，包含容器级标签。比如<code>h1</code>，<code>div</code>等</li>
+<li>文本级：标签内部只能存放文字或类似文字的内容，比如存放图片、表单元素等。比如<code>p</code>等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>HTML</code>元素的特性<ul>
+<li>元素间对空格、换行、缩进形成的空白不敏感，有无空白对在浏览器中加载的效果没有影响。浏览器识别的是元素的开始和结束以及相互之间的嵌套关系。</li>
+<li>空白折叠现象：元素内容如果是文本，所有文字（类似文字内容）之间如果有空格、换行、缩进等空白字符，在浏览器中加载时，链接在一起的空白会折叠成一个空格显示，这就是空白折叠现象</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>HTML</code>属性</p>
+<ul>
+<li><code>HTML</code>标签可以添加属性，属性可以提供关于<code>HTML</code>元素的更多信息</li>
+<li><code>HTML</code>属性规范<ul>
+<li>书写位置：必须写在开始标签或者单标签之内，与标签名之间用空格进行分隔</li>
+<li>属性包括：属性名（<code>key</code>）、属性值（<code>value</code>）。属性名与属性值之间的写法通常称作键值对写法，<code>HTML</code>标签属性的键值对写法是<code>k=&quot;v&quot;</code>，<code>XHTML</code>要求属性值必须在双引号内部</li>
+<li>一个标签内可以设置多个不同的属性，属性与属性之间使用空格进行分隔，每个属性的键值对写法都是<code>k=&quot;v&quot;</code></li>
+<li>部分标签属性<code>k</code>可以设置多个属性值<code>v</code>，所有属性值<code>v</code>都必须写在同一对双引号内，值与值之间需要使用空格分隔</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h3><ul>
+<li>纯文本编辑器<ul>
+<li>所有的纯文本编辑器都能编辑<code>HTML</code>文件。例如记事本、<code>Editplus</code>、<code>notepad</code>等</li>
+<li>专门制作网页的软件有：<code>sublime</code>、<code>WebStorm</code>、<code>HBuilder</code>、<code>VSCode</code>等</li>
+</ul>
+</li>
+</ul>
+<h3 id="HTML基本结构"><a href="#HTML基本结构" class="headerlink" title="HTML基本结构"></a>HTML基本结构</h3><ul>
+<li>基本骨架<ul>
+<li>HTML文件最基本的四个标签，组成了网页的基本骨架，包括：<code>&lt;html&gt;</code>、<code>&lt;head&gt;</code>、<code>&lt;title&gt;</code>、<code>&lt;body&gt;</code>四组标签</li>
+<li><code>&lt;html&gt;</code>标签<ul>
+<li>作用：定义<code>HTML</code>文件的根元素，表示整个<code>HTML</code>文档，所有的标签都要书写在<code>&lt;html&gt;</code>标签内部</li>
+</ul>
+</li>
+<li><code>&lt;head&gt;</code>标签<ul>
+<li>作用：用于存放<code>&lt;title&gt;</code>，<code>&lt;meta&gt;</code>，<code>&lt;base&gt;</code>，<code>&lt;style&gt;</code>，<code>&lt;script&gt;</code>，<code>&lt;link&gt;</code>。内部用于对网页的设置，除了<code>&lt;title&gt;</code>内部的文字，其他标签都不显示在浏览器上。</li>
+<li>注意在<code>&lt;head&gt;</code>标签中我们必须要设置的标签是<code>&lt;title&gt;</code></li>
+</ul>
+</li>
+<li><code>&lt;title&gt;</code>标签<ul>
+<li>让网页拥有一个属于自己的标题</li>
+<li><code>title</code>中的关键字可以作为搜索引擎抓取时的关键字，提高<code>SEO</code>搜索引擎优化</li>
+<li>内部的内容会显示在搜索结果的标题部分</li>
+<li>作为浏览器收藏夹默认的网页标题</li>
+<li>建议网页必须添加<code>title</code>标签内部内容，内容尽量精简，提取网页的关键字</li>
+</ul>
+</li>
+<li><code>&lt;body&gt;</code>标签<ul>
+<li>作用：定义网页的主题部分，用于存放所有的<code>HTML</code>显示内容的标签<code>&lt;p&gt;</code>，<code>&lt;h1&gt;</code>，<code>&lt;a&gt;</code>，<code>&lt;div&gt;</code>等</li>
+<li><code>&lt;body&gt;</code>内部的元素内容会显示在浏览器的窗口中</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>DTD</code><ul>
+<li>完整的HTML文件的第一行内容叫做文档定义类型，英文<code>DocType Definition</code>，简称<code>DTD</code>。也称作文档声明类型，<code>DocType Declaration</code></li>
+<li>作用：告知浏览器该网页使用的是哪个版本的<code>HTML</code>规范，让浏览器按照对应版本的<code>HTML</code>语法进行解析页面</li>
+</ul>
+</li>
+<li>命名空间<ul>
+<li><code>&lt;html&gt;</code>元素表示整个网页文档，在开始标签上设置了命名空间<code>xmlns</code>属性</li>
+<li>命名空间<code>xmlns</code><ul>
+<li><code>xml</code>：可拓展标记语言，使用在传输过程中的规范。被设计用来传输和存储数据，是<code>html</code>的补充。</li>
+<li><code>xmlns</code>：全称叫做<code>XML NameSpace</code>，<code>NameSpace</code>叫做命名空间，浏览器会将此命名空间用于该属性所在元素内的所有内容</li>
+<li><code>&lt;html&gt;</code>元素的命名空间规定了在不同用户的浏览器中标签语义遵循的统一标准，避免出现标签名冲突，这个标准使用的就是一个固定的网址<code>http://www.w3.org/1999/xhtml</code>中的规范。</li>
+</ul>
+</li>
+<li><code>xml:lang=&quot;en&quot;</code>和<code>lang=&quot;en&quot;</code>表示所有的标签元素内容的语言都是英文，对搜索引擎和浏览器是有帮助的，<code>lang=&quot;zh-cn&quot;</code>表示中文（中国）</li>
+</ul>
+</li>
+<li>字符集<ul>
+<li><code>&lt;head&gt;</code>标签内部的<code>&lt;meta&gt;</code>标签通过<code>http-equiv</code>属性定义了当i请安的网页所使用的字符编码。</li>
+<li><code>char</code>：<code>character</code>，字符。<code>set</code>：集合。</li>
+<li>常用字符集编码<ul>
+<li>国际通用字库<ul>
+<li><code>UTF-8</code>：以字节为单位对<code>Unicode</code>万国码进行编码，涵盖了所有人类的语言文字，一个汉字为三个字节大小</li>
+</ul>
+</li>
+<li>中文国标字库<ul>
+<li><code>gb2312</code>：共收入汉字6763个和包括拉丁字母、希腊字母、日文平假名级片假名字母、俄语西里尔字母在内的682个。</li>
+<li><code>gbk</code>：是<code>gb2312</code>的扩展，增加了繁体字，共收入21886个汉字和图形符号，其中汉字（包括部首和构件）21003个，图形符号883个，一个汉字为2个字节大小。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>字符集常见问题<ul>
+<li>如果没有网页加载速度要求，或者制作的是外文网站，使用<code>utf-8</code></li>
+<li>如果含有大量中文汉字的网站，并且要求网页加载速度快，使用<code>gbk</code></li>
+<li>注意：<code>meta</code>标签声明的字库，必须和编辑器软件默认编译字库相同，否则会出现两个字库不匹配，浏览器加载时出现乱码</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wzx0905.github.io/2021/07/ba66d0ff8ee2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2021/07/5c8258b43431/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            Html基础（三）HTML常用标签
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/07/dc17d32a38af/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Html基础（一）认识网页</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.staticfile.org/valine/1.4.16/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "CbKIaUfp8DPa8CN4qJPir5Yp-gzGzoHsz",
+    app_key: "WmzsxKGcSfWDxr9r6cUyweDO",
+    path: window.location.pathname,
+    avatar: "mp",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2019-2022
+        <i class="ri-heart-fill heart_icon"></i> Wangzx
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+        <li>
+          <a href="https://beian.miit.gov.cn/" target="_black" rel="nofollow">浙ICP备20007208号-1</a>
+        </li>
+        
+    </ul>
+    <ul>
+      
+      <li>
+          <img src="/images/beian.png"></img>
+          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002014485" target="_black" rel="nofollow">浙公网安备33011002014485号</a>
+      </li>
+        
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="Hexo"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>觉得有帮助的话，可以鼓励一下~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://pic.imgdb.cn/item/60d30be4844ef46bb24e8567.png">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://pic.imgdb.cn/item/60d30be4844ef46bb24e854d.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=1901371647&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta name="keywords" content="前端,技术,代码" />
+       
+      <meta name="description" content="前端技术分享" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>CSS3（一）新增选择器 |  Hexo</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <script src="https://cdn.staticfile.org/mermaid/8.14.0/mermaid.min.js"></script>
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-CssStyle/CSS3（一）新增选择器"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  CSS3（一）新增选择器
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/08/54a75abce09f/" class="article-date">
+  <time datetime="2021-08-10T16:00:00.000Z" itemprop="datePublished">2021-08-11</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a> / <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/Css/">Css</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.1k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">4 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><code>CSS3</code> 中，相对于 <code>CSS2.1</code> 版本的 7 个选择器，增加了更多其他的选择器，实现了更多的选择方式。</p>
+<h3 id="子级选择器"><a href="#子级选择器" class="headerlink" title="子级选择器"></a>子级选择器</h3><ul>
+<li>子级选择器用于选取带有特定父元素的元素。</li>
+<li>书写语法：<code>element1 &gt; element2</code> 。</li>
+<li>注意：如果 <code>element2</code> 元素不是父元素 <code>element1</code> 的直接子元素，则不会被选择。</li>
+<li><code>&gt;</code> 符号之前书写父级的选择器，<code>&gt;</code> 符号之后写子级选择器，必须满足父子级关系才能选中标签。</li>
+</ul>
+<h3 id="兄弟选择器"><a href="#兄弟选择器" class="headerlink" title="兄弟选择器"></a>兄弟选择器</h3><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>element1+element2</code></td>
+<td>匹配同一个父元素中紧跟在<code>element1</code>后面的一个<code>element2</code>元素</td>
+</tr>
+<tr>
+<td><code>element1~element2</code></td>
+<td>匹配同一个父元素中在<code>element1</code>后面的所有<code>element2</code>元素</td>
+</tr>
+</tbody></table>
+<ul>
+<li>相邻兄弟选择器<ul>
+<li>相邻兄弟选择器可以用于选择紧接在另一个元素后的兄弟元素，而且二者有相同的父元素。书写语法：<code>E1 + E2</code>。</li>
+<li>注意：<ul>
+<li>选中的是紧跟在 <code>E1</code> 之后的同级元素 <code>E2</code>。</li>
+<li>只能选中紧跟在后面的一个 <code>E2</code> 元素。</li>
+<li>二者有相同的父元素。</li>
+<li><code>+</code> 符号前后可以添加空格书写。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>其他兄弟选择器<ul>
+<li>其他兄弟选择器匹配同一个父元素中在 <code>element1</code> 后面的所有 <code>element2</code> 元素。</li>
+<li>书写语法：<code>element1~element2</code> </li>
+<li>注意：<ul>
+<li>选择 <code>element1</code> 之后出现的所有 <code>element2</code>。</li>
+<li>两种元素必须拥有相同的父元素，但是 <code>element2</code> 不必直接紧随 <code>element1</code>。</li>
+<li><code>~</code> 符号前后可以添加空格书写。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="结构伪类选择器"><a href="#结构伪类选择器" class="headerlink" title="结构伪类选择器"></a>结构伪类选择器</h3><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>E:first-child</code></td>
+<td>匹配<code>父元素</code>中的第一个<code>子元素E</code></td>
+</tr>
+<tr>
+<td><code>E:last-child</code></td>
+<td>匹配<code>父元素</code>中最后一个<code>E元素</code></td>
+</tr>
+<tr>
+<td><code>E:nth-child(n)</code></td>
+<td>匹配<code>父元素</code>中的第<code>n</code>个<code>子元素E</code></td>
+</tr>
+<tr>
+<td><code>E:first-of-type</code></td>
+<td>指定类型<code>E</code>的第一个</td>
+</tr>
+<tr>
+<td><code>E:last-of-type</code></td>
+<td>指定类型<code>E</code>的最后一个</td>
+</tr>
+<tr>
+<td><code>E:nth-of-type(n)</code></td>
+<td>指定类型<code>E</code>的第<code>n</code>个</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p><code>nth-child（n）</code></p>
+<ul>
+<li><p><code>n</code> 可以是数字，关键字和公式</p>
+</li>
+<li><p><code>n</code> 如果是数字，就是选择第 <code>n</code> 个</p>
+</li>
+<li><p>常见的关键词 <code>even</code> 偶数 <code>odd</code> 奇数</p>
+</li>
+<li><p>常见的公式如下 ( 如果 <code>n</code> 是公式，则从 0 开始计算，<code>n</code>是从 0 ，1，2，3.. 一直递增）</p>
+</li>
+<li><p>但是第 0 元素或者超出了元素的个数会被忽略 </p>
+</li>
+<li><table>
+<thead>
+<tr>
+<th>公式</th>
+<th>取值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>2n</code></td>
+<td>偶数</td>
+</tr>
+<tr>
+<td><code>2n+1</code></td>
+<td>奇数</td>
+</tr>
+<tr>
+<td><code>5n</code></td>
+<td>5 10 15 ……</td>
+</tr>
+<tr>
+<td><code>n+5</code></td>
+<td>从第5个开始（包含第5个）到最后，5 6 7 8 9 ……</td>
+</tr>
+<tr>
+<td><code>-n+5</code></td>
+<td>前5个（包含第5个），5 4 3 2 1 0……</td>
+</tr>
+</tbody></table>
+</li>
+<li><p><code>E:nth-child(n)</code> 和<code>E:nth-of-type(n)</code> 的区别</p>
+<ul>
+<li><code>E:nth-child(n)</code> 匹配父元素的第 <code>n</code> 个子元素 <code>E</code>，同时需要满足两个条件。</li>
+<li><code>E:nth-of-type(n)</code> 匹配同类型中的第 <code>n</code> 个同级兄弟元素 <code>E</code>，会忽视其他同级的非同类型元素。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h3><ul>
+<li><p>新增伪元素</p>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>E::before</code></td>
+<td>在 <code>E</code> 元素内部的前面插入一个元素</td>
+</tr>
+<tr>
+<td><code>E::after</code></td>
+<td>在 <code>E</code> 元素内部的后面插入一个元素</td>
+</tr>
+<tr>
+<td><code>E::first-letter</code></td>
+<td>选择到了 <code>E</code> 容器内的第一个字母</td>
+</tr>
+<tr>
+<td><code>E::first-line</code></td>
+<td>选择到了 <code>E</code> 容器内的第一行文本</td>
+</tr>
+</tbody></table>
+</li>
+<li><p><code>h5</code> 写法和传统写法区别</p>
+<ul>
+<li>单冒号 <code>E:before</code></li>
+<li>双冒号 <code>E::before</code></li>
+<li>浏览器对以上写法都能识别，双冒号是 <code>h5</code> 的语法规范。</li>
+</ul>
+</li>
+<li><p>伪元素的注意事项</p>
+<ul>
+<li>伪元素只能给双标签添加，不能给单标签添加</li>
+<li>伪元素的冒号前不能有空格，如 <code>E ::before</code> 这个写法是错误的</li>
+<li>伪元素里面必须写上属性 <code>content:&quot;&quot;;</code></li>
+<li><code>before</code> 和 <code>after</code> 创建一个元素，但是属于行内元素。</li>
+<li>因为在 <code>DOM</code> 里面看不见刚才创建的元素，所以我们称为伪元素。</li>
+</ul>
+</li>
+</ul>
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><ul>
+<li><p>属性选择器用来选择包含指定属性的标签。</p>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>E[att]</code></td>
+<td>选择具有<code>att</code>属性的<code>E元素</code></td>
+</tr>
+<tr>
+<td><code>E[att=&quot;val&quot;]</code></td>
+<td>选择具有<code>att</code>属性且属性值等于<code>val</code>的<code>E元素</code></td>
+</tr>
+<tr>
+<td><code>E[att^=&quot;val&quot;]</code></td>
+<td>匹配具有<code>att</code>属性、且值以<code>val</code>开头的<code>E元素</code></td>
+</tr>
+<tr>
+<td><code>E[att$=&quot;val&quot;]</code></td>
+<td>匹配具有<code>att</code>属性、且值以<code>val</code>结尾的<code>E元素</code></td>
+</tr>
+<tr>
+<td><code>E[att*=&quot;val&quot;]</code></td>
+<td>匹配具有<code>att</code>属性、且值中含有<code>val</code>的<code>E元素</code></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="选择器权重"><a href="#选择器权重" class="headerlink" title="选择器权重"></a>选择器权重</h3><ul>
+<li>基础选择器：<code>id 选择器</code> &gt; <code>类选择器</code> &gt; <code>标签选择器</code> &gt; <code>*</code></li>
+<li><code>伪类选择器</code>、<code>属性选择器</code> 的权重等于<code>类选择器</code> 。</li>
+<li><code>伪元素选择器</code> 的权重等于<code>标签选择器</code> 。</li>
+</ul>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wzx0905.github.io/2021/08/54a75abce09f/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2021/08/ac64559ba3f1/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            CSS3（二）CSS3盒模型
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2021/08/ce5949453f00/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Html5</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.staticfile.org/valine/1.4.16/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "CbKIaUfp8DPa8CN4qJPir5Yp-gzGzoHsz",
+    app_key: "WmzsxKGcSfWDxr9r6cUyweDO",
+    path: window.location.pathname,
+    avatar: "mp",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2019-2022
+        <i class="ri-heart-fill heart_icon"></i> Wangzx
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+        <li>
+          <a href="https://beian.miit.gov.cn/" target="_black" rel="nofollow">浙ICP备20007208号-1</a>
+        </li>
+        
+    </ul>
+    <ul>
+      
+      <li>
+          <img src="/images/beian.png"></img>
+          <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002014485" target="_black" rel="nofollow">浙公网安备33011002014485号</a>
+      </li>
+        
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="Hexo"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>觉得有帮助的话，可以鼓励一下~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://pic.imgdb.cn/item/60d30be4844ef46bb24e8567.png">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://pic.imgdb.cn/item/60d30be4844ef46bb24e854d.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=1901371647&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+</body>
+
+</html>

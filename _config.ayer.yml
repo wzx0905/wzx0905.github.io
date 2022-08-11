@@ -166,12 +166,12 @@ since: 2019
 
 # ICP备案信息尾部显示
 icp:
-  enable: false
+  enable: true
   url: "https://beian.miit.gov.cn/" # 备案链接
   text: "浙ICP备20007208号-1" # 备案信息
 # 公安备案信息尾部显示
 gongan:
-  enable: false
+  enable: true
   img: /images/beian.png #公安备案图片
   url: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002014485" #公安备案链接
   text: "浙公网安备33011002014485号" #公安备案信息
@@ -180,16 +180,16 @@ gongan:
 friends_link:
   Hexo:
     url: https://hexo.io
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/hexo.png
+    img: /images/hexo.png
   Ayer:
     url: https://github.com/Shen-Yu/hexo-theme-ayer
     img: /images/ayer.png
   GitHub:
     url: https://github.com/wzx0905
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/github.png
+    img: /images/github.png
   Gitee:
     url: https://gitee.com/wzx0905
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/gitee.png
+    img: /images/gitee.png
 
 # 评论：1、Valine(推荐)；2、Gitalk；3、Twikoo; 4.MiniValine
 

@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>BOM 浏览器对象模型</title>
-    <url>/8e4e199896e1/</url>
+    <url>/2021/09/8e4e199896e1/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="BOM-的概念"><a href="#BOM-的概念" class="headerlink" title="BOM 的概念"></a><code>BOM</code> 的概念</h3><ul>
 <li><code>BOM</code>(<code>Browser Object Model</code>) 是指浏览器对象模型，浏览器对象模型提供了独立于内容的、可以与浏览器窗口进行互动的对象结构。<code>BOM</code> 由多个对象组成，其中代表浏览器窗口的 <code>Window</code> 对象是 <code>BOM</code> 的顶层对象，其他对象都是该对象的子对象。</li>
 <li>我们在浏览器中的一些操作都可以使用BOM的方式进行编程处理，比如：刷新浏览器、后退、前 进、在浏览器中输入URL等。</li>
@@ -142,7 +142,7 @@
   </entry>
   <entry>
     <title>DOM 特效</title>
-    <url>/9129bf424132/</url>
+    <url>/2021/09/9129bf424132/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
 <p><code>DOM</code> 提供了一套与元素自身有关的位置和大小的属性。</p>
 </blockquote>
@@ -171,7 +171,7 @@
   </entry>
   <entry>
     <title>DOM 事件详解</title>
-    <url>/7866e4eba81b/</url>
+    <url>/2021/09/7866e4eba81b/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="注册事件的其他方法1"><a href="#注册事件的其他方法1" class="headerlink" title="注册事件的其他方法1"></a>注册事件的其他方法1</h3><ul>
 <li><p><code>element.addEventListener()</code> 方法</p>
 </li>
@@ -274,7 +274,7 @@
   </entry>
   <entry>
     <title>DOM 节点操作</title>
-    <url>/f21bba7488f4/</url>
+    <url>/2021/09/f21bba7488f4/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="DOM-树"><a href="#DOM-树" class="headerlink" title="DOM 树"></a><code>DOM</code> 树</h3><p><img src="https://pic.imgdb.cn/item/61b029542ab3f51d910d66fa.png"></p>
 <h3 id="节点属性"><a href="#节点属性" class="headerlink" title="节点属性"></a>节点属性</h3><ul>
 <li><code>nodeType</code> 节点的类型，属性值为数字，表示不同的节点类型，共 12 种，只读<ul>
@@ -344,7 +344,7 @@
   </entry>
   <entry>
     <title>DOM 元素属性操作</title>
-    <url>/013fb0154133/</url>
+    <url>/2021/09/013fb0154133/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="非表单元素的属性"><a href="#非表单元素的属性" class="headerlink" title="非表单元素的属性"></a>非表单元素的属性</h3><ul>
 <li>例如：<code>href</code>、<code>title</code>、<code>id</code>、<code>src</code> 等。</li>
 <li>调用方式：元素对象打点调用属性名，例如 <code>obj.href</code>。</li>
@@ -409,7 +409,7 @@
   </entry>
   <entry>
     <title>DOM 事件基本应用</title>
-    <url>/681e4ff6d9ba/</url>
+    <url>/2021/09/681e4ff6d9ba/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><ul>
 <li>事件：在什么时候做什么事</li>
 <li>执行机制：触发–响应机制</li>
@@ -444,7 +444,7 @@
   </entry>
   <entry>
     <title>DOM 获取页面元素</title>
-    <url>/47801cb926fc/</url>
+    <url>/2021/08/47801cb926fc/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="根据-id-获取元素"><a href="#根据-id-获取元素" class="headerlink" title="根据 id 获取元素"></a>根据 <code>id</code> 获取元素</h3><ul>
 <li>方法：调用 <code>document</code> 对象的 <code>getElementById</code> 方法。</li>
 <li>参数：字符串类型的 <code>id</code> 的属性值。</li>
@@ -489,7 +489,7 @@
   </entry>
   <entry>
     <title>DOM 简介</title>
-    <url>/60f642112ad4/</url>
+    <url>/2021/08/60f642112ad4/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="DOM-的概念"><a href="#DOM-的概念" class="headerlink" title="DOM 的概念"></a><code>DOM</code> 的概念</h3><ul>
 <li>文档对象模型（<code>Document Object Model</code>，简称 <code>DOM</code>），是 <code>W3C</code> 组织推荐的处理可扩展标记语言的标准编程接口。它是一种与平台和语言无关的应用程序接口(<code>API</code>),它可以动态地访问程序和脚本，更新其内容、结构和 <code>www</code> 文档的风格(目前，<code>HTML</code> 和 <code>XML</code> 文档是通过说明部分定义的)。文档可以进一步被处理，处理的结果可以加入到当前的页面。<code>DOM</code> 是一种基于树的 <code>API</code> 文档，它要求在处理过程中整个文档都表示在存储器中。</li>
 </ul>
@@ -517,7 +517,7 @@
   </entry>
   <entry>
     <title>Web API</title>
-    <url>/038998309473/</url>
+    <url>/2021/08/038998309473/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="API的概念"><a href="#API的概念" class="headerlink" title="API的概念"></a><code>API</code>的概念</h3><ul>
 <li><code>API</code>（<code>Application Programming Interface</code>,应用程序编程接口）是一些预先定义的函数，目的是提供应用程序与开发人员基于某软件或硬件得以访问一组例程的能力，而又无需访问源码，或理解内部工作机制的细节。</li>
 <li>任何开发语言都有自己的 <code>API</code></li>
@@ -554,7 +554,7 @@
   </entry>
   <entry>
     <title>内置对象</title>
-    <url>/be3a3fabfcc7/</url>
+    <url>/2021/08/be3a3fabfcc7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="MDN"><a href="#MDN" class="headerlink" title="MDN"></a><code>MDN</code></h3><ul>
 <li><code>Mozilla</code>开发者网络（ <code>MDN</code> ）提供有关开放网络技术 （<code>Open Web</code>）的信息，包括 <code>HTML</code> 、<code>CSS</code>和万维网及 <code>HTML5</code> 应用的 <code>API</code> 。<ul>
 <li><a href="https://developer.mozilla.org/zh-CN/">MDN</a> </li>
@@ -740,7 +740,7 @@
   </entry>
   <entry>
     <title>简单类型和复杂类型</title>
-    <url>/cf5cca4359c0/</url>
+    <url>/2021/08/cf5cca4359c0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="简单类型和复杂类型的区别"><a href="#简单类型和复杂类型的区别" class="headerlink" title="简单类型和复杂类型的区别"></a>简单类型和复杂类型的区别</h3><ul>
 <li>基本类型又叫做值类型，复杂类型又叫做引用类型。</li>
 <li>值类型：简单数据类型，基本数据类型，在存储时，变量中存储的是值本身，因此叫做值类型。</li>
@@ -775,7 +775,7 @@
   </entry>
   <entry>
     <title>对象</title>
-    <url>/f7a30b30f53e/</url>
+    <url>/2021/08/f7a30b30f53e/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="为什么要有对象？"><a href="#为什么要有对象？" class="headerlink" title="为什么要有对象？"></a>为什么要有对象？</h3><ul>
 <li>如果有一组相关的数据，松散的存储不利于使用，存入数组中受下标限制又必须有固定的顺序，而对象可以自定义名称存储一系列无序的相关数据。</li>
 </ul>
@@ -858,7 +858,7 @@
   </entry>
   <entry>
     <title>函数</title>
-    <url>/e86b4b4e0a72/</url>
+    <url>/2021/08/e86b4b4e0a72/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="函数概念"><a href="#函数概念" class="headerlink" title="函数概念"></a>函数概念</h3><ul>
 <li>函数（<code>function</code>），也叫作功能、方法，函数可以将一段代码一起封装起来，被封装起来的函数具备某一项特殊的功能，内部封装的一段代码作为一个完整的结构体，要执行就都执行，要不执行就都不执行。</li>
 <li>函数的作用就是封装一段代码，将来可以重复使用。</li>
@@ -1024,7 +1024,7 @@
   </entry>
   <entry>
     <title>数组</title>
-    <url>/0204406b3a5a/</url>
+    <url>/2021/08/0204406b3a5a/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="数组的概念"><a href="#数组的概念" class="headerlink" title="数组的概念"></a>数组的概念</h3><ul>
 <li>所谓数组（<code>Array</code>），就是将多个元素（通常是同一类型）按一定顺序排列放到一个集合中，那么这个集合我们就称之为数组。</li>
 </ul>
@@ -1065,7 +1065,7 @@
   </entry>
   <entry>
     <title>流程控制语句</title>
-    <url>/e954a18be628/</url>
+    <url>/2021/08/e954a18be628/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="表达式和语句"><a href="#表达式和语句" class="headerlink" title="表达式和语句"></a>表达式和语句</h3><h4 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h4><ul>
 <li>一个表达式可以产生一个值，有可能是运算、函数调用、有可能是字面量。表达式可以放在任何需要值的地方。</li>
 <li>特点：表达式会先执行出一个结果，然后再参与其他程序。</li>
@@ -1349,7 +1349,7 @@
   </entry>
   <entry>
     <title>操作符</title>
-    <url>/f0b79071b9ae/</url>
+    <url>/2021/08/f0b79071b9ae/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><ul>
 <li><p><code>+</code> <code>-</code> <code>*</code> <code>/</code> <code>%</code> <code>()</code></p>
 </li>
@@ -1516,7 +1516,7 @@
   </entry>
   <entry>
     <title>数据类型</title>
-    <url>/518c5d3e65b8/</url>
+    <url>/2021/08/518c5d3e65b8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="字面量"><a href="#字面量" class="headerlink" title="字面量"></a>字面量</h3><ul>
 <li>字面量（<code>literal</code>）是用于表达一个固定值的表示法，又叫常量。</li>
 <li>通俗的理解，字面就是所见即所得，<code>js</code> 程序执行到代码中的字面量，会立即知道它是什么类型的数据，值是多少。</li>
@@ -1748,7 +1748,7 @@
   </entry>
   <entry>
     <title>JavaScript书写语法</title>
-    <url>/229dc9d88f44/</url>
+    <url>/2021/08/229dc9d88f44/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="JavaScript-的书写位置"><a href="#JavaScript-的书写位置" class="headerlink" title="JavaScript 的书写位置"></a><code>JavaScript </code>的书写位置</h3><ul>
 <li><p>写在行内</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;按钮&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;alert(&#x27;Hello World&#x27;)&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure></li>
@@ -1832,7 +1832,7 @@
   </entry>
   <entry>
     <title>JavaScript基础</title>
-    <url>/b1870e7b909c/</url>
+    <url>/2021/08/b1870e7b909c/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><h4 id="网页、网站和应用程序"><a href="#网页、网站和应用程序" class="headerlink" title="网页、网站和应用程序"></a>网页、网站和应用程序</h4><ul>
 <li>网页：单独的一个页面</li>
 <li>网站：一系列相关的页面组合到一起。</li>
@@ -1891,7 +1891,7 @@
   </entry>
   <entry>
     <title>Bootstrap</title>
-    <url>/8695d9c67314/</url>
+    <url>/2021/08/8695d9c67314/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="Bootstrap简介"><a href="#Bootstrap简介" class="headerlink" title="Bootstrap简介"></a><code>Bootstrap</code>简介</h3><p><code>Bootstrap</code>来自<code>Twitter</code>（推特），是目前最受欢迎的前端框架。<code>Bootstrap</code>是基于<code>HTML</code>、<code>CSS</code>和<code>JavaScript</code>的，它简洁灵活，使得<code>Web</code>开发更加快捷。</p>
 <ul>
 <li><a href="http://www.bootcss.com/">中文官网</a></li>
@@ -2061,7 +2061,7 @@
   </entry>
   <entry>
     <title>Less</title>
-    <url>/e72d4b15dd47/</url>
+    <url>/2021/08/e72d4b15dd47/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="维护css的弊端"><a href="#维护css的弊端" class="headerlink" title="维护css的弊端"></a>维护<code>css</code>的弊端</h3><p><code>css</code>是一门非程序式语言，没有变量、函数、<code>SCOPE</code>（作用域）等概念</p>
 <ul>
 <li><code>CSS</code>需要书写大量看似没有逻辑的代码，<code>CSS</code>冗余度是比较高的。</li>
@@ -2144,7 +2144,7 @@
   </entry>
   <entry>
     <title>移动Web布局</title>
-    <url>/79ce30c12007/</url>
+    <url>/2021/08/79ce30c12007/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="流式布局（百分比布局）"><a href="#流式布局（百分比布局）" class="headerlink" title="流式布局（百分比布局）"></a>流式布局（百分比布局）</h3><ul>
 <li>流式布局，就是百分比布局，也称非固定像素布局</li>
 <li>通过将盒子的宽度设置成百分比，从而根据屏幕的宽度来进行伸缩，不受固定像素的限制，内容向两侧填充</li>
@@ -2621,7 +2621,7 @@
   </entry>
   <entry>
     <title>移动Web开发</title>
-    <url>/7ff18ad25f7c/</url>
+    <url>/2021/08/7ff18ad25f7c/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="浏览器现状"><a href="#浏览器现状" class="headerlink" title="浏览器现状"></a>浏览器现状</h3><ul>
 <li><p><code>PC</code>端常见的浏览器</p>
 <ul>
@@ -2802,7 +2802,7 @@
   </entry>
   <entry>
     <title>PC静态网页开发</title>
-    <url>/deed219e1457/</url>
+    <url>/2021/08/deed219e1457/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="开发流程"><a href="#开发流程" class="headerlink" title="开发流程"></a>开发流程</h3><p><img src="https://pic.imgdb.cn/item/617629b12ab3f51d91c00b81.png"></p>
 <h3 id="版心"><a href="#版心" class="headerlink" title="版心"></a>版心</h3><ul>
 <li>阅读报纸时我们会发现，虽然其中内容很多很丰富，但是经过合理的排版布局，版面整体依然清晰、易读。</li>
@@ -2893,7 +2893,7 @@
   </entry>
   <entry>
     <title>CSS3（三）CSS3新增属性</title>
-    <url>/b3d7c705d61b/</url>
+    <url>/2021/08/b3d7c705d61b/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="边框圆角"><a href="#边框圆角" class="headerlink" title="边框圆角"></a>边框圆角</h3><ul>
 <li><p>属性名：<code>border-­radius</code> </p>
 </li>
@@ -3375,7 +3375,7 @@
   </entry>
   <entry>
     <title>CSS3（二）CSS3盒模型</title>
-    <url>/ac64559ba3f1/</url>
+    <url>/2021/08/ac64559ba3f1/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><code>CSS3</code> 中可以通过 <code>box-sizing</code> 来指定盒模型，这样我们就可以设置如何计算一个元素的总宽度和总高度。</p>
 <table>
 <thead>
@@ -3409,7 +3409,7 @@
   </entry>
   <entry>
     <title>CSS3（一）新增选择器</title>
-    <url>/54a75abce09f/</url>
+    <url>/2021/08/54a75abce09f/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><code>CSS3</code> 中，相对于 <code>CSS2.1</code> 版本的 7 个选择器，增加了更多其他的选择器，实现了更多的选择方式。</p>
 <h3 id="子级选择器"><a href="#子级选择器" class="headerlink" title="子级选择器"></a>子级选择器</h3><ul>
 <li>子级选择器用于选取带有特定父元素的元素。</li>
@@ -3629,7 +3629,7 @@
   </entry>
   <entry>
     <title>Html5</title>
-    <url>/ce5949453f00/</url>
+    <url>/2021/08/ce5949453f00/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="HTML版本"><a href="#HTML版本" class="headerlink" title="HTML版本"></a><code>HTML</code>版本</h3><p><img src="https://pic.imgdb.cn/item/616e5dea2ab3f51d919bf770.png"></p>
 <h3 id="HTML5简介"><a href="#HTML5简介" class="headerlink" title="HTML5简介"></a><code>HTML5</code>简介</h3><p>它是万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（<code>HTML</code>）的第五次重大修改。用于取代<code>HTML4</code>与<code>XHTML</code>的新一代标准版本，所以叫<code>HTML5</code>。</p>
 <h3 id="H5新变化"><a href="#H5新变化" class="headerlink" title="H5新变化"></a><code>H5</code>新变化</h3><ul>
@@ -4012,7 +4012,7 @@
   </entry>
   <entry>
     <title>CSS常用样式（九）定位</title>
-    <url>/408be7c4d1fc/</url>
+    <url>/2021/08/408be7c4d1fc/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="定位属性-position"><a href="#定位属性-position" class="headerlink" title="定位属性 position"></a>定位属性 <code>position</code></h3><ul>
 <li><p>属性名：<code>position</code>。</p>
 </li>
@@ -4184,7 +4184,7 @@
   </entry>
   <entry>
     <title>CSS常用样式（八）背景</title>
-    <url>/159520271b03/</url>
+    <url>/2021/08/159520271b03/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><code>CSS</code> 中除了布局类属性，还需要添加一些背景类的内容进行页面的修饰，从而让网页变得更加的美观。</p>
 <p><code>CSS</code> 中通过 <code>background</code> 属性来设置背景，它是一个综合属性，可以拆分成多个单一属性。</p>
 <h3 id="背景颜色-background-color"><a href="#背景颜色-background-color" class="headerlink" title="背景颜色 background-color"></a>背景颜色 <code>background-color</code></h3><ul>
@@ -4411,7 +4411,7 @@
   </entry>
   <entry>
     <title>CSS常用样式（七）a标签的伪类</title>
-    <url>/916d87fabf67/</url>
+    <url>/2021/08/916d87fabf67/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><ul>
 <li>伪类和类之间有一定的相似之处，也存在明显的区别。</li>
 <li>普通的类：必须给标签设置对应的 class 属性值，才能选中标签，而且类选择器后面添加的属性，会立即加载到浏览器之上。</li>
@@ -4444,7 +4444,7 @@
   </entry>
   <entry>
     <title>CSS常用样式（六）浮动</title>
-    <url>/c1a7e041e208/</url>
+    <url>/2021/08/c1a7e041e208/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="浮动定义"><a href="#浮动定义" class="headerlink" title="浮动定义"></a>浮动定义</h3><ul>
 <li><p>浮动是一种非常重要的布局属性。 </p>
 </li>
@@ -4642,7 +4642,7 @@
   </entry>
   <entry>
     <title>CSS常用样式（五）文档流及显示模式</title>
-    <url>/1910e3869cce/</url>
+    <url>/2021/08/1910e3869cce/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在我们遇到的 <code>HTML</code> 元素中，有的标签元素如 <code>&lt;div&gt;</code>、<code>&lt;p&gt;</code> 等在浏览器中加载时必须独自占满一行，有的标签元素如 <code>&lt;a&gt;</code> 、<code>&lt;span&gt;</code>等则不会独占一行，原因是什么？</p>
 <h3 id="标准文档流"><a href="#标准文档流" class="headerlink" title="标准文档流"></a>标准文档流</h3><ul>
 <li>标准文档流，指的是元素排版布局过程中，元素会默认自动从左往右，从上往下的流式排列方式。前面内容发生了变化，后面的内容位置也会随着发生变化。</li>
@@ -4721,7 +4721,7 @@
   </entry>
   <entry>
     <title>CSS常用样式（四）盒模型拓展</title>
-    <url>/dbe127acbd8a/</url>
+    <url>/2021/08/dbe127acbd8a/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>虽然我们了解了盒模型的五个属性的基本语法，但是在实际工作中还有更多的方法和技巧需要掌握，因此，我们需要扩展对盒模型的应用知识。</p>
 <h3 id="清除默认样式"><a href="#清除默认样式" class="headerlink" title="清除默认样式"></a>清除默认样式</h3><ul>
 <li>大部分标签都有一个浏览器加载的默认样式，会对布局造成一些影响。为了避免默认样式对整体布局效果造成影响，一定要清除默认样式。</li>
@@ -4813,7 +4813,7 @@
   </entry>
   <entry>
     <title>CSS常用样式（三）盒模型</title>
-    <url>/5fff91662ea7/</url>
+    <url>/2021/08/5fff91662ea7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul>
 <li>盒模型又叫框模型，包含了五个用来描述盒子位置、尺寸的属性，分别是宽度 <code>width</code>、高度 <code>height</code>、内边距 <code>padding</code>、 边框 <code>border</code>、外边距 <code>margin</code>。</li>
 </ul>
@@ -5021,7 +5021,7 @@
   </entry>
   <entry>
     <title>CSS常用样式（二）文本类样式</title>
-    <url>/eb852cdecbf4/</url>
+    <url>/2021/08/eb852cdecbf4/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="颜色-color"><a href="#颜色-color" class="headerlink" title="颜色 color"></a>颜色 <code>color</code></h3><ul>
 <li><p>作用：给文字设置颜色。</p>
 </li>
@@ -5291,7 +5291,7 @@
   </entry>
   <entry>
     <title>CSS常用样式（一）字体类样式</title>
-    <url>/de65dc4b4401/</url>
+    <url>/2021/08/de65dc4b4401/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="字体-font-family"><a href="#字体-font-family" class="headerlink" title="字体 font-family"></a>字体 <code>font-family</code></h3><ul>
 <li><p>作用：定义元素内文字的字体。</p>
 </li>
@@ -5537,7 +5537,7 @@
   </entry>
   <entry>
     <title>CSS基础语法</title>
-    <url>/04dd7123fa55/</url>
+    <url>/2021/07/04dd7123fa55/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="产生背景"><a href="#产生背景" class="headerlink" title="产生背景"></a>产生背景</h3><ul>
 <li>从<code>HTML</code>被发明开始，样式就以各种形式存在，最初的<code>HTML</code>只包含很少的显示属性。</li>
 <li>随着<code>HTML</code>的成长，为了满足页面设计者的要求，<code>HTML</code>添加了很多显示功能，例如文本格式化标签。</li>
@@ -6232,7 +6232,7 @@
   </entry>
   <entry>
     <title>Html基础（三）HTML常用标签</title>
-    <url>/5c8258b43431/</url>
+    <url>/2021/07/5c8258b43431/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><ul>
 <li>在很多代码技术中都可以添加注释内容，我们也可以向HTML源代码添加注释</li>
 <li>HTML注释语法：<code>&lt;!-- 书写注释内容 --&gt;</code></li>
@@ -7052,7 +7052,7 @@
   </entry>
   <entry>
     <title>Html基础（二）认识HTML</title>
-    <url>/ba66d0ff8ee2/</url>
+    <url>/2021/07/ba66d0ff8ee2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="HTML概念"><a href="#HTML概念" class="headerlink" title="HTML概念"></a><code>HTML</code>概念</h3><ul>
 <li><code>Hypertext Markup Language</code>：<strong>超文本标记语言</strong>。是用来制作网页的一种标记语言<ul>
 <li><strong>超文本</strong>：是超级文本的缩写，简单来说超文本就是用于链接另一个文本或多媒体内容的文本，比如链接到图片、链接、音频、视频、程序等</li>
@@ -7254,7 +7254,7 @@
   </entry>
   <entry>
     <title>Html基础（一）认识网页</title>
-    <url>/dc17d32a38af/</url>
+    <url>/2021/07/dc17d32a38af/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="认识前端开发"><a href="#认识前端开发" class="headerlink" title="认识前端开发"></a>认识前端开发</h3><ul>
 <li><p>前端开发是创建<code>Web</code>页面或<code>app</code>等前端界面呈现给用户的过程</p>
 </li>
@@ -7384,7 +7384,7 @@
   </entry>
   <entry>
     <title>前端学习路线规划</title>
-    <url>/7316ff6469dc/</url>
+    <url>/2021/07/7316ff6469dc/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h3><ul>
 <li>计算机基本认识</li>
 <li>应用的概念</li>
@@ -7495,7 +7495,7 @@
   </entry>
   <entry>
     <title>electron-builder常用配置</title>
-    <url>/ce120d766f28/</url>
+    <url>/2021/07/ce120d766f28/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="attr">build</span>: &#123;</span><br><span class="line">    <span class="attr">productName</span>: <span class="string">&#x27;xxxx&#x27;</span>, <span class="comment">//项目名 这也是生成的exe文件的前缀名</span></span><br><span class="line">    <span class="attr">appId</span>: <span class="string">&#x27;com.xxx.xxxxx&#x27;</span>, <span class="comment">//包名</span></span><br><span class="line">    <span class="attr">copyright</span>: <span class="string">&#x27;xxxx&#x27;</span>, <span class="comment">//版权信息</span></span><br><span class="line">    <span class="attr">directories</span>: &#123;</span><br><span class="line">        <span class="comment">//输出文件夹</span></span><br><span class="line">        <span class="attr">output</span>: <span class="string">&#x27;build&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">nsis</span>: &#123;</span><br><span class="line">        <span class="comment">//nsis相关配置，打包方式为nsis时生效</span></span><br><span class="line">        <span class="attr">oneClick</span>: <span class="literal">false</span>, <span class="comment">// 是否一键安装</span></span><br><span class="line">        <span class="attr">allowElevation</span>: <span class="literal">true</span>, <span class="comment">// 允许请求提升，如果为false，则用户必须使用提升的权限重新启动安装程序。</span></span><br><span class="line">        <span class="attr">allowToChangeInstallationDirectory</span>: <span class="literal">true</span>, <span class="comment">// 允许修改安装目录</span></span><br><span class="line">        <span class="attr">installerIcon</span>: <span class="string">&#x27;./build/icons/aaa.ico&#x27;</span>, <span class="comment">// 安装图标</span></span><br><span class="line">        <span class="attr">uninstallerIcon</span>: <span class="string">&#x27;./build/icons/bbb.ico&#x27;</span>, <span class="comment">//卸载图标</span></span><br><span class="line">        <span class="attr">installerHeaderIcon</span>: <span class="string">&#x27;./build/icons/aaa.ico&#x27;</span>, <span class="comment">// 安装时头部图标</span></span><br><span class="line">        <span class="attr">createDesktopShortcut</span>: <span class="literal">true</span>, <span class="comment">// 创建桌面图标</span></span><br><span class="line">        <span class="attr">createStartMenuShortcut</span>: <span class="literal">true</span>, <span class="comment">// 创建开始菜单图标</span></span><br><span class="line">        <span class="attr">shortcutName</span>: <span class="string">&#x27;xxxx&#x27;</span>, <span class="comment">// 图标名称</span></span><br><span class="line">        <span class="attr">include</span>: <span class="string">&#x27;build/script/installer.nsh&#x27;</span> <span class="comment">// 包含的自定义nsis脚本</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">publish</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">provider</span>: <span class="string">&#x27;generic&#x27;</span>, <span class="comment">// 服务器提供商，也可以是GitHub等等</span></span><br><span class="line">            <span class="attr">url</span>: <span class="string">&#x27;http://xxxxx/&#x27;</span> <span class="comment">// 服务器地址</span></span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">win</span>: &#123;</span><br><span class="line">        <span class="attr">icon</span>: <span class="string">&#x27;build/icons/aims.ico&#x27;</span>,</span><br><span class="line">        <span class="attr">target</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">target</span>: <span class="string">&#x27;nsis&#x27;</span>, <span class="comment">//使用nsis打成安装包，&quot;portable&quot;打包成免安装版</span></span><br><span class="line">                <span class="attr">arch</span>: [</span><br><span class="line">                    <span class="string">&#x27;ia32&#x27;</span>, <span class="comment">//32位</span></span><br><span class="line">                    <span class="string">&#x27;x64&#x27;</span> <span class="comment">//64位</span></span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">mac</span>: &#123;</span><br><span class="line">        <span class="attr">icon</span>: <span class="string">&#x27;build/icons/icon.icns&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">linux</span>: &#123;</span><br><span class="line">        <span class="attr">icon</span>: <span class="string">&#x27;build/icons&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h3><ul>
@@ -7509,7 +7509,7 @@
   </entry>
   <entry>
     <title>electron安装失败</title>
-    <url>/4f963243790b/</url>
+    <url>/2021/07/4f963243790b/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在安装项目依赖时，出现报错<code>RequestError: read ECONNRESET</code>报错，如下图</p>
 <p><img src="https://pic.imgdb.cn/item/60dedff25132923bf80193f3.png"></p>
 <p>解决方法：安装<code>cross-env</code></p>
@@ -7527,7 +7527,7 @@
   </entry>
   <entry>
     <title>electron+vue项目添加vue-devTools</title>
-    <url>/c860e0e594a7/</url>
+    <url>/2021/06/c860e0e594a7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>首先需要下载vue-devtools离线crx文件，建议使用第三方谷歌商店镜像站</p>
 <p><a href="https://chrome.pictureknow.com/">收藏猫插件-Chrome插件商店</a></p>
 <p>在商店内找到vue-devtools，选择下载插件手动安装</p>
@@ -7553,7 +7553,7 @@
   </entry>
   <entry>
     <title>Grunt</title>
-    <url>/1eecca2bf8cc/</url>
+    <url>/2021/05/1eecca2bf8cc/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h1><ul>
 <li>创建一个 <code>package.json</code></li>
 </ul>
@@ -7589,7 +7589,7 @@
   </entry>
   <entry>
     <title>自动化构建</title>
-    <url>/15c23d295a5f/</url>
+    <url>/2021/05/15c23d295a5f/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h1><ul>
 <li>自动化构建<ul>
 <li>将源代码自动化构建成为生产代码，这样的转换的过程称为自动化构建工作流</li>
@@ -7640,7 +7640,7 @@
   </entry>
   <entry>
     <title>脚手架的工作原理</title>
-    <url>/94aba96ecc2f/</url>
+    <url>/2021/05/94aba96ecc2f/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>脚手架工具实际上是一个<code>node cli</code>应用，创建脚手架工具实际上就是创建<code>cli</code>应用</p>
 <ul>
 <li>在项目目录下初始化<code>package.json</code></li>
@@ -7715,7 +7715,7 @@
   </entry>
   <entry>
     <title>Plop</title>
-    <url>/7994ecbf42a5/</url>
+    <url>/2021/05/7994ecbf42a5/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul>
 <li>将<code>plop</code>作为一个<code>npm</code>模块安装到开发依赖当中</li>
 </ul>
@@ -7754,7 +7754,7 @@
   </entry>
   <entry>
     <title>Yeoman</title>
-    <url>/bc60b4a212ef/</url>
+    <url>/2021/05/bc60b4a212ef/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>用来创造现代化<code>Web</code>应用的工具</p>
 <ul>
 <li>在全局范围安装<code>yo</code><ul>
@@ -7848,7 +7848,7 @@
   </entry>
   <entry>
     <title>脚手架工具</title>
-    <url>/0961306b307e/</url>
+    <url>/2021/05/0961306b307e/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="脚手架的本质作用"><a href="#脚手架的本质作用" class="headerlink" title="脚手架的本质作用"></a>脚手架的本质作用</h1><p>创建项目基础解构、提供项目规范和约定</p>
 <ul>
 <li>相同的组织结构</li>
@@ -7881,7 +7881,7 @@
   </entry>
   <entry>
     <title>工程化概述</title>
-    <url>/6691ba82146f/</url>
+    <url>/2021/05/6691ba82146f/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>前端工程化是指遵循一定标准和规范，通过工具提高效率降低成本的一种手段。</p>
 <h1 id="没有工程化时面临的问题"><a href="#没有工程化时面临的问题" class="headerlink" title="没有工程化时面临的问题"></a>没有工程化时面临的问题</h1><ul>
 <li>传统语言或语法的弊端<ul>
@@ -7957,7 +7957,7 @@
   </entry>
   <entry>
     <title>JSDoc</title>
-    <url>/aa8a51edc8a7/</url>
+    <url>/2021/05/aa8a51edc8a7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="什么是JSDoc"><a href="#什么是JSDoc" class="headerlink" title="什么是JSDoc"></a>什么是<code>JSDoc</code></h1><p><code>JSDoc</code> 是一个根据 <code>JavaScript</code> 文件中注释信息，生成 <code>JavaScript</code> 应用程序或模块的<code>API</code>文档的工具。你可以使用 <code>JSDoc</code> 标记如：<strong>命名空间</strong>，<strong>类</strong>，<strong>方法</strong>，<strong>方法参数</strong>等。从而使开发者能够轻易地阅读代码，掌握代码定义的类和其属性和方法，从而降低维护成本，和提高开发效率。</p>
 <h1 id="JSDoc-注释规则"><a href="#JSDoc-注释规则" class="headerlink" title="JSDoc 注释规则"></a><code>JSDoc</code> 注释规则</h1><p><code>JSDoc</code>注释一般应该放置在方法或函数声明之前，它必须以<code>/**</code>开始，以便由<code>JSDoc</code>解析器识别。其他任何以<code>/*</code>、<code>/***</code>或者超过3个星号的注释，都将被<code>JSDoc</code>解析器忽略。</p>
 <p>JavaScript 项目中如何有更好的类型提示：<code>JSDoc</code> + <a href="https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html#import-types"><code>import-types</code></a></p>
@@ -8093,7 +8093,7 @@
   </entry>
   <entry>
     <title>This</title>
-    <url>/d8371860c131/</url>
+    <url>/2021/05/d8371860c131/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>关于 <code>this</code> 的总结：</p>
 <ul>
 <li>沿着作用域向上找最近的一个 <code>function</code>（不是箭头函数），看这个 <code>function</code> 最终是怎样执行的；</li>
@@ -8128,7 +8128,7 @@
   </entry>
   <entry>
     <title>JSBench</title>
-    <url>/81e2a5b98f88/</url>
+    <url>/2021/05/81e2a5b98f88/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h1><p><a href="https://jsbench.me/"><code>JSBench</code></a>是一个可以在线测试<code>js</code>执行效率的网站</p>
 <p><img src="https://pic.imgdb.cn/item/60ebe6ef5132923bf8de76f4.png"></p>
 <h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul>
@@ -8145,7 +8145,7 @@
   </entry>
   <entry>
     <title>JavaScript性能优化（六）优化案例</title>
-    <url>/043a8592aa08/</url>
+    <url>/2021/05/043a8592aa08/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="变量局部化"><a href="#变量局部化" class="headerlink" title="变量局部化"></a>变量局部化</h1><p>定义变量时尽可能将变量定义在局部作用域内，这样可以提高代码的执行效率（减少了数据访问时需要查找的路径）</p>
 <p><img src="https://pic.imgdb.cn/item/60ebeb1e5132923bf8079504.png"></p>
 <p>从<code>JSBench</code>测试结果中可以看到对比结果差距还是挺大的</p>
@@ -8189,7 +8189,7 @@
   </entry>
   <entry>
     <title>JavaScript性能优化（五）堆栈操作</title>
-    <url>/d272b270da16/</url>
+    <url>/2021/05/d272b270da16/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="堆栈准备"><a href="#堆栈准备" class="headerlink" title="堆栈准备"></a>堆栈准备</h1><ul>
 <li><code>JS</code>执行环境</li>
 <li>执行环境栈（<code>ECStack</code>，<code>execution context stack</code>）</li>
@@ -8253,7 +8253,7 @@
   </entry>
   <entry>
     <title>JavaScript性能优化（四）performance工具</title>
-    <url>/c16d95e897f5/</url>
+    <url>/2021/04/c16d95e897f5/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="为什么使用Performance"><a href="#为什么使用Performance" class="headerlink" title="为什么使用Performance"></a>为什么使用<code>Performance</code></h1><ul>
 <li><code>GC</code>的目的是为了实现内存空间的良性循环</li>
 <li>良性循环的基石是合理使用</li>
@@ -8327,7 +8327,7 @@
   </entry>
   <entry>
     <title>JavaScript性能优化（三）V8引擎的垃圾回收</title>
-    <url>/205552df41f0/</url>
+    <url>/2021/04/205552df41f0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="认识V8"><a href="#认识V8" class="headerlink" title="认识V8"></a>认识<code>V8</code></h1><ul>
 <li><code>V8</code>是一款主流的<code>JavaScript</code>执行引擎</li>
 <li><code>V8</code>采用即时编译</li>
@@ -8416,7 +8416,7 @@
   </entry>
   <entry>
     <title>JavaScript性能优化（二）垃圾回收与常见GC算法</title>
-    <url>/9164d4cab658/</url>
+    <url>/2021/04/9164d4cab658/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="JavaScript中的垃圾"><a href="#JavaScript中的垃圾" class="headerlink" title="JavaScript中的垃圾"></a><code>JavaScript</code>中的垃圾</h1><ul>
 <li><code>JavaScript</code>中的内存管理是自动的</li>
 <li>对象不在引用时是垃圾</li>
@@ -8504,7 +8504,7 @@
   </entry>
   <entry>
     <title>JavaScript性能优化（一）内存管理</title>
-    <url>/dead12376500/</url>
+    <url>/2021/04/dead12376500/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="内存为什么需要管理"><a href="#内存为什么需要管理" class="headerlink" title="内存为什么需要管理"></a>内存为什么需要管理</h1><p>我们在代码中经常会有意无意的造成内存泄漏如下图所示，该代码在语法上没有任何问题，但是通过性能检测工具对脚本内存进行检测可以发现，内存持续升高，并没有回落，当此类问题代码多次出现，就可能给程序带来许多意想不到的<code>bug</code>。所以我们有必要了解内存管理机制，从而避免编写出内存问题代码。</p>
 <p><img src="https://pic.imgdb.cn/item/60e65fe45132923bf89e0180.png"></p>
 <h1 id="什么是内存管理"><a href="#什么是内存管理" class="headerlink" title="什么是内存管理"></a>什么是内存管理</h1><ul>
@@ -8526,7 +8526,7 @@
   </entry>
   <entry>
     <title>TypeScript</title>
-    <url>/4aaef74deb87/</url>
+    <url>/2021/04/4aaef74deb87/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul>
 <li><code>TypeScript</code>可以编译出纯净、简洁的<code>JavaScript</code>代码，并且可以运行在任何浏览器上、<code>Node.js</code>环境中和任何支持<code>ECMAScript3</code>（或更高版本）的<code>JavaScript</code>引擎中</li>
 <li>类型允许<code>JavaScript</code>开发者在开发<code>JavaScript</code>应用程序时使用高效的开发工具和常用操作比如静态检查和代码重构</li>
@@ -8620,7 +8620,7 @@
   </entry>
   <entry>
     <title>Flow</title>
-    <url>/199ad6f4755e/</url>
+    <url>/2021/04/199ad6f4755e/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><code>Flow</code>是 <code>JavaScript</code> 的静态类型检查器，<code>Flow</code> 发布在 <code>GitHub</code> 上，在 <code>Facebook</code> 内部大量使用，并且是开源的。<br><code>Flow</code>使用类型注解，来给参数添加类型控制。在生产环境中可以通过编译工具，去掉类型注解，我们可以在自己需要的地方添加类型注解</p>
 <h1 id="在项目中使用flow"><a href="#在项目中使用flow" class="headerlink" title="在项目中使用flow"></a>在项目中使用<code>flow</code></h1><ul>
 <li>安装<code>flow-bin</code> <code>npm i flow-bin -D</code></li>
@@ -8688,7 +8688,7 @@
   </entry>
   <entry>
     <title>类型系统基础概念</title>
-    <url>/b26bcb297384/</url>
+    <url>/2021/04/b26bcb297384/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="强类型与弱类型"><a href="#强类型与弱类型" class="headerlink" title="强类型与弱类型"></a>强类型与弱类型</h1><p>从类型安全角度区分类型。</p>
 <ul>
 <li>强类型从语言层面限制函数的实参类型必须与形参相同</li>
@@ -8723,7 +8723,7 @@
   </entry>
   <entry>
     <title>ECMAScript新特性(二)ES6+</title>
-    <url>/f9d54b037621/</url>
+    <url>/2021/04/f9d54b037621/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="ES2016"><a href="#ES2016" class="headerlink" title="ES2016"></a><code>ES2016</code></h1><h2 id="数组扩展方法"><a href="#数组扩展方法" class="headerlink" title="数组扩展方法"></a>数组扩展方法</h2><ul>
 <li><code>includes()</code>判断数组是否包含某一个元素</li>
 </ul>
@@ -8795,7 +8795,7 @@
   </entry>
   <entry>
     <title>ECMAScript新特性(一)ES6</title>
-    <url>/ac4a54750366/</url>
+    <url>/2021/04/ac4a54750366/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>大致可分为四类</p>
 <ul>
 <li>解决原有语法上的⼀些问题或者不足</li>
@@ -8994,7 +8994,7 @@
   </entry>
   <entry>
     <title>手写Promise源码</title>
-    <url>/117ac517ba3d/</url>
+    <url>/2021/03/117ac517ba3d/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  1. Promise 就是一个类 在执行这个类的时候 需要传递一个执行器进去 执行器会立即执行</span></span><br><span class="line"><span class="comment">  2. Promise 中有三种状态 分别为 成功 fulfilled 失败 rejected 等待 pending</span></span><br><span class="line"><span class="comment">    pending -&gt; fulfilled</span></span><br><span class="line"><span class="comment">    pending -&gt; rejected</span></span><br><span class="line"><span class="comment">    一旦状态确定就不可更改</span></span><br><span class="line"><span class="comment">  3. resolve和reject函数是用来更改状态的</span></span><br><span class="line"><span class="comment">    resolve: fulfilled</span></span><br><span class="line"><span class="comment">    reject: rejected</span></span><br><span class="line"><span class="comment">  4. then方法内部做的事情就判断状态 如果状态是成功 调用成功的回调函数 如果状态是失败 调用失败回调函数 then方法是被定义在原型对象中的</span></span><br><span class="line"><span class="comment">  5. then成功回调有一个参数 表示成功之后的值 then失败回调有一个参数 表示失败后的原因</span></span><br><span class="line"><span class="comment">  6. 同一个promise对象下面的then方法是可以被调用多次的</span></span><br><span class="line"><span class="comment">  7. then方法是可以被链式调用的, 后面then方法的回调函数拿到值的是上一个then方法的回调函数的返回值</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">PENDING</span> = <span class="string">&#x27;pending&#x27;</span>; <span class="comment">// 等待</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">FULFILLED</span> = <span class="string">&#x27;fulfilled&#x27;</span>; <span class="comment">// 成功</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">REJECTED</span> = <span class="string">&#x27;rejected&#x27;</span>; <span class="comment">// 失败</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MyPromise</span> &#123;</span><br><span class="line">  <span class="comment">// 执行这个类的时候，传递一个执行器，执行器会立即执行</span></span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">executor</span>) &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      <span class="title function_">executor</span>(<span class="variable language_">this</span>.<span class="property">resolve</span>, <span class="variable language_">this</span>.<span class="property">reject</span>)</span><br><span class="line">    &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="title function_">reject</span>(e);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// Promsie 状态 </span></span><br><span class="line">  status = <span class="variable constant_">PENDING</span>;</span><br><span class="line">  <span class="comment">// 成功之后的值</span></span><br><span class="line">  value = <span class="literal">undefined</span>;</span><br><span class="line">  <span class="comment">// 失败后的原因</span></span><br><span class="line">  reason = <span class="literal">undefined</span>;</span><br><span class="line">  <span class="comment">// 成功回调</span></span><br><span class="line">  successCallback = [];</span><br><span class="line">  <span class="comment">// 失败回调</span></span><br><span class="line">  failCallback = [];</span><br><span class="line">  <span class="comment">// 此处使用箭头函数是为了使函数内部的this指向为实例类</span></span><br><span class="line">  resolve = <span class="function"><span class="params">value</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 如果状态不是等待，阻止程序向下执行</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">status</span> !== <span class="variable constant_">PENDING</span>) <span class="keyword">return</span>;</span><br><span class="line">    <span class="comment">// 将状态更改为成功</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">status</span> = <span class="variable constant_">FULFILLED</span>;</span><br><span class="line">    <span class="comment">// 保存成功之后的值</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">value</span> = value;</span><br><span class="line">    <span class="comment">// 判断成功回调是否存在，如果存在就调用</span></span><br><span class="line">    <span class="keyword">while</span> (<span class="variable language_">this</span>.<span class="property">successCallback</span>.<span class="property">length</span>) <span class="variable language_">this</span>.<span class="property">successCallback</span>.<span class="title function_">shift</span>()()</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 使用箭头函数是为了使函数内部的this指向为实例类</span></span><br><span class="line">  reject = <span class="function"><span class="params">reason</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 如果状态不是等待，阻止程序向下执行</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">status</span> !== <span class="variable constant_">PENDING</span>) <span class="keyword">return</span>;</span><br><span class="line">    <span class="comment">// 将状态更改为失败</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">status</span> = <span class="variable constant_">REJECTED</span>;</span><br><span class="line">    <span class="comment">// 保存失败后的原因</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">reason</span> = reason;</span><br><span class="line">    <span class="comment">// 判断失败回调是否存在，如果存在就调用</span></span><br><span class="line">    <span class="keyword">while</span> (<span class="variable language_">this</span>.<span class="property">failCallback</span>.<span class="property">length</span>) <span class="variable language_">this</span>.<span class="property">failCallback</span>.<span class="title function_">shift</span>()()</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">then</span>(<span class="params">successCallback, failCallback</span>) &#123;</span><br><span class="line">    <span class="comment">// 参数可选</span></span><br><span class="line">    <span class="comment">// 判断传入的参数是否为函数，如果是则保留，否则初始化为value =&gt; value</span></span><br><span class="line">    successCallback = <span class="keyword">typeof</span> successCallback === <span class="string">&#x27;function&#x27;</span> ? successCallback : <span class="function"><span class="params">value</span> =&gt;</span> value;</span><br><span class="line">    <span class="comment">// 参数可选</span></span><br><span class="line">    <span class="comment">// 判断传入的参数是否为函数，如果是则保留，否则初始化为reason =&gt; &#123; throw reason &#125;</span></span><br><span class="line">    failCallback = <span class="keyword">typeof</span> failCallback === <span class="string">&#x27;function&#x27;</span> ? failCallback : <span class="function"><span class="params">reason</span> =&gt;</span> &#123; <span class="keyword">throw</span> reason &#125;;</span><br><span class="line">    <span class="keyword">let</span> promsie = <span class="keyword">new</span> <span class="title class_">MyPromise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="comment">// 判断状态</span></span><br><span class="line">      <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">status</span> === <span class="variable constant_">FULFILLED</span>) &#123; <span class="comment">// 成功</span></span><br><span class="line">        <span class="comment">// 此处使用setTimeout的作用是为了能够拿到实例后的promsie</span></span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">          <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 将回调后的结果保存</span></span><br><span class="line">            <span class="keyword">let</span> x = <span class="title function_">successCallback</span>(<span class="variable language_">this</span>.<span class="property">value</span>);</span><br><span class="line">            <span class="comment">// 判断x的值是普通值还是promise对象</span></span><br><span class="line">            <span class="comment">// 如果是普通值，直接调用resolve </span></span><br><span class="line">            <span class="comment">// 如果是promise对象，查看promsie对象返回的结果，再根据promise对象返回的结果，决定调用resolve，还是调用reject</span></span><br><span class="line">            <span class="title function_">resolvePromise</span>(promsie, x, resolve, reject)</span><br><span class="line">          &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">            <span class="title function_">reject</span>(e);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;, <span class="number">0</span>)</span><br><span class="line">      &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">status</span> === <span class="variable constant_">REJECTED</span>) &#123; <span class="comment">// 失败</span></span><br><span class="line">        <span class="comment">// 此处使用setTimeout的作用是为了能够拿到实例后的promsie</span></span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">          <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 将回调后的结果保存</span></span><br><span class="line">            <span class="keyword">let</span> x = <span class="title function_">failCallback</span>(<span class="variable language_">this</span>.<span class="property">reason</span>);</span><br><span class="line">            <span class="comment">// 判断x的值是普通值还是promise对象</span></span><br><span class="line">            <span class="comment">// 如果是普通值，直接调用resolve </span></span><br><span class="line">            <span class="comment">// 如果是promise对象，查看promsie对象返回的结果，再根据promise对象返回的结果，决定调用resolve，还是调用reject</span></span><br><span class="line">            <span class="title function_">resolvePromise</span>(promsie, x, resolve, reject)</span><br><span class="line">          &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">            <span class="title function_">reject</span>(e);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;, <span class="number">0</span>)</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123; <span class="comment">// 异步</span></span><br><span class="line">        <span class="comment">// 等待</span></span><br><span class="line">        <span class="comment">// 将成功回调和失败回调存储起来</span></span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">successCallback</span>.<span class="title function_">push</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">          <span class="comment">// 此处使用setTimeout的作用是为了能够拿到实例后的promsie</span></span><br><span class="line">          <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">              <span class="comment">// 将回调后的结果保存</span></span><br><span class="line">              <span class="keyword">let</span> x = <span class="title function_">successCallback</span>(<span class="variable language_">this</span>.<span class="property">value</span>);</span><br><span class="line">              <span class="comment">// 判断x的值是普通值还是promise对象</span></span><br><span class="line">              <span class="comment">// 如果是普通值，直接调用resolve </span></span><br><span class="line">              <span class="comment">// 如果是promise对象，查看promsie对象返回的结果，再根据promise对象返回的结果，决定调用resolve，还是调用reject</span></span><br><span class="line">              <span class="title function_">resolvePromise</span>(promsie, x, resolve, reject)</span><br><span class="line">            &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">              <span class="title function_">reject</span>(e);</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;, <span class="number">0</span>)</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">failCallback</span>.<span class="title function_">push</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">          <span class="comment">// 此处使用setTimeout的作用是为了能够拿到实例后的promsie</span></span><br><span class="line">          <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">              <span class="comment">// 将回调后的结果保存</span></span><br><span class="line">              <span class="keyword">let</span> x = <span class="title function_">failCallback</span>(<span class="variable language_">this</span>.<span class="property">reason</span>);</span><br><span class="line">              <span class="comment">// 判断x的值是普通值还是promise对象</span></span><br><span class="line">              <span class="comment">// 如果是普通值，直接调用resolve </span></span><br><span class="line">              <span class="comment">// 如果是promise对象，查看promsie对象返回的结果，再根据promise对象返回的结果，决定调用resolve，还是调用reject</span></span><br><span class="line">              <span class="title function_">resolvePromise</span>(promsie, x, resolve, reject)</span><br><span class="line">            &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">              <span class="title function_">reject</span>(e);</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;, <span class="number">0</span>)</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="comment">// 此处返回promise实现链式调用</span></span><br><span class="line">    <span class="keyword">return</span> promsie;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// catch方法 promise失败会被执行</span></span><br><span class="line">  <span class="keyword">catch</span>(failCallback) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="title function_">then</span>(<span class="literal">undefined</span>, failCallback)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// finally方法 无论promise成功失败都会被执行</span></span><br><span class="line">  <span class="title function_">finally</span>(<span class="params">callback</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="title function_">then</span>(<span class="function"><span class="params">value</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="title class_">MyPromise</span>.<span class="title function_">resolve</span>(<span class="title function_">callback</span>()).<span class="title function_">then</span>(<span class="function">() =&gt;</span> value);</span><br><span class="line">    &#125;, <span class="function"><span class="params">reason</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="title class_">MyPromise</span>.<span class="title function_">resolve</span>(<span class="title function_">callback</span>()).<span class="title function_">then</span>(<span class="function">() =&gt;</span> &#123; <span class="keyword">throw</span> reason &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// all方法 接收一个array，是一个promise集合，当所有promise执行成功后，才返回resolve，有一个失败则返回reject</span></span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">all</span>(<span class="params">array</span>) &#123;</span><br><span class="line">    <span class="comment">// 用来存储promise执行结果</span></span><br><span class="line">    <span class="keyword">let</span> result = [];</span><br><span class="line">    <span class="comment">// 记录promise完成数量</span></span><br><span class="line">    <span class="keyword">let</span> index = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">MyPromise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="comment">// 当promise执行完成时向result添加执行结果</span></span><br><span class="line">      <span class="keyword">function</span> <span class="title function_">addData</span>(<span class="params">key, value</span>) &#123;</span><br><span class="line">        result[key] = value;</span><br><span class="line">        index++;</span><br><span class="line">        <span class="comment">// 当所有promise执行完毕后调用resolve并返回result</span></span><br><span class="line">        <span class="keyword">if</span> (index === array.<span class="property">length</span>) <span class="title function_">resolve</span>(result);</span><br><span class="line">      &#125;</span><br><span class="line">      array.<span class="title function_">forEach</span>(<span class="function">(<span class="params">item, key</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (item <span class="keyword">instanceof</span> <span class="title class_">MyPromise</span>) &#123;</span><br><span class="line">          <span class="comment">// promise 对象</span></span><br><span class="line">          item.<span class="title function_">then</span>(<span class="function"><span class="params">value</span> =&gt;</span> <span class="title function_">addData</span>(key, value), reject)</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="comment">// 普通值</span></span><br><span class="line">          <span class="title function_">addData</span>(key, item);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// allSettled方法 接收一个array，是一个promise集合，当所有promise执行完成(无论成功还是失败)后，返回resolve</span></span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">allSettled</span>(<span class="params">array</span>) &#123;</span><br><span class="line">    <span class="comment">// 用来存储promise执行结果</span></span><br><span class="line">    <span class="keyword">let</span> result = [];</span><br><span class="line">    <span class="comment">// 记录promise完成数量</span></span><br><span class="line">    <span class="keyword">let</span> index = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">MyPromise</span>(<span class="function">(<span class="params">resolve</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">function</span> <span class="title function_">addData</span>(<span class="params">key, value, status</span>) &#123;</span><br><span class="line">        <span class="comment">// 以对象的形式存储promise执行结果和状态</span></span><br><span class="line">        result[key] = &#123; status, value &#125;;</span><br><span class="line">        index++;</span><br><span class="line">        <span class="comment">// 当所有promise执行完毕后调用resolve并返回result</span></span><br><span class="line">        <span class="keyword">if</span> (index === array.<span class="property">length</span>) <span class="title function_">resolve</span>(result);</span><br><span class="line">      &#125;</span><br><span class="line">      array.<span class="title function_">forEach</span>(<span class="function">(<span class="params">item, key</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (item <span class="keyword">instanceof</span> <span class="title class_">MyPromise</span>) &#123;</span><br><span class="line">          <span class="comment">// promise 对象</span></span><br><span class="line">          <span class="comment">// 无论promsie成功还是失败，都将结果和状态存储到result中</span></span><br><span class="line">          item.<span class="title function_">then</span>(<span class="function"><span class="params">value</span> =&gt;</span> <span class="title function_">addData</span>(key, value, <span class="variable constant_">FULFILLED</span>), <span class="function"><span class="params">reason</span> =&gt;</span> <span class="title function_">addData</span>(key, reason, <span class="variable constant_">REJECTED</span>))</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="comment">// 普通值</span></span><br><span class="line">          <span class="title function_">addData</span>(key, item, <span class="variable constant_">FULFILLED</span>);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// race方法 接收一个array，是一个promise集合，其中任意一个promise执行完毕之后，返回执行结果，无论成功失败</span></span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">race</span>(<span class="params">array</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">MyPromise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">      array.<span class="title function_">forEach</span>(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (item <span class="keyword">instanceof</span> <span class="title class_">MyPromise</span>) &#123;</span><br><span class="line">          <span class="comment">// promise 对象</span></span><br><span class="line">          item.<span class="title function_">then</span>(resolve, reject)</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="comment">// 普通值</span></span><br><span class="line">          <span class="title function_">resolve</span>(item)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// resolve方法 快速创建一个执行结果一定为成功的Promise</span></span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">resolve</span>(<span class="params">value</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (value <span class="keyword">instanceof</span> <span class="title class_">MyPromise</span>) <span class="keyword">return</span> value;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">MyPromise</span>(<span class="function"><span class="params">resolve</span> =&gt;</span> <span class="title function_">resolve</span>(value));</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// reject方法 快速创建一个执行结果一定为失败的Promise</span></span><br><span class="line">  <span class="keyword">static</span> <span class="title function_">reject</span>(<span class="params">value</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">MyPromise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> <span class="title function_">reject</span>(value));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">resolvePromise</span>(<span class="params">promsie, x, resolve, reject</span>) &#123;</span><br><span class="line">  <span class="comment">// 判断then方法返回的promise和回调函数返回的结果x是否相等，相等则抛出异常，防止循环调用</span></span><br><span class="line">  <span class="keyword">if</span> (promsie === x) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="title function_">reject</span>(<span class="keyword">new</span> <span class="title class_">TypeError</span>(<span class="string">&#x27;Chaining cycle detected for promise #&lt;Promise&gt;&#x27;</span>))</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (x <span class="keyword">instanceof</span> <span class="title class_">MyPromise</span>) &#123;</span><br><span class="line">    <span class="comment">// promise 对象</span></span><br><span class="line">    <span class="comment">// x.then(value =&gt; resolve(value), reason =&gt; reject(reason));</span></span><br><span class="line">    x.<span class="title function_">then</span>(resolve, reject);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// 普通值</span></span><br><span class="line">    <span class="title function_">resolve</span>(x);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = <span class="title class_">MyPromise</span>;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>前端</category>
@@ -9003,7 +9003,7 @@
   </entry>
   <entry>
     <title>JavaScript异步编程</title>
-    <url>/4fa87068843a/</url>
+    <url>/2021/03/4fa87068843a/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="同步模式"><a href="#同步模式" class="headerlink" title="同步模式"></a>同步模式</h1><p>代码中的任务依次执行，排队执行</p>
 <p><em><code>注：优点：代码自上而下执行，便于阅读，逻辑清晰；缺点：如果其中某一部分代码执行时间过长，会造成代码阻塞，页面卡顿，影响用户体验</code></em></p>
 <h1 id="异步模式"><a href="#异步模式" class="headerlink" title="异步模式"></a>异步模式</h1><p>不会等待这个任务的结束才开始下一个任务，开启之后就立即往后执行下一个任务，后续逻辑一般会通过回调函数的方式定义</p>
@@ -9093,7 +9093,7 @@
   </entry>
   <entry>
     <title>函数式编程范式（四）函子</title>
-    <url>/70cae5676ffe/</url>
+    <url>/2021/03/70cae5676ffe/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="为什么要学函子"><a href="#为什么要学函子" class="headerlink" title="为什么要学函子"></a>为什么要学函子</h1><p>到目前为止已经已经学习了函数式编程的一些基础，但是我们还没有演示在函数式编程中如何把副作用 控制在可控的范围内、异常处理、异步操作等。</p>
 <h1 id="什么是-Functor"><a href="#什么是-Functor" class="headerlink" title="什么是 Functor"></a>什么是 <code>Functor</code></h1><ul>
 <li>容器：包含值和值的变形关系(这个变形关系就是函数)</li>
@@ -9197,7 +9197,7 @@
   </entry>
   <entry>
     <title>函数式编程范式（三）函数式编程基础</title>
-    <url>/77d4da014ad4/</url>
+    <url>/2021/03/77d4da014ad4/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="lodash"><a href="#lodash" class="headerlink" title="lodash"></a><code>lodash</code></h1><p>一个纯函数的功能库，提供了对数组、数字、对象、字符串、函数等操作的一些方法</p>
 <h1 id="纯函数"><a href="#纯函数" class="headerlink" title="纯函数"></a>纯函数</h1><ul>
 <li><strong>相同的输入永远会得到相同的输出</strong>，而且没有任何可观察的副作用<ul>
@@ -9393,7 +9393,7 @@
   </entry>
   <entry>
     <title>函数式编程范式（二）函数相关内容</title>
-    <url>/05c17dbec362/</url>
+    <url>/2021/03/05c17dbec362/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="函数是一等公民"><a href="#函数是一等公民" class="headerlink" title="函数是一等公民"></a>函数是一等公民</h1><p><a href="https://developer.mozilla.org/zh-CN/docs/Glossary/First-class_Function"><code>First-class Function</code></a></p>
 <p>在 <code>JavaScript</code> 中<strong>函数就是一个普通的对象</strong> (可以通过 <code>new Function()</code> )，我们可以把函数存储到变量/ 数组中，它还可以作为另一个函数的参数和返回值，甚至我们可以在程序运行的时候通过 <code>new Function(&#39;alert(1)&#39;)</code> 来构造一个新的函数。</p>
 <ul>
@@ -9496,7 +9496,7 @@
   </entry>
   <entry>
     <title>函数式编程范式（一）认识函数式编程</title>
-    <url>/e47193adce2d/</url>
+    <url>/2021/03/e47193adce2d/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="函数式编程的好处"><a href="#函数式编程的好处" class="headerlink" title="函数式编程的好处"></a>函数式编程的好处</h1><p>函数式编程是非常古老的一个概念，早于第一台计算机的诞生，<a href="https://zhuanlan.zhihu.com/p/24648375?refer=marisa">函数式编程的历史</a>。 为什么现在还要学函数式编程？</p>
 <ul>
 <li><p>函数式编程是随着 <code>React</code> 的流行受到越来越多的关注</p>
@@ -9535,7 +9535,7 @@
   </entry>
   <entry>
     <title>面试题</title>
-    <url>/d68cc2550020/</url>
+    <url>/2021/03/d68cc2550020/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
   <script id="hbeData" type="hbeData" data-hmacdigest="e477ade3bc25a25a70fa64fd3f28c27b08c29be254307b9efdd03505250b864f">a699756f642203f714ca82f1e29f1c2c269163cab1d0ee04f9b8daa49c1dbbc14b40c2d835ecdfde7389da12e73e832203a5e09cbda9a65079170df7db8493afc711c68a9b246a731208b5fa8dfa5af8abf26e14f1c3e0211904ad82b47f3d1442ecd8e9cd74eae5b20345d6ae8e5aee0e791c954998157c22e25412b2881188bc64eebe1078175b47b48a2b98653e384344372398adf0aac47e03b105d89302c3f3cce8f024a1c25401456be007057de3189b487228bedd0e6cedcae53452f3ff9c64d1c73d3ec224e8836102c27f44d8822615fc370531e67e4b87392ee908baef2e188e6145257abdef918f11e83133f29c62c0a408588573ed7526a9827f30e93047ffb266cb1dc176284b7d0e916e16394d7fcb5ef729c15553ec339600391250f8dded4cbaf2195ea815210bc1bfec5f2387dfe76542d53973df1dcf7e54171635df09a7f4df0540fd6f445d41d6578cb8810a42cfca2318373a3ea47b92e16182ff84345296c3b3ddeb92bb9048fe442218827593f1637bf40903e034f62cce3417a3c10c1817270ce6412fe68f31522c91fee53bfa8660c3a771b6bebe466eb945971d88e4c71e9b3a6e6d89d1c1123a591e36ce9b007287ce89cbcc69ecbf20380c2fb234e8589ddedbd4ac28ec6f32d82ccc31779af9ee9c48a1d286806d2f9154d871c03f6c9b874ba6cc6c8c3728226306f5b7cf0c951caf32cb2dfd901c484fd8b33741a840f70ffd5982268b16f6c629acf7afeb7114c17e3832281a4712e96ae4a48afe17fc4163c4c223181bd159be82c36f79511d707a644b9cf60f5b27a38f4b09929de9dadf97d0b61939bba8841229be894c261eadab7987de2dd9e76ce704eef3794c46890050e070bc315a1ff71538b2d8281e67b2b98950903d455d1eabd7313432e2c2bae47979eea61bb51dcd98ffa39fe1551aef926f7cd15f88fa6adfd6c377073f71a63ea23f6cdd8cef305c5b45c6ec85fdd04e1b83cbbdd45bd0534a7966d6a7b8dad76a5b0cbd65fda31399b20e327f61a38ffc73b2d805cf38e8247ad35e7724f439dacab4aa150011daf25f515f788abaca5940e9e7a8e48cfbd08f9d0aca6a045c17fc6c19bfb67539a45dfd452bc8cb7de8610c657097954ccc0e94ff56952e5ec508ef0320781c7b820fd85ac22a67fdba65602784f296331a29456416ce858e7b3b48241cac74bfbc52bc142eb5491a8a27ce06150420ba3cc81f687fe5f7c036bcf69cca6f094f71b491fc9cd7bad80997fd3e4929588082477b993555f98cad3ec82844940ff0112ddab6073ad2bdd334e84a37cab0f442d5877afffa7c696517c0e93cc99488afa5140ac64e60cd19b22660a948d1ae8aed2f15278784c8aafa1646db5f26378646ec34ba9aa6683edefbcb28d2a88d6eb243d0d305ef0d276ab89cbab5beea09180ce801f64f5b20e73be2561dec3e06ee437c70ac79f817adc037bd6ce068d5045af58f6495b51f5a42933f3e8d62889a5141511f08ca5a5f43a8a2d17153b73745ab13a4f5319ecc647723be7652151b88d1ccbde7a22780642af3738eaeef01b2d1e23d44284ed039c724efdf07a0a630f530129d46427adb89981a492d8a760221b1974dda71f5eb27cbd7bdf0d1bb46754100497062a48de368e8a8401ed3b77803e590ca1aa2432ef9e6949837a223e7a86c0a0b8df16b2591f6b62e821a940e7a9a48b21376974a4c56216d72e73b033254bc1bf9957d535ad91dde0132b9d0f17cb32c5cabf268d74bac09be699e8ac0fcdb740913e05c33cf644378380c25f88318802a545986e6200027825b6bc1d03a3ac333825a6e4a27e24ad2fd228013bfff670c55f0bcd868df07a43bd8ba7432392f1216a93362640331418737f7e58c61c3b98f3dd455a997873b1ff16f6a0490fd54429d279e91af6194c794ade321ddf9b6fab75e551e4744c96b2b1337b7c75cb3cb54ea4ccf00ff7cfa3444865d911d5088e683306d3890ffbef5709f230fc006bc79cc4cdf4231f7a2f27ea7e0ed3239933c1d786a75719a7ce25c0e7068afcba735951071d1771c4580bec20dc959683f6cd6a8bab87291899da6d187728d241f546ce48bbfd108599438e9a02119fa3cf275af1aa1ed222c8ca6660aeaca513815e5360c4c771ee7ef9810d809b89018f3428d9851c585c1bb787df20c5f3556686c913a33cafef3e730c17dce5ca2f579ae100c5a2920cf4b8f8052257454fca24b04c9c850e5962266c67af501dbe8484f75cac3e6beb3eebcdb9b334e54ddfcf8e9666653f0d76ab0bd23d353a24ba26b5a7155b33797c3b03a3c8e56630b12e6d7e35a913c13b19aa9e04a76f9adc43bb79df0a251e731835b9fc1742f3acfeaff160c97ab645543e1c143f7ab72fca60ea56ab70fcac832f3b528397929e1dd56955a79d69f6cccd6708c3bea1ce72a48b7029d517faf7966c2acda128c5771c04a5be9a72203af436a35ab3aee22a02216c726428837576ba2ed14f8bcb3aebdd1dd03be253c54aad5a1def8901090f92f3770c33a8a9e274cf0902cb53b4e9286629d90d41461d9cd8091648ee866313e2103b98f3f6e04c061fa85fbb5f072bc3d3817a4ddca4ba6bc1c58e722946d470663ff71d82f33a1611a96f7939d6a086f910ff65f41b94829317800357a5e5684f253a18f8886813d60d578ce07a1e62dd8da417571a3920151914a855f8839eaa789f4c9862b6d8c09d4ca99dedfd648365425c21b2287a23272ed39e1600b14ae0b3d64bc8433d31596e3faddc5fef0286ec740f446289000f6337a46b55ba319d75c735555f2f78be46b83d86883268123daaea4b32f87376a8a44c5282a8980185ceecb94b1adce130b69d0f20166d2b92aef0e4703f78b1cc28cdd70dd216b0471023a378f95dad3ed777f17eb7e67ee3860c2654d530fa423a27de268fc7f7f98e6fde0fd2cf5da793f5d77034916e5daf12c4ab9e475d876472e6e3285b7a0835d4629511835738ca034b56b0f1259a14c0f329ff1711083d8df5000b83d89c3ec38594974482360ee564d2a32859e654d618758feb30f6ef3a895ca8712b3c89920c35b12b3fd80e88a4ca2e5f786e46ac0901489f7c6d1036b8089c0e984df8fb72ed7f7c18dd8cbea3601e0b927e824a0943d4aad6430a5719fc4fc1cdb7ffe399f685e80d3f47d3f027d91722dbfe05a21937d524219dba72f2e30cb7ca6ddc50e25ebc795d767baedad1aab9ce84d7226fbf1b67fdc498bef0edade0a93aa0b84cc4f666e565a9d35af149489d3045e469ecfc64f8663896e2574c86719dc8f15d27fec8df8c966019b345abece61c74ceb08b382869f4f34a615f1ed3bea4c484c14c5087f736f3b5892cdd474a61a4f459c90ae02e58747daddd13aa711becfbb7363b8195781d64b4f88f796b776582385e038dfa2e10aaac67b190777f859845359753966d587bf59bb62e9e675e9cf7781743440a2c53668786c4f103db7b0f6a1eb7a9a1af21bce6d3587dc4c838c0354ae6e4c098cc252d16bf1f93aaac50e0d9f9b62fa9963807f28986bbb5ac1a3dee8717202953d28129f41577f2aae64a2bb9749650d2feff74010d565da4d86bb68fdb7ca5d5e9fb48250304b2bd1f1203e160d9831d8ffefcbab9c5fb6f5780bf1c62f8ffe5fd71550512d3e2bdaa073469bc33a918432ca3a1808c146c43bf00f36a7b0418f7fe41c62f3dcad35e2411a6c0797beb20ddaaf4d153c22697e0daf2f47d07e576c8ceae419dde5ef9313c0abb6af7b9635c29eb8e92b0a359a24fbdb0bc50f8c6e53412157873afca111fe2ef540f2e3ffa73ad63384ab027e1b6f6b015e176a7f39ddba2d3bcf113e65daa31850c10b1619b496954b5bdc4f553c2c6dc311a0c114cd716d281ac5a504ebc3b6b23606fcbde7ff5993127e6a4e1d9ed2bf2ed4c58e8492eeb36c19de514e4eb91fbf2c2f16ceb37a8dc04e0493c757cd1a0ac28c9754a8e471e2b7776f6ab8d6a9c21ba17727ad2f6364ff85abda2583bff5dc7c4afa3edd716110ad6566a797e43386818e2e7acf3e3fa04d358850c37558c3620912202a94e9ae89b9109945e0278e7208af9de7c0bfa75476b5c79302a623b27db27036033c73ac4eed0585bd96a7fcf8a4c774d7d1ecec05b4e0049a5201615008a614a1fcc4b33ecb76afcfbe14701620a635afc66978ca42623f52f0db47a82e0b2cecb6842cfebeeaa62aaa6f8e70d8c7340ea902d8cdfeff59f8e93e3cf8e9a38e341cde8d68ef748928bba31c7165c30e449405a6e113217c4640392e3dd29e7ce4745a049f28ce59179072f9f266352f370299049338775b3d73f505d39cd17058688fb56e1b8fa36abe3d2c8ab064fcc7ae2c36a5ff42b0c2373d2853ffb250f70775a8f6d6696e2b0186700ec649fa74307486ddaa7ccaa25e0e8c0d8833405bc7e5a69b26fdc0da28ffc2c86e9c23bbd25740933a04df41b80191eb28d6dcd920ef576edccdfd530b63c25dd4aed2d40ba7ebf95440a34fff9bbdcf6a596f7571ef05f3b360356f8f392fcd04e1a69b15dcfa7e3c34779dc30622ced153e84202271d5fbfa1faacfc9951aeeff619f8d04f1579ecc326a6d42e78f4eafa14c2618f247d340114eb0482e2a7d629b8be14364c3f0de9ce53edf31626f1c47e43d1938721ce60c265468a2b1f757ab9b12c8c0bae3deaf8efec554d95e59cc126ae06fe4f8c2ceda8298d711b909f47d773d25e0879c8bb2af277bfa316a1f1119d05adea7522af3715ba8ffb08d0c339d1b83c4f1a050830502f7bf6ea234aa10dceba61e60edd4bc2c4533067d16ec931bb400a6462cac8da783312a2d494de0dc99b7d37e4160710dca2e26868f34cd7705796653b4f6073558e4f9d63a74184d25a399b399c656c364fb9de50d1f59424756e2e67eb63be28cd60c589d9d42fc20876db3914105be0f66e54718f17139491b75e8ae179c992e16aaf6bf95f5924d75c8008587e6881c3d644a3c476efa000120eae69f3122bbd34c1ff2eeb251cb7bdc083c9d15dc4ad6b52847b0782a819201ca467c9084f09170991942ad0f7a9c88fd15f9176cdcc4e0558310d81df67c00f1a445b29d5e060432aef07d2978db2a65821ae8f72d2bcda3d07c3e23ec03d9945e8361bec156eb59f2ed6c28b9553cba62995fa9cdf0ad9fab968d2f7242bb747f66a97d1a5ac39fbee93beca468c503e7b617a5c0341ebb73b6ff9391955aae6fd9550649f53097481d52cba6734c89b631e021809141e671fbe47e54484fe2b4e01e401f328315d68a5bfc59824455278f228e7f47fb54f992f3ce188b8e20ab84e8587c6f0f0bdcf8931c60a2c5a2aa006415f4319b96cca4b4eee648f63f12f185a20e0173f896cae817a2e829e12df54b902cfdae44023a549e654eea2d9f35ec66d983c9616a33f8475a9732b04b15573fbdef9583faee5d74181c6fb594e5f2d44376cd0dbec3f3f4237f268e40831adc380a09f0fc7a9ff5503ca311ad0b680cdd65f216f32fdf70664059be35bb6a32926a3322c4d04df47576c730abfa384ceb42a53daa836397780d5eb3272c8f5789a735924aef7d38275cc9fa90aa7e6b495422824cc532802c52dfd3ce97384f2ead1c312bf08147584b44dfa82cb40bdf3b841cbe8b5704cf287d622c72e6ac3fdd5217714168799065394ced61483500fbc4d2af67d2ae08f8713b0e06a374021d202e4fd20d724ed58713d2ab4b08dc170c8dab6f2d94d428096a063f072cadc3f0c9ad6d0b6097cc41810af7df6c97e3c5460622f4f55f2a68f0c4170b36f74dd9bbf668db2cdd5569da85cecec5a09364632f61daf9d32b085885a532d6c43095acfded3940ba0c6ebf784848e87d22ccfcf887918db102441f3e4f0424484c4f6e60dbf4235be57a811cdecd3213d5cef3569ed7b5e18d9ddb6fba6321849f36a41d53e5024eb6893f3c2cf76d5d38ab6d6770670e0a08b0f98978f8a1fbac2fd23d19f5dc781f38c510128158fd1ad3077e5275356330b4c0fe43898ca3ea245876736e35099e41293bb9071e14185f622bed32b8a1876da4d84b8d79ee2e039eb22d90d6aff49d731f442bdfa43abd49d48be9a13ea5bbee9db4a610efedfc79be9874d42722bc469e5d58980ad450ba06f49343cbb65102d017a120d0adec1cdb2629c41eda53b4a8dc7183f016661b200d000f17702b2057ab4ddd8ca9dd07d8ba5091607584bff85cdec13f54c6958e2296dde3b0d9379889636409d9266e8c2e5ac85ca7f0a283dbf157dffcec67f8ab16df613e5b838c7aaf2fb42d719ce2486b0ed72248a2dd88b37000b42a5d9024f512e6f319c09d36474b8404fd98ed59f90b449cc0a0baa74b2e9c59fb263da01bc64050e8219f2c864995319868b719c299971b0cd23bdd21d7cf0e773410334b72c0aeba1bc7021529388cbba5ce22b9862fb0c0f23465458831a37aef71bf7d5a847a2f79e4ddd975dabb692d8a8010dbaf1ce1e159c9045495dcb8fa2bea5366ca1711a7027060562fa1b3f76e3c458e051fca69f9b499e4bb949155c247f3072d0f6055d50414893771fb42d6941c48f2b24403f4ba0aee2439d5d594db7aea8edb8b3f87a6fd3b3e59465d5be858f8eeea3c979d76c89af1bb61c2d8b5e2533e3e87d1cdb900c0cd17bba0135f7d408cdc145986185dce4a6531a7b12eaa53f3a94eeacb0f016b561cb3521479dca0c866610edda8cccfaab9c8694ebdc12c336cd33929b1654e81080204f964341b68866272e28417f21fa0632648cc58123976ee678583355b2b9b858a76cff62d2d7d5104069de20d343a867babaf5dbf99c2b29838dc4a7b0dcaec6a449211f599f3b6053c67b7b82ffe3028b9c5b7108e5e518296de917d9ee7aff09c417360f7a1ab0fe2ed934aba69c9ed12f704d12c01b0790f359af23b4d78f3d17d6c441c5cf8eadce757f8a7d2cedf9c8c4f04e369fe2fc18653e14466ae15a69f312df69e0e25cce9226a8f6c2df5f76368a1c5df58145f3c1c7c45e9dfe824006be18370cfda660c42005819af522608c061369080e5487fcc231b0e58f8b8057dafc3494c00b0abdd2236d0203148bcb1a4dd77362b095837036443a2ebe4cf8eeda2313b19044faade581353d14c43067c34d21f9f331f8cea7dcfec5a76e75dedf51ae4a8e0bdb295a51b99d4f6815e999f8763feadf10fd459b62fb066e876249ba8686c93299b43f6b01821e1ae39c429b9d8ae1ed6a1ad5d381f790e74843012a19f746a33c13f8982cfcaef5856a5e4cf8fdc97efb53ea2623e75ad88eab7d438607619079e8cb6d267a959a0108cfbe3673aa58ac9cd779e4dc22b9f25aaa685d2e061b01c17466b49a9b1f6511c2c69e448d8034ad9c4daea3c18108888328893fcabd3dfc391d1a1d87b7aaf2826389a6b6419c0c0b33e2d64469225eb9f589985cadfa96bf07dda75748c1a9f1359079d0f64db01158f63c82aaa08a6daef2d01b2a65cbeac6b23377c1481923b96c2c73de1d9c67fcb31ad6fb877a98b78f257a81b19978ccb48ea08a24042dbb059553e62cf2a7a129b668c39239c26c5fdf6880a2c841acd08c81ddcefb1571b480e984b7c1c70234a3d213398024ded7a7ad1b404c1456b7d5afa8235ef307dd3205b9051fbf899d2220fa6766318d0b6a1d17ce09afa6809bc4b5a91a172133157e99052c308c83d31a304fb11421474dfc6ef543bf949f0453ecb3e277b36b1138b697e0ea730188cd420e2f6f59899e12b459c1d3edf491344f3de159aa9ef5bbc9babacf1737186671d63003a3e9d0790d4ad63f62c93c0d476257d1433fab40709d19fbd4c289b89bcf9e2b596afe71a3e3e4c8386b534399f30d51f000c6887a6219786bec0f6e71b8072168a3970db8d96404a9205b93a498d9b43e85005a8ed6f255c37e0d314af3ce575a688fbb02c80a1a25863db76d770f7a83b234e0e7054fe3ce1a2b2b9f2785ea78999f64cc973d2eae28776e042e4b75447c3235846bfeb4e520face68bad197e31ca5645a1758173695cfcc235bb137bbdeabc5b013755ba9c0953e30e15d04cd52102e6715b094e83a2f698ec9c50e29097147f294ab66c8de27fb258b987a3fd81076bfd87f48f37162205bca7ecd1000bdf078c5bf0281821bf8a807a3c7f73f91ba7bb6afe2880321993c1aa6896b8af4942cd667c2d6a753505bfacd5d43ca0006e28d602c60b85a68421c35d937e2f72e9f4a18ec56ef83614c02226b9126a1215dea7bb5ae42d6927e32ac95d480fe3c22712398551674e2a365593d261657722f8b92f9b0b4abc5fdaadb34725882072558ff80a6462bd12f05f373e5e63cf8ed0702b6876b193b62b4d631f2721da43d834b867d1bef3162efb15911743718e1b9cc921189a1f55a6ca0cf3ed4199655083b99cb6612177bbc229e1f7a5b36744830e19c3352808f9e686a10c3968853ab3716d198261b2dc77d538d6ae5a7388c38271e8e1470900618b44e6cf1e6f5b4b3f89cfefee09d436bbd55218ee667203b6979c707d38631f1d51cc9895d63d26dca973ac693099c29d09b2b5f86e5b15dff47097aaf320326628b68a8aaa4765060ad1e331bdc531240333763a65d6fb36669168aff3dc908a8ea58a9f2fc4c55aae47927125bf42ec3dc7b410a31a1aa3529a100e7d5875d2e15a622ac8fdadb18892b19a7875d6e78c8b9b8aeb485e3129fb5d45430b101854a490f5e5486d80a4359ba8838e9ec4616bb90e36249a613fce8bef22c3bf40a77a43ef820da0a03ff19a90ec9c2740dd03f647e38afac0e551bbded3c371a95ab0c9d7bf28d1eb42fa4a204b053e08fdfbd94fc7d6318c416fa34ded5bf8a5d262297dc49e196f32572ea6b0804f44a786b37fe15607a5b6df11481c3b9a82cdb485e05502e4f33b14f64852a17e195dc278799fed4151edb3481edb2132bbf94becf70a89d1e27b23816eaaac434420cdb504b30eb582b39c028b636b2f3d14eda638241de93109b68f1860e8e7e4a440cee001b91b8bef3be05ade843d966949fe46eb74c2f30ef1ce218c0f836f9d4321fe1787f59e7a102065243bc604ffa80a3dbdec37cd2694d1757e947f63121cae1d13ce172b719618ffecd0ff3487fee31d8e15c368c0af7c9d1a6a930cc9ab3f0bbf9d003b50bec0a2e3b5fa617325dd1a827867eb2d1b2851cb044e61c894f4ab28c652f8b7d6f11eff8e3f58bbf62a43b03261ec1983473552dda3c31576bd7ff9f531a6babd822fa53c1a445a3f9b18777a265dfd801700423ebb725d266143495afaea3130d7439bd510f3ed7ca8b6f8e381c66f14f20ae368d914e190736fd943e02ff7e314616ac4fc4c1d12349fc305ccc701c2a78c6fde1568a4b39ad6e3b8b0098e6615169e65836f3fed0a9d506aac2f9614da0af8e792611de102097e28d2e5016eeeef1ebcfd0a6b217573bfdd10b1662fe84cd9547537c014494943db570516909fb7fb79162fc7efead51f1cd22299911846420f110e5fa013571d79f4e47bd689944202398f1a4c82fad164ce67d6153e9bf3a060be85458c90756e6f9b6901de779c2b1d2e0606826c4736bece6d5578224b997cb4d7c8f89aa65019854037e122c97a06f3d20739473863b7a16fec623bebd439d270411f26a646b01933b27ddb387c3bb9dd57192eb8a12928f4bf55d1ea756f3fef330a1555341a9f6ec6b9a4146bd3b749a6aaa27fb2bc3599fb9f8bda6ff8d90e7114b24dfa331a37bb2643944c47eac40d0aab8b0b7b07d6fbbd22ed2cff029008f9a9f03271f07bc87e90ef088ba27efe2705d5feca28aa5808b1f4811bd6f68f2ebb9946359eead329068cb109aeef22431f066f527469722cb846f9bb37746dad207371f67376737ecb01a22bd1f4050b37372d4db7139457b3263224e70630d3dcdae5264f1cba47ce6edb3af1e702e2cf01f5eef00ab1e88973bbdb6a26fdc3385e9f8447d72421d9f8c79583f2836225d345c4c17bd4acebdeff445a8d6c5a200bda3375bafe21349b283d195f652db5d51750107d755ccc642ffa5d2335f2e06b104ad2b3d95f00e7a2a7600e220a54da39c50dc561906311a12216688dea69ffe28cb9dbe56c26a25d87aa15449c8ee2e6354d668abd25e5bd314fc01646e6746af3a257879a9f4e82ce5613bcecbcaed60e0d4073af5a880396bd8b0899cfd6a5b0ddffc38f58017564e3a0d2e5ad7031a24a4e29e32f1e90cb787b847ee9764257904ca95aa4b86f55bccd87325d6141853df1bccbb02dc6a73215704e064367901e68f6685fd612edfd10bb9d0a4b2780e5a9a491235f37cebc15ff69747329110b527931db89a746dacab851c035f88a35d6fb74c844e7f6ad5179e5d90a46f0502606b15506c9c5659d10f00b57cfc45a19bc81745b1913c54723e6538bb2ca4fee25710e9728b36f3b712fda763cb26b42aa24939a27a2530a036ad0ed08c778614ab8c774b38a766357cfa3a1c7d43e83e5400e63ace45969afb1e2d5e440b6bee0c02f859487ea4da60fe86928152adfd9446ef7095f6e77ce76963407c93f910dd171a45cbaa5b511ab43eababdd4c4b6605554dd03cd578b0be3dc90414afd5a047ac61760495020679d927e617a749752a99e2aa6efb038e4d19d676548974f175e7e991e8665d557364a915255d397187b45fa2adae022b0c8def920c77d0fb361cd9e91466f0b62084cedbe1ee734f53a4a45105d29b60e692a479f331815f4608d040f28fb883b96d6591647687a451b6b60260aed077223e64cd458e161b08d1d91e577f2eccb8c2dc42474a4fb8a379b71755b1c69f5f3047b7158af7393fa46d226da182381afac35f10a75df00add23dbeba7e5d33ed0c8a1422fc811dab7d5dea6bfcc315cd7f13f6048737fc31a73644c438203028a783106078c1b1ff52a330cbfd9f20521d0aa76719dd34d20a35f5711704ae5e2c3343fb00774723404e963830637c46adefcbaa4dfec4a494463ab90e8c7600b873ee088fba69ce19d9cbd5c8b4935fa995376b543f5c96022c5d6e38233f81b9cbdc4a5d20db8114605b380c3e37eb0c32869397ee23903bf9508b0e808fd92d14adb6b5c00fda65f52d955b358fe5418b0d3270b0ad3369ac0219d42ed82de20eebba054802e494e5721a27f451ce79b7f3c91285fee42a8b5553637faa8d1fc99a005ff5e3f6a64324107c047dd17503ebd979983e9dc2a3140d1b1b2571c187ea448ff42101913396cedbdef2f755537fa334a92ae6498efadc719c3afa758db7f020ba9e69a5314a2058136b70d854a1e369fabd1c82dcd26103c8878724538a5e6b8074845d8416e92653f4c109f4513f9cbc77d9351e9341fae86b4c103932591f594be34529dcbcb4f9dad45eea364b613a8853b3b5ec0a334ccf9ee1fe0264d33ddb740900e4c6bd8479f66fbbe930f5ff8f4666c94bd4e389319aa70069b8b335c685bbd478a759aaf11a82806cf278beac5e3fde64f9d174c51c3c416baaccb238ff18f549c7182c980dbcdc2c6c0acfb55f5de5701d614d25882e32303e9e1cbb30cf78e96fb1f855d1d7cef1b9ab9c98ce8d5107db96327bec31857948b164596a7b1592c3476e77eb1e0e9291be938d422ec1f4879ee2b85517b81997e50d499c8487c46b1eb9308c71bcd37ce660b4623d136bd9afb72768a5dcaed0430eb6664f3e8c97d37cbc8c1e33381bd1c03f9de5359a747d5964d3f82db803dc78dde70338d017e83a9b12242d2f781ebbe5a48ed7c8c094ea22471bbe176f9f42a38563715e4fb28e5dc08747f963741d55397e13ecc2d8a7a09d49ec0b3f81355d3893be519a9dec4e0acc0da235877342811eff1d47102226da6c4d734078f9a081d1866c41516d82e3607203c50de6c0ab10cad916ddf6639c7534b0969fe248652c8ccb6b325173ccc30446717f210f7088a2ec1a4ec5a5f507cdd650bb06e80038454a9dacc9ab460cf19261d499fd26ba228b8682af57b4f6fee717506eecd610a2e7685a16c6f58a5a4147f55034681bcde346da41f63f784dd03cf137f534a3bdb61fbb23ecd2a03883174a8495d4ec6e51ba7761dbffdc6be71f476ac16a1b0b184f83ae43adb8b101a5fbb8f662724d2b2e3f18fa4d02eda2995068a4f5f51c27de83ed98e0ee5b216807a16b16c9727a00cfab66500084d3cdaa051e350f562f19576980bc62aabc419e1acbfec50b8d33a78acc1b650526cd958feef6f9739aef4c26be633d9832cd7e9734a4dab4e80fd0c095b5dcb8185a0e3b20eea87274eea458d43460e14e2fa98cf99103226513b5c5c3e8c5369dbc514836b36eb7873cd9f688327ba1e380a89311d63e8e3eb88cbbc7e33c63f079de8b083951b6296776a61762f55cc369eeeadba337e188e3c5cf215a0a8190730f3b1289769504de154a172f0dc583a2f84c81c1cf9fca25c9a4873f17f7e013327ff9bc89714851a13f6722e28d510e0cd321c4829e9031ec1a60684f082e1e3d17fae3d50a2b01acb8159a12789f2b749b168cc83e93d9f7e4f6a328004839d5be44cf97d81089e89112aa1b24197b46ae18ccf5c1116eee5ff1206dad1b0f0cc9b9388a14ff34e9bc03d7e54fa03984b03088339b62e9ef6fa89b052a5d40d814d689c202c4fc7578e37e3effcf1b059b5b920d92a675f35b4992bf9c27287b0f1ea5185f8abe11277cd5e0286989c38f40d07289d541cbfd5a98bebbf5bb2e02ae8be96df7cee04c723dbaca909af4be28cb41a0f6d2a54be990b81b3815a4f86242141e9093e5f63772a7a7556caea271afbb8efa5e42fc4d28aa00252f2427358c769be98cf63fc6dadc17e9661ffe9c449d5ecd93c9e9bd23b7fe0922f6036e1768492513e90c10158bc135632b690fc3cbeacf0032f4db193953a228aaaf43e4946dac198cff556bbecda222c805a1e2f531292ebf4c25cdaeca24d0d58ae7caaba0b58a4ded35f64fe2cfa30ec7aafba17dd720beeb3b6c42ac1864797a63b7df8bfca598ea7e81b40e6161edb6caeceebba12289d4f80ef3611a704c1a63613ad387debf785eff8417f1cb3d867050f60c62e5a1b0aa6c735b3b751f3cfd47d874d9ed86ce5faa1a6b43d4c8138a4c7817cd460d595c3b4ed6b06e1826b8528ebafab345bcba90fe5f0d8ba771986b63ed2f13e729bbcef5fd2ead964b72de13c1ee43b4f49fab63ec427cbd040497e7a90560681b4c6480d8eaa7ac211a1cd243741b2520af358c5340cee0977ade369241ddea6f255bc24213e36790ca3ce0719c9f03181206371e7a543cbe12c2be7b48e14eb38fec2ef9baa357a0f75c2b54a6eefe8c51b0ceb2057b60b97cab7de787fda3822752b491bc695288c5c168c66257e83f9fcf125d483488df946098b14af7c08324bccf5b406380bb1db89ea809fb6dca0571689fe62d5413052cc96e8795ac918f107209b8e4b0a40ef909cb32091cf436ed1d50bbde6fc836468bf406118b49836d4302db4a6f06d1ce12923aea4b6c7614d52de82b6d013757b0782a989b3069f3f3eb3cff3eaeef58f492106d1d9b950f47fcdf00d70288ea68974020b7bc5317c92e397690b99b2bab00514db41f7ee12b4693e7ae17b10189a07c59e13b02f91e86339e89af1f6538c785c842f5e47f25b2ad6d0adfede4bbbd104c0adc0b03c86a58bcdd8fda5b45beaf42e7ed25d10ea7816bb55c4fca570873ae5b590f03344c72fedfc0f432dace41681b28f35ebdc9be468c2ea86c093e971d874fa852b77939a9f4f8d591b39e9d904fa439800198c3cc6e517e450ad6c1a6ed3e1d6c05aa543e09abe58ce7294a3ad58ff0de22079991b9ccc19701127664c46e3d0bc1016891f45132414aac395ee850f9815b942eb2a7d1ff13e232e4a897dd83115a1388480be66a89312228251a36a0d87f9ac28e7e28655af4348f594e64e8ffc0141868e2b1bc0dabe7ef29e968add7551dbb506d71220b9f1ea5b647d07a14b53516d68f5d10e290ab19246d30d1a9bf8081654b9013531cc54db0225a57a720f68b165d219b4b75ee4443d1b9fc630aa682c735f779ff6c2370ef4bb51cfb28da77e7250b0185ab8002532124998fcd476f26f27150f5c0b07a2ccb9eb5371aa66405a163fa748f673eebf6092d1eeced20c44df4fdb31feb681106f6ae2df699eb459ba8427843af1895cd38931fcc59a72b9e2a9233e9c326c25050082449ee8419f9b997c6fb1857064e59fa76020a341ddac162052382e41a2fc39aaacc96071cde2a06fed6235088a3119439f5a6feeaa10daeb3a1dad423302577b03d11b676ceda8c6beb689946bf62295e4b14e624199e65a23ab2d771bf2371e6333a2ff924fa3ee5fc8844cccfdf71f8a7c85b15c0c326fe885aa677f3f6771617af156fd7e2122a3fdfa35298170068cc7ca23cefeaa5f86b1202c7e3e5c02289071334e0b1c48f0fb26fd125e05a04588cb082b071aecaedea176a922b19b00ba5532da36ce126b8641f4fcf95695506cafa03e1cce35f07cfe7c8672f4cdedbf5adb7e7d13e48c6242d928ed22a750b9b49744bb9b0b486b7071f119d09840c314e267da12bec196dd2971264e03bba834a90f00a0f3f8016c4d6617be480d634a84d4f18b316a5fcfb76673a62abb2d6f08ccf15fc150350df235c5e744c90a65a9e78885091bddba2c0d825180d95c9958c5779fe54ad99a8f949610c13ef73658a74f2d7f8d0037e6f639d4a602de0d145a7d7318248f81b188d99bf16e4322a71b8c98938f8b6532d4e3912cbe661481e5375fa0e4bf1be61a16d373f41a0ba9cce8bf1cf26dd111d228732ee18b38570f4c3f21ca8b2bb5a025e13d5b4c4eaed46d09a7c5b5aeca980704286f69cfe7fdc09734d871a083a4eabaa47078900fdbbdf6b026983bc38d65c2f0b69fe0e27ff5b26f92f29980b9d413696c6614d251c49d4909d18a39d402bc010fbb95c6d566a0beb22d94a22eb223b60e81fac683a64470e4d87a4c6fa2f33faf3af47060da972b05f50871445459dd86707496386f1e9f82d1f350eef599f8606c46ba83bf8346a0ef96c3ce8b936d8e4c615adddfa676f22775fb781d66c7cf86333380f8435ccb59427378dc4ab4a856a0f92a4c9188c142325a61f7a00217fa2f399aa5b1201eac9d59973189cfbb87865e214bf5433c6e460abf7de5ee2d35f90d12654f10f6add5c3e29d876523a7ed1fea7a8b62998b8acbef8bec668bb585ab54c07613f0426e57618be4084849ace782b7aff521d275cfd509fa1e8d30d331df95d122799197e73e46c4b7e12c9566499122c0541532d227391e5c6219c45a47ab2d45cc71e91be16813b7d9a6551456dee5e0e084af4da685fd9b2610e2dda4120201599104a8f5180b2f70c971246c1e8916a6955bca42d8a4cdf799308b4e9dd7ccfaa5777cd7cb20e99897fcd33d7cd3b2719dc9be350817f667b4b67b3c05fb5d44ecb875e02391646fdd42b3a706447582505ff1b2cea51fd78e13545b88523d10f8bb0ab33aadac8deddf532212bafb965683e44bd408bafe1dd3b94f8edd0dfba0ca477febe05bc3b826d0bc7c6bd57d1f6bd23c884c712b42ee6d5a41d7a8ee8988c95db8259621e55f2ef54269b6cc3f20d06cab66e8da154a27487b101a9d275c094b2f5268caa2d986005916c449468fc59ed8cade54a8c5584f5fdfbf91cc4b6b1d71d69f96391cf0ee6f08d5e88ff13224c3b20da12313d4fbf57e36b4fd2a6d2d67c3a2657f7a2db7f1b1e5176db783820d5df315375208b9d64e0e340e7d4765</script>
   <div class="hbe hbe-content">
