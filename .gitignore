@@ -1,1 +1,10 @@
-node_modules
+/node_modules
+/.github
+/assets
+/scaffolds
+/source
+_config.ayer.yml
+_config.yml
+db.json
+package-lock.json
+package.json
