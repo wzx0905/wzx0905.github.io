@@ -15,7 +15,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>操作符 |  Hexo</title>
+      <title>photos |  Hexo</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -60,8 +60,8 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-JavaScript/操作符"
-  class="article article-type-post"
+  id="page-"
+  class="article article-type-page"
   itemscope
   itemprop="blogPost"
   data-scroll-reveal
@@ -71,209 +71,24 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  操作符
+  photos
 </h1>
  
 
       
     </header>
-     
-    <div class="article-meta">
-      <a href="/2021/08/f0b79071b9ae/" class="article-date">
-  <time datetime="2021-08-21T16:00:00.000Z" itemprop="datePublished">2021-08-22</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a> / <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/">JavaScript</a>
+       
+    <div class="article-entry" itemprop="articleBody">
+      
+<div class="justified-gallery" id="gallery">
+  
+  <div>
+    <img src="/images/bg.jpg" itemprop="image" alt="背景" style="cursor: pointer;">
   </div>
   
-<div class="word_count">
-    <span class="post-time">
-        <span class="post-meta-item-icon">
-            <i class="ri-quill-pen-line"></i>
-            <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">1.4k</span>
-        </span>
-    </span>
-
-    <span class="post-time">
-        &nbsp; | &nbsp;
-        <span class="post-meta-item-icon">
-            <i class="ri-book-open-line"></i>
-            <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">5 分钟</span>
-        </span>
-    </span>
 </div>
  
-    </div>
-      
-    <div class="tocbot"></div>
-
-
-
-
-  
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><ul>
-<li><p><code>+</code> <code>-</code> <code>*</code> <code>/</code> <code>%</code> <code>()</code></p>
-</li>
-<li><p><code>%</code>:取余，取模。 <code>a / b = c 余 d</code>，就说<code>a % b = d</code>。</p>
-</li>
-<li><p>运算顺序：先算乘除取余、再算加减，有小括号先算小括号。</p>
-</li>
-<li><p>正常情况</p>
-<ul>
-<li>数字与数字之间的运算。</li>
-</ul>
-</li>
-<li><p>非正常情况 1</p>
-<ul>
-<li>有特殊值字面量参与的运算。</li>
-<li><code>NaN</code>参与的运算：得到的结果都是<code>NaN</code></li>
-<li><code>Infinity</code>参与的运算，视情况而定</li>
-<li>工作中并不会使用特殊值运算，没有实际应用的意义，但是要了解。</li>
-</ul>
-</li>
-<li><p>非正常情况 2</p>
-<ul>
-<li>其他类型的数据参与数学运算。</li>
-<li>有字符串参与的 <code>+</code> 运算：<code>+</code> 号变为连字符将前后连接成整体字符串。</li>
-<li><strong>隐式转换</strong>：除了字符串参与的 <code>+</code> 运算，其他情况下，所有其他数据类型参与数学运算时，计算机暗中将其他数据类型先自动转换成数字类型，再参与运算，这个过程中不需要使用<code>parseInt()</code>、<code>Number()</code> 等方法，过程是暗中进行，这就是一个隐式转换的过程。<ul>
-<li>其他的数据类型会隐式转换为数字类型：<ul>
-<li>对应数字：纯数字字符串会转为对应的数字<code>&quot;123&quot;→123</code></li>
-<li>转换为<code>1</code>： <code>true</code></li>
-<li>转换为<code>0</code>：<code>false</code>、<code>null</code>、 <code>&quot;&quot;空字符串</code>、<code>空白字符串</code></li>
-<li>转换为<code>NaN</code>：<code>undefined</code>、<code>非空非纯数字字符串</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><ul>
-<li><p>也叫作关系运算符。一个比较运算符 <code>comparison operator</code> 比较它的操作数并返回一个布尔类型值。运算结果要么是<code>true</code>，要么是<code>false</code>。</p>
-<ul>
-<li><code>&gt;</code> 大于</li>
-<li><code>&lt;</code> 小于 </li>
-<li><code>&gt;=</code> 大于等于</li>
-<li><code>&lt;=</code> 小于等于</li>
-<li><code>==</code> 相等，只判断值大小是否相等，不判断数据类型</li>
-<li><code>!=</code> 不等，与相等完全相反</li>
-<li><code>===</code> 全等，不光判断值相等，还要判断数据类型相等</li>
-<li><code>!==</code> 不全等，与全等于完全相反</li>
-</ul>
-</li>
-<li><p>正常情况</p>
-<ul>
-<li>数字与数字比较。</li>
-</ul>
-</li>
-<li><p>非正常情况 1</p>
-<ul>
-<li>特殊值参与比较运算。</li>
-<li><code>NaN</code>参与：不等于和不全等于结果是 <code>true</code>，其他的都得到 <code>false</code>。</li>
-<li><code>Infinity</code>参与的运算，视情况而定</li>
-</ul>
-</li>
-<li><p>非正常情况 2</p>
-<ul>
-<li>其他数据类型参与比较运算（排除字符串与字符串的比较）。</li>
-<li> 其他数据类型也会隐式转换为数字参与比较。 <code>“123”→123</code> <code>true→1</code> <code>false→0</code> <code>null→0</code> <code>undefined→NaN</code> <code>“”→0</code> <code>“abc”→NaN</code></li>
-<li><code>null</code> 的判断比较特殊：<code>null</code> 与 <code>0</code> 判断时，相等判断为 <code>false</code>，<code>&gt;=</code> 和 <code>&lt;=</code> 判断为 <code>true</code></li>
-<li><code>null</code> == <code>undefined</code></li>
-</ul>
-</li>
-<li><p>非正常情况 3</p>
-<ul>
-<li>字符串与字符串比较。</li>
-<li>不会发生隐式转换为数字，而是比较两个字符串的 <code>Unicode</code> 编码顺序。</li>
-<li>字符编码顺序：从前往后 <code>0-9</code>，<code>A-Z</code>，<code>a-z</code>，前面的小于后面的。</li>
-<li>比较时，不关心两个字符串的长度，从第一个字符开始比较，依次往后顺延比较，直到比较出大小，就不再往后比较。</li>
-</ul>
-</li>
-<li><p>比较运算符运算顺序</p>
-<ul>
-<li>从前往后比较，前面的结果与后面的进行比较。</li>
-<li>3 &gt; 2 &gt; 1</li>
-</ul>
-</li>
-</ul>
-<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><ul>
-<li>逻辑运算符常用于布尔类型值之间; 当操作数都是布尔值时，返回值也是布尔值。<ul>
-<li><code>&amp;&amp;</code> 逻辑与运算符</li>
-<li><code>||</code> 逻辑或运算符</li>
-<li><code>!</code> 逻辑非运算符</li>
-</ul>
-</li>
-<li>正常情况<ul>
-<li>布尔类型的值参与运算，返回值为布尔值。</li>
-</ul>
-</li>
-<li>非正常情况<ul>
-<li>除了布尔类型的值之外，其他数据类型的值也可以参与逻辑运算。运算过程中需要将操作数隐式转换为布尔类型的值，参与判断计算，最终运算结果还是原来的某个位置的数据。</li>
-<li>并不是所有逻辑运算返回结果都是布尔值，其他数据参与得到的就是数据本身。</li>
-</ul>
-</li>
-<li>隐式转换为布尔值的规律<ul>
-<li>转为<code>false</code>：<code>NaN</code>、<code>0</code>、 <code>“”空字符串</code>、<code>null</code>、<code>undefined</code></li>
-<li>转为<code>true</code>：<code>非0 非NaN数字</code>、<code>非空字符串</code></li>
-<li>当它们用于非布尔值的时候，返回值就可能是非布尔值。其实这种运算非常简单，就两句话<ul>
-<li>(<strong>逻辑与 <code>a&amp;&amp;b</code></strong> ) 如果<code>a</code>能被转换为<code>false</code>，那么返回<code>a</code>；否则，返回<code>b</code>。</li>
-<li>(<strong>逻辑或 <code>a||b</code></strong> ) 如果<code>a</code>能被转换为<code>true</code>，那么返回<code>a</code>；否则，返回<code>b</code>。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>逻辑运算符运算顺序<ul>
-<li>同种运算符从前往后运算。</li>
-<li>综合运算顺序：非、与、或。</li>
-</ul>
-</li>
-</ul>
-<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><ul>
-<li>赋值运算符必须有变量参与运算，赋值运算符会做两件事情：<ul>
-<li>第一，将变量中原始值参与对应数学运算，与右侧的数据。</li>
-<li>第二，将运算结果再重新赋值给变量。</li>
-</ul>
-</li>
-<li>变量位于操作符的左侧。</li>
-<li>赋值运算符符号<ul>
-<li><code>=</code> 等于 </li>
-<li><code>+=</code> 加等于 </li>
-<li><code>-=</code> 减等于 </li>
-<li><code>*=</code> 乘等于 </li>
-<li><code>/=</code> 除等于 </li>
-<li><code>%=</code> 取余等于 </li>
-<li><code>++</code> 递加 </li>
-<li><code>--</code> 递减</li>
-</ul>
-</li>
-</ul>
-<h3 id="一元运算符"><a href="#一元运算符" class="headerlink" title="一元运算符"></a>一元运算符</h3><ul>
-<li><code>++</code> 和 <code>--</code> 也叫一元运算符，只有一个操作数。</li>
-<li><code>++</code> 或 <code>--</code> 符号可以写在变量前和变量后面，位置不同可能导致程序运行结果不同。</li>
-<li>以 <code>++</code> 为例：<ul>
-<li><code>a++</code>: <code>++</code> 符号在变量之后，<code>a++</code> 在参与程序过程中使用的原始没有加 <code>1</code> 的值，使用完后第二次用 <code>a</code> 变量时，<code>a</code> 用的就是加 <code>1</code> 后的新值。先参与，后自加。</li>
-<li><code>++a</code>：<code>++</code> 符号在变量之前，<code>++a</code> 在参与过程中整体就使用 <code>a</code> 加 <code>1</code> 之后的新值，使用完后第二次用 <code>a</code> 变量时，<code>a</code> 用的也是加 <code>1</code> 的新值。先自加，后参与。</li>
-</ul>
-</li>
-</ul>
-<h3 id="运算优先级"><a href="#运算优先级" class="headerlink" title="运算优先级"></a>运算优先级</h3><ul>
-<li>运算优先级也可以叫综合运算顺序。</li>
-<li>优先级从高到底<ol>
-<li><code>()</code> 优先级最高 </li>
-<li>一元运算符 <code>++</code> <code>--</code> <code>!</code> </li>
-<li>算数运算符 先<code>*</code> <code>/</code> <code>%</code> 后 <code>+</code> <code>-</code> </li>
-<li>关系运算符 <code>&gt;</code> <code>&gt;=</code> <code>&lt;</code> <code>&lt;=</code> </li>
-<li>相等运算符 <code>==</code> <code>!=</code> <code>===</code> <code>!==</code> </li>
-<li>逻辑运算符 先<code>&amp;&amp;</code> 后<code>||</code> </li>
-<li>赋值运算符</li>
-</ol>
-</li>
-</ul>
- 
+   
       <!-- reward -->
       
       <div id="reword-out">
@@ -343,7 +158,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wzx0905.github.io/2021/08/f0b79071b9ae/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wzx0905.github.io/photos/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -352,25 +167,6 @@
   </div>
 
    
-  <nav class="article-nav">
-    
-      <a href="/2021/08/e954a18be628/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            流程控制语句
-          
-        </div>
-      </a>
-    
-    
-      <a href="/2021/08/518c5d3e65b8/" class="article-nav-link">
-        <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">数据类型</div>
-      </a>
-    
-  </nav>
-
    
 <!-- valine评论 -->
 <div id="vcomments-box">
@@ -420,8 +216,7 @@
 </style>
 
  
-   
-     
+    
 </article>
 
 </section>
@@ -575,22 +370,6 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
- 
-<script src="/js/tocbot.min.js"></script>
-
-<script>
-  tocbot.init({
-    tocSelector: ".tocbot",
-    contentSelector: ".article-entry",
-    headingSelector: "h1, h2, h3, h4, h5, h6",
-    hasInnerContainers: true,
-    scrollSmooth: true,
-    scrollContainer: "main",
-    positionFixedSelector: ".tocbot",
-    positionFixedClass: "is-position-fixed",
-    fixedSidebarOffset: "auto",
-  });
-</script>
 
 <script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
 <link

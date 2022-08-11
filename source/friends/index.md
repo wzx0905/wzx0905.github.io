@@ -1,5 +1,5 @@
 ---
-title: 友链
+title: friends
 type: friends
 layout: "friends"
 ---
