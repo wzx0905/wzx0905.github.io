@@ -1,0 +1,7 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rd /s/q docs && ren public docs"
+  }
+}
