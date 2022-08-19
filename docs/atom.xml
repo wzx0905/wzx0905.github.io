@@ -6,7 +6,7 @@
   <link href="https://www.wzx0905.top/atom.xml" rel="self"/>
   
   <link href="https://www.wzx0905.top/"/>
-  <updated>2022-08-19T03:20:51.558Z</updated>
+  <updated>2022-08-19T15:12:05.783Z</updated>
   <id>https://www.wzx0905.top/</id>
   
   <author>
@@ -17,11 +17,113 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HTML的概念</title>
+    <link href="https://www.wzx0905.top/2022/08/bcec9513a4dd/"/>
+    <id>https://www.wzx0905.top/2022/08/bcec9513a4dd/</id>
+    <published>2022-08-19T07:04:44.000Z</published>
+    <updated>2022-08-19T15:12:05.783Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="HTML" scheme="https://www.wzx0905.top/categories/HTML/"/>
+    
+    <category term="基础" scheme="https://www.wzx0905.top/categories/HTML/%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="技术" scheme="https://www.wzx0905.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>纯文本格式</title>
+    <link href="https://www.wzx0905.top/2022/08/036c8e9a5c83/"/>
+    <id>https://www.wzx0905.top/2022/08/036c8e9a5c83/</id>
+    <published>2022-08-19T06:48:08.000Z</published>
+    <updated>2022-08-19T15:12:05.784Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端基础" scheme="https://www.wzx0905.top/categories/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="技术" scheme="https://www.wzx0905.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>互联网原理</title>
+    <link href="https://www.wzx0905.top/2022/08/47b2f661c6ea/"/>
+    <id>https://www.wzx0905.top/2022/08/47b2f661c6ea/</id>
+    <published>2022-08-19T06:35:35.000Z</published>
+    <updated>2022-08-19T15:12:05.784Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端基础" scheme="https://www.wzx0905.top/categories/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="技术" scheme="https://www.wzx0905.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网页的认识</title>
+    <link href="https://www.wzx0905.top/2022/08/6b01bb54f24e/"/>
+    <id>https://www.wzx0905.top/2022/08/6b01bb54f24e/</id>
+    <published>2022-08-19T06:15:55.000Z</published>
+    <updated>2022-08-19T15:12:05.784Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端基础" scheme="https://www.wzx0905.top/categories/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="技术" scheme="https://www.wzx0905.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>video.js</title>
     <link href="https://www.wzx0905.top/2022/08/8762987745d8/"/>
     <id>https://www.wzx0905.top/2022/08/8762987745d8/</id>
     <published>2022-08-19T01:30:28.000Z</published>
-    <updated>2022-08-19T03:20:51.558Z</updated>
+    <updated>2022-08-19T15:12:05.784Z</updated>
     
     
       
