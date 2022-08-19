@@ -2,9 +2,9 @@
 title: video.js
 date: 2022-08-19 09:30:28
 categories:
- - [库,JS]
+  - [库,JS]
 tags:
- - 技术
+  - 技术
 ---
 
 ### video.js概述
