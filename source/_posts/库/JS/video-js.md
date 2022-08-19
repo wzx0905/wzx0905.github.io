@@ -7,9 +7,9 @@ tags:
  - 技术
 ---
 
-### video.js 概述
+### video.js概述
 
-- video.js 是一个通用的在网页上嵌入视频播放器的 JS 库。video.js旨在增强HTML5中的视频元素，多年来，它的嵌入代码只是一个video元素。然后，video.js将视频元素包装在一个div中，该div用于放置控件和播放器所需的任何其他内容。
+- video.js是一个通用的在网页上嵌入视频播放器的JS库。video.js旨在增强HTML5中的video元素，它的嵌入代码只是一个video元素。video.js将video元素包装在一个div中，该div用于放置控件和播放器所需的任何其他内容。
 - 官网地址：https://videojs.com/
 
 ### video.js使用
