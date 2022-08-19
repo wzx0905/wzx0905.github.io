@@ -14,7 +14,7 @@ tags:
 
 ### video.js使用
 
-##### CDN
+#### CDN
 
 ```html
 <head>
@@ -50,7 +50,7 @@ tags:
 </body>
 ```
 
-##### npm
+#### npm
 
 ```shell
 $ npm install --save-dev video.js
@@ -66,7 +66,7 @@ import 'video.js/dist/video-js.css';
 const player = videojs(document.querySelector('.video-js'));
 ```
 
-##### 修改配置
+#### 修改配置
 
 ```js
 var player = videojs('my-video', {
@@ -76,7 +76,7 @@ var player = videojs('my-video', {
 player.autoplay('muted');
 ```
 
-##### 常用配置
+#### 常用配置
 
 ```js
 videojs('my-video', {
