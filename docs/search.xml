@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>标题</title>
+    <url>/2022/08/f94e8f5866d3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>标题</strong>（Heading），是通过h1-h6六个标签分别来对应六个级别的标题进行定义的。</p>
+<p>h1定义最大的标题，h6定义最小的标题。</p>
+<p>h1-h6标签都是双标签，且是容器级标签。</p>
+<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>给标签内部的元素内容添加对应级别的标题的语义，不负责文字的粗体、字号等样式，样式是由CSS设定的。</p>
+<h3 id="级别"><a href="#级别" class="headerlink" title="级别"></a>级别</h3><p>标题标签之间是不能互相嵌套的，下一级标题与上一级标题之间通过同级关系书写，下一级标题解释说明的是前面距离最近的上一级标题</p>
+<h3 id="权重"><a href="#权重" class="headerlink" title="权重"></a>权重</h3><ul>
+<li>标题标签对于呈现文档结构非常重要，使用时要根据标签的重要成都进行选择，其中h1标签最重要，h2标签次重要，以此类推。</li>
+<li>h1在整个HTML中的权重非常高，内部应该放置HTML中最重要的内容，比如logo。</li>
+<li>h1由于非常重要，内部的文字对于提高搜索引擎排名也非常重要，为了防止作弊，如果一个页面出现多个h1，反而降低权重。约定俗成的，一个页面中只会出现一个h1。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>注释</title>
     <url>/2022/08/c76ef35f17ed/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在很多代码技术中都可以添加注释内容，我们也可以向HTML源代码添加注释</p>
