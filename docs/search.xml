@@ -1,6 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>列表</title>
+    <url>/2022/08/512ac1494c66/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>列表用于制作HTML中的一系列项目。</p>
+<p>通常我们会将内容相关、结构相似、样式相近的内容使用列表结构进行搭建。</p>
+<p>根据项目的内容不同，可以有三种语义的列表结构：无序列表、有序列表、定义列表。</p>
+<h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>无序列表需要两个标签参与，分别是ul和li。</p>
+<ul>
+<li><strong>ul</strong>：unordered list，表示定义一个无序列表的大结构。</li>
+<li><strong>li</strong>：list item，列表项，定义的是无序列表内的某一项。</li>
+</ul>
+<p>ul和li是嵌套关系，快捷键：ul&gt;li。</p>
+<p>一个列表中可以有任意个列表项。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li>ul内部只能嵌套li，li标签不能脱离ul单独书写。</li>
+<li>li标签是一个经典的容器级标签，内部可以放置任意内容，甚至可以放一组ul&gt;li无序列表结构。</li>
+<li>无序列表的列表项li之间，没有顺序的先后之分，它们的重要程度是相同的。</li>
+<li>无序列表的作用只是搭建列表结构，没有添加样式前缀的功能，样式是由css负责。</li>
+</ul>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>有序列表的语法与无序列表非常类似，只是在语义上有差异。</p>
+<p>有序列表由两个标签组成，分别是ol和li。</p>
+<ul>
+<li><strong>ol</strong>：ordered list，表示定义一个有序的列表的大结构。</li>
+<li><strong>li</strong>：list item，定义的是有序列表的每一项。ol和li是嵌套关系，快捷键：ol&gt;li。</li>
+</ul>
+<p>ol标签内部可以嵌套任意多个li标签。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="注意事项-1"><a href="#注意事项-1" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li>ol内部只能嵌套li标签，而li不能脱离ol单独书写。</li>
+<li>li标签是一个经典的容器级标签，内部可以放置任何内容，甚至可以放ol&gt;li。</li>
+<li>有序列表的列表项li之间，存在顺序先后之分，根据内容的顺序需要合理调整书写位置。</li>
+<li>有序列表的作用只是搭建有顺序的列表结构，前面的数字排序样式不是ol标签的作用，而是css负责的。</li>
+</ul>
+<h3 id="定义列表"><a href="#定义列表" class="headerlink" title="定义列表"></a>定义列表</h3><p>自定义列表不仅仅是一列项目，而是项目及其注释的组合。</p>
+<p>由三个标签组成完整的结构，包含dl、dt和dd。</p>
+<ul>
+<li><strong>dl</strong>：definition list，表示定义一个自定义列表的大结构。</li>
+<li><strong>dt</strong>：definition term，表示定义自定义列表中的一个主题或者术语。</li>
+<li><strong>dd</strong>：definition description，定义解释项，表示描述或解释前面的定义主题。</li>
+</ul>
+<p>dl内部只能嵌套dt和dd，dt和dd是同级关系。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>主题<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>解释项<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="注意事项-2"><a href="#注意事项-2" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li>dl内部只能嵌套dt和dd，dt与dd不能脱离dl单独书写。</li>
+<li>dl内部可以放多组dt和dd，每个dd解释说明的是前面的距离最近的一个dt。</li>
+<li>每个dt候面可以有0到多个解释项的dd，每个dd解释的都是前面距离最近的一个dt。</li>
+<li>dt和dd标签也是容器级标签，内部可以放置任意内容。</li>
+<li>定义列表中的缩进样式由css主责，标签只负责搭建语义结构。</li>
+<li>配合着css布局效果，最好每个dl中只添加一组dt和dd，便于后期管理。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>超级链接</title>
+    <url>/2022/08/b4ac4d7f3a99/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>HTML使用超级链接与网络上的另一个文档相连。超链接可以是一个字，一个词，或者一组词，也可以是一幅图像，可以点击这些内容来跳转到新的文档或者当前文档中的某个部分。</p>
+<h3 id="超级链接标签"><a href="#超级链接标签" class="headerlink" title="超级链接标签"></a>超级链接标签</h3><ul>
+<li>在HTML中使用a标签可以创建链接。</li>
+<li>a全称anchor，锚的意思。</li>
+<li>a为双标签。</li>
+<li>作用：在指定的位置添加超级链接，提供用户进行点击和跳转。</li>
+<li>a标签可以实现两种跳转：跨页面跳转、页面内跳转。实现跳转的方式需要用到一些标签属性。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span>&gt;</span>链接内容<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="href属性"><a href="#href属性" class="headerlink" title="href属性"></a>href属性</h3><ul>
+<li>href全称hypertext reference，超文本引用，用于规定链接的目标地址。</li>
+<li>属性值：链接目标的路径地址。可以使用相对路径或网址形式的绝对路径。</li>
+<li>href属性非常重要，a标签想要实现点击跳转，必须设置该属性，拥有这个属性a标签在鼠标移上去时才会显示一个小手指针状态。</li>
+</ul>
+<h3 id="target属性"><a href="#target属性" class="headerlink" title="target属性"></a>target属性</h3><ul>
+<li>使用target属性，可以定义被链接的文档在何处跳转显示。</li>
+<li><strong>_self</strong>：默认值，表示跳转的页面在当前窗口打开，不会打开新的窗口。</li>
+<li><strong>_blank</strong>：空白的，表示跳转的页面在新窗口打开。</li>
+</ul>
+<h3 id="title属性"><a href="#title属性" class="headerlink" title="title属性"></a>title属性</h3><ul>
+<li>title设置的时鼠标悬停时的提示文本，与img标签类似。</li>
+<li>属性值：自定义的文字内容。</li>
+<li>该属性用于给用户进行提示，该链接的功能是什么，提高用户的体验。</li>
+</ul>
+<h3 id="锚点跳转"><a href="#锚点跳转" class="headerlink" title="锚点跳转"></a>锚点跳转</h3><p>超级链接的跳转效果不止包括跨页面的跳转，还包括锚点跳转的方式。</p>
+<h4 id="页面内锚点跳转"><a href="#页面内锚点跳转" class="headerlink" title="页面内锚点跳转"></a>页面内锚点跳转</h4><ul>
+<li><p>这种跳转方式实现的是从某个位置跳转到同页面的另一个位置。</p>
+</li>
+<li><p>制作方法分为两个步骤，分别是设置锚点、添加链接。</p>
+</li>
+<li><p>设置锚点，也就是设置跳转目标位置，有两种设置方式。</p>
+<ul>
+<li><p>在目标位置找到任意一个标签，给它添加id属性，id的属性值必须是唯一的。id的属性值自定义规则：必须以字母开头，候面可以有字母、数字、下划线和横线，区分大小写。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">id</span>=<span class="string">&quot;mubiao&quot;</span>&gt;</span>锚点位置<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>在目标位置添加一个空的a标签，只设置一个name属性，name属性值设置方式与id相同，也必须是唯一的。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">&quot;mubiao&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+<li><p>添加链接</p>
+<ul>
+<li><p>链接到锚点，在需要点击的位置设置a标签，给a的href属性设置属性值为#id属性值或者#加a的name属性值</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#mubiao&quot;</span>&gt;</span>点击文本<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="跨页面锚点跳转"><a href="#跨页面锚点跳转" class="headerlink" title="跨页面锚点跳转"></a>跨页面锚点跳转</h4><ul>
+<li>这种跳转方法综合了跨页面跳转和锚点跳转。</li>
+<li>制作方法也分为两个步骤，分别是设置锚点、添加链接。</li>
+<li>第一步：设置锚点，方式与页面内锚点跳转一直，在目标网页的指定位置设置使用id或name属性。</li>
+<li>第二步：链接到锚点，添加超级链接时href属性需要更改，属性值写在页面的路径#id。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;new.html#mubiao&quot;</span>&gt;</span>点击文本<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>音频和视频</title>
+    <url>/2022/08/6ce1026cf918/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><ul>
+<li>音频使用audio标签进行定义。</li>
+<li>audio是双标签。</li>
+<li>同图片一样，需要使用src属性设置音频查找的路径。</li>
+<li>音频文件支持的格式包括：**.mp3<strong>、</strong>.ogg<strong>、</strong>.wav**。</li>
+<li>音频控制条属性<ul>
+<li>音频加载后不会自动显示播放器的控制条，需要使用controls属性进行设置，属性值也是controls。</li>
+</ul>
+</li>
+</ul>
+<h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><ul>
+<li>视频的设置方法与音频非常类似。</li>
+<li>视频使用video标签进行定义。</li>
+<li>video是双标签。</li>
+<li>使用src属性设置视频查找的路径。</li>
+<li>视频我呢见支持的格斯包括：**.mp4<strong>、</strong>.ogg<strong>、</strong>.webm**。</li>
+<li>视频控制条属性<ul>
+<li>视频也需要使用controls属性设置控制条，属性值也是controls。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>图像</title>
     <url>/2022/08/2160b72b2670/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul>
