@@ -1,9 +1,399 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>注释</title>
+    <url>/2022/08/c76ef35f17ed/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在很多代码技术中都可以添加注释内容，我们也可以向HTML源代码添加注释</p>
+<h3 id="HTML注释语法"><a href="#HTML注释语法" class="headerlink" title="HTML注释语法"></a>HTML注释语法</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 注释内容 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 快捷键：ctrl+/ --&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>注释只在源代码中可见，在浏览器窗口是不显示的</p>
+<h3 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h3><ul>
+<li>在源代码中添加描述性的提示信息，便于我们阅读代码。</li>
+<li>对于HTML纠错也大有帮助，可以通过注释某一行HTML代码，一边检索错误的位置。</li>
+<li>暂时注释掉一部分不用的代码，便于后期恢复代码。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>字符集</title>
+    <url>/2022/08/75c47f879da5/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>head标签内部的meta标签通过http-equiv属性定义了当前的网页所使用的字符编码。char：character，字符。set：集合。</p>
+<h3 id="不同版本的字符编码"><a href="#不同版本的字符编码" class="headerlink" title="不同版本的字符编码"></a>不同版本的字符编码</h3><h4 id="XHTML1-0版本"><a href="#XHTML1-0版本" class="headerlink" title="XHTML1.0版本"></a>XHTML1.0版本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html;charset=UTF-8&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="HTML5版本"><a href="#HTML5版本" class="headerlink" title="HTML5版本"></a>HTML5版本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="常用字符集编码"><a href="#常用字符集编码" class="headerlink" title="常用字符集编码"></a>常用字符集编码</h3><h4 id="国际通用字库"><a href="#国际通用字库" class="headerlink" title="国际通用字库"></a>国际通用字库</h4><p><strong>UTF-8</strong>：以字节为单位对Unicode万国码进行编码，涵盖了所有人类的语言文字，一个汉字为三个字节大小。</p>
+<h4 id="中文国标字库"><a href="#中文国标字库" class="headerlink" title="中文国标字库"></a>中文国标字库</h4><p><strong>gb2312</strong>：共收入汉字6763个和包括拉丁字母、希腊字母、日文平假名级片假名字母、俄语西里尔字母在内的682个。</p>
+<p><strong>gbk</strong>：是gb2312的扩展，增加了繁体字，共收入21886个汉字和图形符号，其中汉字（包括部首和构件）21003个，图形符号883个，一个汉字为2个字节大小。</p>
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><h4 id="使用建议"><a href="#使用建议" class="headerlink" title="使用建议"></a>使用建议</h4><ul>
+<li>如果没有网页加载速度要求，或者制作的是外文网站，使用utf-8</li>
+<li>如果含有大量中文汉字的网站，并且要求网页加载速度快，使用gbk</li>
+</ul>
+<p>注意：meta标签声明的字库，必须和编辑器软件默认编译字库相同，否则会出现两个字库不匹配，浏览器加载时出现乱码</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>字符集</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>命名空间</title>
+    <url>/2022/08/987d8a0698d5/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>html元素表示整个网页文档，在开始标签上设置了命名空间xmlns属性</p>
+<h3 id="不同版本的命名空间"><a href="#不同版本的命名空间" class="headerlink" title="不同版本的命名空间"></a>不同版本的命名空间</h3><h4 id="XHTML1-0版本"><a href="#XHTML1-0版本" class="headerlink" title="XHTML1.0版本"></a>XHTML1.0版本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="attr">xml:lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="HTML5版本"><a href="#HTML5版本" class="headerlink" title="HTML5版本"></a>HTML5版本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="命名空间xmlns"><a href="#命名空间xmlns" class="headerlink" title="命名空间xmlns"></a>命名空间xmlns</h3><ul>
+<li><strong>xml</strong>：可拓展标记语言，使用在传输过程中的规范。被设计用来传输和存储数据，是html的补充。</li>
+<li><strong>xmlns</strong>：全称叫做XML NameSpace，NameSpace叫做命名空间，浏览器会将此命名空间用于该属性所在元素内的所有内容</li>
+<li>html元素的命名空间规定了在不同用户的浏览器中标签语义遵循的统一标准，避免出现标签名冲突，这个标准使用的就是一个固定的网址<a href="http://www.w3.org/1999/xhtml%E4%B8%AD%E7%9A%84%E8%A7%84%E8%8C%83%E3%80%82">http://www.w3.org/1999/xhtml中的规范。</a></li>
+</ul>
+<h3 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h3><ul>
+<li><p>xml:lang=”en”和lang=”en”表示所有的标签元素内容的语言都是英文，对搜索引擎和浏览器是有帮助的</p>
+</li>
+<li><p>lang=”zh-cn”表示中文（中国）</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>基础</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DTD</title>
+    <url>/2022/08/172d32bfd3ad/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>完整的HTML文件的第一行内容叫做文档定义类型，英文DocType Definition，简称DTD。也称作文档声明类型，DocType Declaration。</p>
+<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>告知浏览器该网页使用的是哪个版本的HTML规范，让浏览器按照对应版本的HTML语法进行解析页面。</p>
+<h3 id="不同版本的DTD"><a href="#不同版本的DTD" class="headerlink" title="不同版本的DTD"></a>不同版本的DTD</h3><h4 id="XHTML1-0版本"><a href="#XHTML1-0版本" class="headerlink" title="XHTML1.0版本"></a>XHTML1.0版本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span>  <span class="string">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;</span>&gt;</span> </span><br></pre></td></tr></table></figure>
+
+<h4 id="HTML5版本"><a href="#HTML5版本" class="headerlink" title="HTML5版本"></a>HTML5版本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>基础</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML基本结构</title>
+    <url>/2022/08/c5212201cab0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="基本骨架"><a href="#基本骨架" class="headerlink" title="基本骨架"></a>基本骨架</h3><p>HTML文件最基本的四个标签，组成了网页的基本骨架，包括：html、head、title、body四组标签。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="html标签"><a href="#html标签" class="headerlink" title="html标签"></a>html标签</h4><ul>
+<li><strong>作用</strong>：定义HTML文件的根元素，表示整个HTML文档，所有的标签都要书写在html标签内部。</li>
+</ul>
+<h4 id="head标签"><a href="#head标签" class="headerlink" title="head标签"></a>head标签</h4><ul>
+<li><p><strong>作用</strong>：用于存放title，meta，base，style，script，link。内部用于对网页的设置，除了title内部的文字，其他标签都不显示在浏览器上。</p>
+</li>
+<li><p>注意在head标签中我们必须要设置的标签是title。</p>
+</li>
+</ul>
+<h4 id="title标签"><a href="#title标签" class="headerlink" title="title标签"></a>title标签</h4><ul>
+<li><strong>作用</strong><ul>
+<li>让网页拥有一个属于自己的标题。</li>
+<li>title中的关键字可以作为搜索引擎抓取时的关键字，提高SEO搜索引擎优化。</li>
+<li>内部的内容会显示在搜索结果的标题部分。</li>
+<li>作为浏览器收藏夹默认的网页标题。</li>
+</ul>
+</li>
+<li>建议网页必须添加title标签内部内容，内容尽量精简，提取网页的关键字。</li>
+</ul>
+<h4 id="body标签"><a href="#body标签" class="headerlink" title="body标签"></a>body标签</h4><ul>
+<li><p><strong>作用</strong>：定义网页的主题部分，用于存放所有的HTML显示内容的标签p，h1，a，div等。</p>
+</li>
+<li><p>body内部的元素内容会显示在浏览器的窗口中。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>基础</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编辑器</title>
+    <url>/2022/08/e9790d03d10e/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="纯文本编辑器"><a href="#纯文本编辑器" class="headerlink" title="纯文本编辑器"></a>纯文本编辑器</h3><ul>
+<li>所有的纯文本编辑器都能编辑HTML文件。例如记事本、Editplus、notepad等。</li>
+<li>专门制作网页的软件有：sublime、WebStorm、HBuilder、VSCode等。</li>
+</ul>
+<h3 id="VS-code编辑器"><a href="#VS-code编辑器" class="headerlink" title="VS code编辑器"></a>VS code编辑器</h3><ul>
+<li>推荐使用VS code软件，它是微软公司研发的一款非常方便使用的编辑器。</li>
+<li>VS code拥有超级丰富的插件拓展，可以根据子的需求使用不用的插件，对于开发者来说更加友好。</li>
+</ul>
+<h3 id="插件拓展"><a href="#插件拓展" class="headerlink" title="插件拓展"></a>插件拓展</h3><p>打开VS code后，使用ctrl+shift+X打开拓展，这里推荐安装几个初期使用的插件</p>
+<table>
+<thead>
+<tr>
+<th>插件名</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Chinese (Simplified) Language Pack for Visual Studio Code</td>
+<td>使用中文界面</td>
+</tr>
+<tr>
+<td>Auto Rename Tag</td>
+<td>修改html标签，自动完成尾部闭合标签的同步修改</td>
+</tr>
+<tr>
+<td>open in browser</td>
+<td>右键设置在默认浏览器打开网页</td>
+</tr>
+<tr>
+<td>Mithril Emmet</td>
+<td>快速编写工具，已经集成在VS code中</td>
+</tr>
+</tbody></table>
+<h3 id="VS-code使用步骤"><a href="#VS-code使用步骤" class="headerlink" title="VS code使用步骤"></a>VS code使用步骤</h3><ul>
+<li>新建文件，crtl+N。</li>
+<li>保存对应的文件格式ctrl+S，例如.html、.css、.js等文件。</li>
+<li>使用对应的快捷键快速编写程序。</li>
+</ul>
+<h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>!或html:5→tab/ctrl+E</td>
+<td>自动生成基本骨架</td>
+</tr>
+<tr>
+<td>标签名→tab</td>
+<td>自动生成标签</td>
+</tr>
+<tr>
+<td>标签名*n→tab</td>
+<td>自动生成n个相同的标签</td>
+</tr>
+<tr>
+<td>h$*6→tab</td>
+<td>自动生成h1到h6的标签</td>
+</tr>
+<tr>
+<td>ctrl+shift+D</td>
+<td>复制光标所在行、复制所选内容</td>
+</tr>
+<tr>
+<td>ctrl+shift+K/ctrl+X</td>
+<td>删除光标所在行、所选内容</td>
+</tr>
+<tr>
+<td>ctrl+shift+↑</td>
+<td>将光标所在行上移一行</td>
+</tr>
+<tr>
+<td>ctrl+shift+↓</td>
+<td>将光标所在行下移一行</td>
+</tr>
+<tr>
+<td>按住鼠标滚轮拖动</td>
+<td>同时选中多个光标，同时操作</td>
+</tr>
+<tr>
+<td>ctrl+滚轮</td>
+<td>调整显示字号大小</td>
+</tr>
+<tr>
+<td>ctrl+z</td>
+<td>无限后退一步</td>
+</tr>
+<tr>
+<td>ctrl+shift+z</td>
+<td>无限还原一步</td>
+</tr>
+<tr>
+<td>ctrl+enter</td>
+<td>在任意位置直接换行</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>研发工具</category>
+        <category>编辑器</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML属性</title>
+    <url>/2022/08/2d4ccce33e96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>HTML标签可以添加属性，属性可以提供关于HTML元素的更多信息。</p>
+<h3 id="HTML属性规范"><a href="#HTML属性规范" class="headerlink" title="HTML属性规范"></a>HTML属性规范</h3><ul>
+<li><p>书写位置：必须写在开始标签或者单标签之内，与标签名之间用空格进行分隔。</p>
+</li>
+<li><p>属性包括：属性名（key）、属性值（value）。属性名与属性值之间的写法通常称作键值对写法，HTML标签属性的键值对写法是k=”v”，XHTML要求属性值必须在双引号内部。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">k</span>=<span class="string">&quot;v&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>一个标签内可以设置多个不同的属性，属性与属性之间使用空格进行分隔，每个属性的键值对写法都是k=”v”。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">k</span>=<span class="string">&quot;v&quot;</span> <span class="attr">k</span>=<span class="string">&quot;v&quot;</span> <span class="attr">k</span>=<span class="string">&quot;v&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>部分标签属性k可以设置多个属性值v，所有属性值v都必须写在同一对双引号内，值与值之间需要使用空格分隔。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">k</span>=<span class="string">&quot;v1 v2 v3 v4&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>属性</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML元素</title>
+    <url>/2022/08/ad76fb3327df/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>HTML元素指的是从开始标签到结束标签的所有内容，包含开始标签、元素内容、结束标签。</p>
+<h3 id="元素内容"><a href="#元素内容" class="headerlink" title="元素内容"></a>元素内容</h3><ul>
+<li><p>元素内容可以是纯文本，也可以是其他的HTML元素。这种元素内容包含其他HTML元素的情况，我们可以称为嵌套，也就是div标签元素内部嵌套了p标签元素。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>div元素内部嵌套<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>一个HTML元素div的内容可能是多个其他元素组成，例如p和h1，此时我们习惯称div是p和h1的父级元素，p和h1是div的子级元素，而p和h1属于同级元素，这种嵌套关系可以有多层。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>div元素内部嵌套p元素<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>div元素内部嵌套的h1元素<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>单标签是不能添加其他元素内容的，可以称为空元素。</p>
+</li>
+</ul>
+<h3 id="标签级别"><a href="#标签级别" class="headerlink" title="标签级别"></a>标签级别</h3><p>根据标签内容可以存放的元素内容不同，可以将双标签划分为两个级别</p>
+<ul>
+<li>容器级：标签内部可以存放任意内容，包含容器级标签。比如h1，div等。</li>
+<li>文本级：标签内部只能存放文字或类似文字的内容，比如存放图片、表单元素等。比如p等。</li>
+</ul>
+<h3 id="HTML元素的特性"><a href="#HTML元素的特性" class="headerlink" title="HTML元素的特性"></a>HTML元素的特性</h3><p>元素间对空格、换行、缩进形成的空白不敏感，有无空白对在浏览器中加载的效果没有影响。浏览器识别的是元素的开始和结束以及相互之间的嵌套关系。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>空白折叠现象：元素内容如果是文本，所有文字（类似文字内容）之间如果有空格、换行、缩进等空白字符，在浏览器中加载时，链接在一起的空白会折叠成一个空格显示，这就是空白折叠现象。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>HTML中所有文字内容之间的空    格、换</span><br><span class="line">行、缩				进都会被折叠成一个空格显示。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML规范版本和标签语法</title>
+    <url>/2022/08/e3534ecf4d38/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="HTML规范版本"><a href="#HTML规范版本" class="headerlink" title="HTML规范版本"></a>HTML规范版本</h3><ul>
+<li><p><strong>W3C</strong>：<strong>world wide web consortium</strong>，万维网联盟。专门发布和维护互联网的规范和标准。</p>
+</li>
+<li><table>
+<thead>
+<tr>
+<th>版本</th>
+<th>发布时间</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>HTML1.0</td>
+<td>1993.06</td>
+<td>互联网工程小组（IETF）发布的工作草案</td>
+</tr>
+<tr>
+<td>HTML2.0</td>
+<td>1995.01</td>
+<td>2000年6月发布之后被宣布已经过时</td>
+</tr>
+<tr>
+<td>HTML3.2</td>
+<td>1997.01.14</td>
+<td>W3C推荐标准</td>
+</tr>
+<tr>
+<td>HTML4.0</td>
+<td>1997.12.18</td>
+<td>W3C推荐标准，引入了样式表CSS，实现了结构和样式分离</td>
+</tr>
+<tr>
+<td>HTML4.01</td>
+<td>1999.12.24</td>
+<td>W3C推荐标准，修复了HTML4.0中的漏洞</td>
+</tr>
+<tr>
+<td>XHTML1.0</td>
+<td>2000.01.20</td>
+<td>在HTML4.01基础上进行的升级拓展和严格化</td>
+</tr>
+<tr>
+<td>HTML5</td>
+<td>2008.01.22</td>
+<td>HTML5在2012年已形成稳定的版本</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h3><p>HTML标记通常被成为HTML标签（HTML tag）。标签在书写和使用过程中，必须遵循特定的语法。</p>
+<ul>
+<li><p>标签名必须书写在一堆尖括号&lt;&gt;内部。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>标签分为单标签和双标签，双标签必须成对出现。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 双标签 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 单标签 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>双标签包含开始标签和结束标签，结束标签必须书写关闭符号**/**，单标签也需要进行自封闭书写。在HTML5中，单标签可以不写关闭符号。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 错误写法 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- &lt;div&gt;&lt;div&gt; --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- &lt;br&gt; --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 正确写法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>基础</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML的概念</title>
     <url>/2022/08/bcec9513a4dd/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul>
+<li><strong>Hypertext Markup Language</strong>：<strong>超文本标记语言</strong>。是用来制作网页的一种标记语言。<ul>
+<li><strong>超文本</strong>：是超级文本的缩写，简单来说超文本就是用于链接另一个文本或多媒体内容的文本，比如链接到图片、链接、音频、视频、程序等。</li>
+<li><strong>标记</strong>：又叫做标签（HTML tag），有特殊的书写规范，是写给浏览器的一种语法格式，结合普通的文字信息，实现特殊的语义或显示内容。在编辑器中可以编辑和查看，在浏览器中不显示。</li>
+</ul>
+</li>
+<li><strong>纯文本格式的文件</strong>，内部只能书写文字内容，不能添加图片、音频、视频等，但是在网页中给用户呈现的效果却包含了文字以外的内容，这种效果就是HTML语言区别于其他文件的不同之处。</li>
+<li><strong>功能</strong>：利用标记给普通的文本添加语义、描述超文本内容，搭建网页的基本结构。</li>
+<li><strong>语义化</strong><ul>
+<li>HTML文件中，如果没有使用特殊语义的标记，也可以实现网页显示效果，但是利用标记给普通的文字添加了不同的语义，能够让网站的结构划分更加清晰。</li>
+</ul>
+</li>
+<li><strong>语义化优势</strong><ul>
+<li>方便代码的阅读和后期维护。</li>
+<li>便于浏览器或是网络爬虫更好地解析网站内容。</li>
+<li>使用语义化标签有利于SEO搜索引擎优化，提高网站的搜索排名。</li>
+</ul>
+</li>
+</ul>
+]]></content>
       <categories>
         <category>HTML</category>
         <category>基础</category>
@@ -15,18 +405,18 @@
   <entry>
     <title>纯文本格式</title>
     <url>/2022/08/036c8e9a5c83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>纯文本格式，就是没有任何文本修饰的，没有任何粗体，下划线，斜体，图形，符号或特殊字符及特殊打印格式的文本，只保存文本，不保存其格式设置</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>纯文本格式，就是没有任何文本修饰的，没有任何粗体，下划线，斜体，图形，符号或特殊字符及特殊打印格式的文本，只保存文本，不保存其格式设置。</p>
 <h3 id="格式对比"><a href="#格式对比" class="headerlink" title="格式对比"></a>格式对比</h3><h4 id="纯文本格式"><a href="#纯文本格式" class="headerlink" title="纯文本格式"></a>纯文本格式</h4><ul>
-<li>最常见的是.txt文件</li>
-<li>只能保存文本，不保存其他的格式或非文本内容</li>
-<li>文件小，有利于网络传输</li>
-<li>可以通过直接更改扩展名的方式更改保存格式</li>
-<li>可以使用任意的纯文本编辑器进行查看和编辑</li>
-<li>html、css、js文件都是纯文本格式文件</li>
+<li>最常见的是.txt文件。</li>
+<li>只能保存文本，不保存其他的格式或非文本内容。</li>
+<li>文件小，有利于网络传输。</li>
+<li>可以通过直接更改扩展名的方式更改保存格式。</li>
+<li>可以使用任意的纯文本编辑器进行查看和编辑。</li>
+<li>html、css、js文件都是纯文本格式文件。</li>
 </ul>
 <h4 id="富文本格式"><a href="#富文本格式" class="headerlink" title="富文本格式"></a>富文本格式</h4><ul>
-<li>最常见的是.rtf文件，类似.doc文件</li>
-<li>内部可以保存文本的样式、图片等</li>
+<li>最常见的是.rtf文件，类似.doc文件。</li>
+<li>内部可以保存文本的样式、图片等。</li>
 </ul>
 ]]></content>
       <categories>
@@ -39,20 +429,20 @@
   <entry>
     <title>互联网原理</title>
     <url>/2022/08/47b2f661c6ea/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="互联网的运行过程"><a href="#互联网的运行过程" class="headerlink" title="互联网的运行过程"></a>互联网的运行过程</h3><p>开发人员将网页源文件上传到服务器进行存储，用户后期通过客户端（如浏览器软件）发送HTTP请求到服务器，服务器接收请求后进行响应，将存储的相关文件通过HTTP响应回传到用户本地客户端，最终通过客户端将网页文件进行渲染，显示出最终用户看到的网页效果</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="互联网的运行过程"><a href="#互联网的运行过程" class="headerlink" title="互联网的运行过程"></a>互联网的运行过程</h3><p>开发人员将网页源文件上传到服务器进行存储，用户后期通过客户端（如浏览器软件）发送HTTP请求到服务器，服务器接收请求后进行响应，将存储的相关文件通过HTTP响应回传到用户本地客户端，最终通过客户端将网页文件进行渲染，显示出最终用户看到的网页效果。</p>
 <h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><ul>
-<li>服务器（server），就是一种特殊的计算机，也包括处理器、硬盘、内存、系统总线等，但是由于需要提供更可靠的服务，因此在处理能力、稳定性、可靠性、安全性等方面要求较高</li>
-<li>作用：对于WEB来讲，用于存储开发人员上传的网页数据，且需要响应服务请求，并进行处理</li>
-<li>要求：对于网站服务器来说，为了让用户随时进行访问，必须24小时不间断工作</li>
+<li>服务器（server），就是一种特殊的计算机，也包括处理器、硬盘、内存、系统总线等，但是由于需要提供更可靠的服务，因此在处理能力、稳定性、可靠性、安全性等方面要求较高。</li>
+<li>作用：对于WEB来讲，用于存储开发人员上传的网页数据，且需要响应服务请求，并进行处理。</li>
+<li>要求：对于网站服务器来说，为了让用户随时进行访问，必须24小时不间断工作。</li>
 </ul>
-<h3 id="云服务器"><a href="#云服务器" class="headerlink" title="云服务器"></a>云服务器</h3><p>目前绝大多数网站都采用的是云服务器（Elastic Compute Service, ECS)，云服务器是一种简单高效、安全可靠、处理能力可弹性伸缩的计算服务。其管理方式比物理服务器更简单高效。用户无需提前购买硬件，即可迅速创建或释放任意多台云服务器</p>
+<h3 id="云服务器"><a href="#云服务器" class="headerlink" title="云服务器"></a>云服务器</h3><p>目前绝大多数网站都采用的是云服务器（Elastic Compute Service, ECS)，云服务器是一种简单高效、安全可靠、处理能力可弹性伸缩的计算服务。其管理方式比物理服务器更简单高效。用户无需提前购买硬件，即可迅速创建或释放任意多台云服务器。</p>
 <h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><ul>
-<li>客户端（Client）也叫用户端，指的是普通用户使用的终端，客户端有多种形式，比如最常用的就是浏览器、app等，而web开发最主要的客户端形式还是浏览器</li>
-<li>浏览器(Browser)，是一种用户上网搜索、查看信息资源的应用程序</li>
+<li>客户端（Client）也叫用户端，指的是普通用户使用的终端，客户端有多种形式，比如最常用的就是浏览器、app等，而web开发最主要的客户端形式还是浏览器。</li>
+<li>浏览器(Browser)，是一种用户上网搜索、查看信息资源的应用程序。</li>
 <li>功能：用于发送HTTP请求到服务器，接收服务器发回的HTTP响应，渲染HTML网页。</li>
 </ul>
-<h3 id="主流浏览器"><a href="#主流浏览器" class="headerlink" title="主流浏览器"></a>主流浏览器</h3><p>主流的Web页面浏览器有：微软的IE和Microsoft Edge、Mozilla的Firefox、苹果公司的Safari、Google的Chrome及Opera软件公司的Opera</p>
-<h3 id="主流浏览器内核"><a href="#主流浏览器内核" class="headerlink" title="主流浏览器内核"></a>主流浏览器内核</h3><p>因为不同浏览器使用内核及所支持的HTML等网页语言标准不同，对网页的渲染效果会有差异</p>
+<h3 id="主流浏览器"><a href="#主流浏览器" class="headerlink" title="主流浏览器"></a>主流浏览器</h3><p>主流的Web页面浏览器有：微软的IE和Microsoft Edge、Mozilla的Firefox、苹果公司的Safari、Google的Chrome及Opera软件公司的Opera。</p>
+<h3 id="主流浏览器内核"><a href="#主流浏览器内核" class="headerlink" title="主流浏览器内核"></a>主流浏览器内核</h3><p>因为不同浏览器使用内核及所支持的HTML等网页语言标准不同，对网页的渲染效果会有差异。</p>
 <table>
 <thead>
 <tr>
@@ -87,20 +477,20 @@
 <td align="center"></td>
 </tr>
 </tbody></table>
-<p>推荐：使用Chrome浏览器。（渲染效果好、市场占有率高、自带开发者调试工具）</p>
+<p>推荐：使用Chrome浏览器。（渲染效果好、市场占有率高、自带开发者调试工具）。</p>
 <h3 id="浏览器功能"><a href="#浏览器功能" class="headerlink" title="浏览器功能"></a>浏览器功能</h3><ul>
-<li>发送HTTP请求，发送的方式是在浏览器地址栏输入对应网址，或者点击超级链接</li>
-<li>接收服务器发回的HTTP响应，服务器会发回一个HTML给浏览器</li>
-<li>将接收到的HTML进行解析并显示</li>
+<li>发送HTTP请求，发送的方式是在浏览器地址栏输入对应网址，或者点击超级链接。</li>
+<li>接收服务器发回的HTTP响应，服务器会发回一个HTML给浏览器。</li>
+<li>将接收到的HTML进行解析并显示。</li>
 </ul>
-<h3 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h3><p>Hypertext Transfer Protocol：超文本传输协议。是客户端浏览器或其他程序与WEB服务器之间的应用层通信协议</p>
+<h3 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h3><p>Hypertext Transfer Protocol：超文本传输协议。是客户端浏览器或其他程序与WEB服务器之间的应用层通信协议。</p>
 <h4 id="HTTP请求"><a href="#HTTP请求" class="headerlink" title="HTTP请求"></a>HTTP请求</h4><ul>
-<li>request，浏览器根据网址向对应的服务器发送请求</li>
-<li>发起请求的方法：在浏览器地址栏中输入网址，或者点击网址链接</li>
-<li>HTML页面解析过程中，会发出多个http请求，包含网页的图片、视频、音频等文件请求</li>
+<li>request，浏览器根据网址向对应的服务器发送请求。</li>
+<li>发起请求的方法：在浏览器地址栏中输入网址，或者点击网址链接。</li>
+<li>HTML页面解析过程中，会发出多个http请求，包含网页的图片、视频、音频等文件请求。</li>
 </ul>
 <h4 id="HTTP响应"><a href="#HTTP响应" class="headerlink" title="HTTP响应"></a>HTTP响应</h4><ul>
-<li>response，服务器根据请求响应一个HTML文件，将HTML传输给客户端，在浏览器中进行HTML网页的渲染</li>
+<li>response，服务器根据请求响应一个HTML文件，将HTML传输给客户端，在浏览器中进行HTML网页的渲染。</li>
 </ul>
 ]]></content>
       <categories>
@@ -114,8 +504,8 @@
     <title>网页的认识</title>
     <url>/2022/08/6b01bb54f24e/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="网页的制作"><a href="#网页的制作" class="headerlink" title="网页的制作"></a>网页的制作</h3><ul>
-<li>HTML就是用来制作网页文件的</li>
-<li>浏览器查看的网页都是.html或.htm文件</li>
+<li>HTML就是用来制作网页文件的。</li>
+<li>浏览器查看的网页都是.html或.htm文件。</li>
 <li>HTML叫做超文本标记语言(Hypertext Markup Language)，用于搭建网页的结构。</li>
 </ul>
 <h3 id="网页的组成"><a href="#网页的组成" class="headerlink" title="网页的组成"></a>网页的组成</h3><ul>
@@ -139,6 +529,8 @@
 <li>官网地址：<a href="https://videojs.com/">https://videojs.com/</a></li>
 </ul>
 <h3 id="video-js使用"><a href="#video-js使用" class="headerlink" title="video.js使用"></a>video.js使用</h3><h4 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;https://vjs.zencdn.net/7.20.2/video-js.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- If you&#x27;d like to support IE8 (for Video.js versions prior to v7) --&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- &lt;script src=&quot;https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js&quot;&gt;&lt;/script&gt; --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">video</span></span></span><br><span class="line"><span class="tag">           <span class="attr">id</span>=<span class="string">&quot;my-video&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">class</span>=<span class="string">&quot;video-js&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">controls</span></span></span><br><span class="line"><span class="tag">           <span class="attr">preload</span>=<span class="string">&quot;auto&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">width</span>=<span class="string">&quot;640&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">height</span>=<span class="string">&quot;264&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">poster</span>=<span class="string">&quot;MY_VIDEO_POSTER.jpg&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">data-setup</span>=<span class="string">&quot;&#123;&#125;&quot;</span></span></span><br><span class="line"><span class="tag">           &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;MY_VIDEO.mp4&quot;</span> <span class="attr">type</span>=<span class="string">&quot;video/mp4&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;MY_VIDEO.webm&quot;</span> <span class="attr">type</span>=<span class="string">&quot;video/webm&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;vjs-no-js&quot;</span>&gt;</span></span><br><span class="line">            To view this video please enable JavaScript, and consider upgrading to a</span><br><span class="line">            web browser that</span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://videojs.com/html5-video-support/&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span></span></span><br><span class="line"><span class="tag">               &gt;</span>supports HTML5 video&lt;/a</span><br><span class="line">                &gt;</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://vjs.zencdn.net/7.20.2/video.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> player = <span class="title function_">videojs</span>(<span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.video-js&#x27;</span>))</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
 
 <h4 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install --save-dev video.js</span></span><br></pre></td></tr></table></figure>
 

@@ -15,7 +15,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>纯文本格式 |  kiloP</title>
+      <title>命名空间 |  kiloP</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/logo.ico" />
@@ -70,7 +70,7 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-前端基础/纯文本格式"
+  id="post-HTML/基础/命名空间"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -81,7 +81,7 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  纯文本格式
+  命名空间
 </h1>
  
 
@@ -89,11 +89,11 @@ var _hmt = _hmt || [];
     </header>
      
     <div class="article-meta">
-      <a href="/2022/08/036c8e9a5c83/" class="article-date">
-  <time datetime="2022-08-19T06:48:08.000Z" itemprop="datePublished">2022-08-19</time>
+      <a href="/2022/08/987d8a0698d5/" class="article-date">
+  <time datetime="2022-08-22T02:20:58.000Z" itemprop="datePublished">2022-08-22</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/">前端基础</a>
+    <a class="article-category-link" href="/categories/HTML/">HTML</a> / <a class="article-category-link" href="/categories/HTML/%E5%9F%BA%E7%A1%80/">基础</a>
   </div>
   
 <div class="word_count">
@@ -101,7 +101,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">192</span>
+            <span class="post-count">269</span>
         </span>
     </span>
 
@@ -125,18 +125,21 @@ var _hmt = _hmt || [];
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>纯文本格式，就是没有任何文本修饰的，没有任何粗体，下划线，斜体，图形，符号或特殊字符及特殊打印格式的文本，只保存文本，不保存其格式设置。</p>
-<h3 id="格式对比"><a href="#格式对比" class="headerlink" title="格式对比"></a>格式对比</h3><h4 id="纯文本格式"><a href="#纯文本格式" class="headerlink" title="纯文本格式"></a>纯文本格式</h4><ul>
-<li>最常见的是.txt文件。</li>
-<li>只能保存文本，不保存其他的格式或非文本内容。</li>
-<li>文件小，有利于网络传输。</li>
-<li>可以通过直接更改扩展名的方式更改保存格式。</li>
-<li>可以使用任意的纯文本编辑器进行查看和编辑。</li>
-<li>html、css、js文件都是纯文本格式文件。</li>
+  <p>html元素表示整个网页文档，在开始标签上设置了命名空间xmlns属性</p>
+<h3 id="不同版本的命名空间"><a href="#不同版本的命名空间" class="headerlink" title="不同版本的命名空间"></a>不同版本的命名空间</h3><h4 id="XHTML1-0版本"><a href="#XHTML1-0版本" class="headerlink" title="XHTML1.0版本"></a>XHTML1.0版本</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="attr">xml:lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="HTML5版本"><a href="#HTML5版本" class="headerlink" title="HTML5版本"></a>HTML5版本</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="命名空间xmlns"><a href="#命名空间xmlns" class="headerlink" title="命名空间xmlns"></a>命名空间xmlns</h3><ul>
+<li><strong>xml</strong>：可拓展标记语言，使用在传输过程中的规范。被设计用来传输和存储数据，是html的补充。</li>
+<li><strong>xmlns</strong>：全称叫做XML NameSpace，NameSpace叫做命名空间，浏览器会将此命名空间用于该属性所在元素内的所有内容</li>
+<li>html元素的命名空间规定了在不同用户的浏览器中标签语义遵循的统一标准，避免出现标签名冲突，这个标准使用的就是一个固定的网址<a target="_blank" rel="noopener" href="http://www.w3.org/1999/xhtml%E4%B8%AD%E7%9A%84%E8%A7%84%E8%8C%83%E3%80%82">http://www.w3.org/1999/xhtml中的规范。</a></li>
 </ul>
-<h4 id="富文本格式"><a href="#富文本格式" class="headerlink" title="富文本格式"></a>富文本格式</h4><ul>
-<li>最常见的是.rtf文件，类似.doc文件。</li>
-<li>内部可以保存文本的样式、图片等。</li>
+<h3 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h3><ul>
+<li><p>xml:lang=”en”和lang=”en”表示所有的标签元素内容的语言都是英文，对搜索引擎和浏览器是有帮助的</p>
+</li>
+<li><p>lang=”zh-cn”表示中文（中国）</p>
+</li>
 </ul>
  
       <!-- reward -->
@@ -208,7 +211,7 @@ var _hmt = _hmt || [];
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.wzx0905.top/2022/08/036c8e9a5c83/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.wzx0905.top/2022/08/987d8a0698d5/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -221,19 +224,19 @@ var _hmt = _hmt || [];
    
   <nav class="article-nav">
     
-      <a href="/2022/08/bcec9513a4dd/" class="article-nav-link">
+      <a href="/2022/08/75c47f879da5/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            HTML的概念
+            字符集
           
         </div>
       </a>
     
     
-      <a href="/2022/08/47b2f661c6ea/" class="article-nav-link">
+      <a href="/2022/08/172d32bfd3ad/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">互联网原理</div>
+        <div class="article-nav-title">DTD</div>
       </a>
     
   </nav>
