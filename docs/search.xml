@@ -1,6 +1,448 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>字符实体</title>
+    <url>/2022/08/b53834f00b8a/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在普通文字书写时，有一些特殊符号不能直接书写（例如连续的空格），或者符号具有特殊功能也不能直接书写（例如&lt; &gt;符号）。可以使用一些HTML提前预留好的替换字符进行书写，这些替换字符叫做字符实体。</p>
+<p>通过查询w3cshool手册，查看所有的字符实体。</p>
+<p>使用方法：可以查询特殊字符的替换写法，包含实体名称以及实体编号。</p>
+<table>
+<thead>
+<tr>
+<th>显示结果</th>
+<th>描述</th>
+<th>实体名称</th>
+<th>实体编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>空格</td>
+<td><code>&amp;nbsp;</code></td>
+<td><code>&amp;#160;</code></td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>小于号</td>
+<td><code>&amp;lt;</code></td>
+<td><code>&amp;#60;</code></td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>大于号</td>
+<td><code>&amp;gt;</code></td>
+<td><code>&amp;#62;</code></td>
+</tr>
+<tr>
+<td><code>&amp;</code></td>
+<td>和号</td>
+<td><code>&amp;amp;</code></td>
+<td><code>&amp;#38;</code></td>
+</tr>
+<tr>
+<td><code>&quot;</code></td>
+<td>引号</td>
+<td><code>&amp;quot;</code></td>
+<td><code>&amp;#34;</code></td>
+</tr>
+<tr>
+<td><code>&#39;</code></td>
+<td>撇号</td>
+<td><code>&amp;apos;</code>(IE不支持)</td>
+<td><code>&amp;#39;</code></td>
+</tr>
+<tr>
+<td><code>¢</code></td>
+<td>分(<code>cent</code>)</td>
+<td><code>&amp;cent;</code></td>
+<td><code>&amp;#162;</code></td>
+</tr>
+<tr>
+<td><code>£</code></td>
+<td>镑(<code>pound</code>)</td>
+<td><code>&amp;pount;</code></td>
+<td><code>&amp;#163;</code></td>
+</tr>
+<tr>
+<td><code>¥</code></td>
+<td>元(<code>yen</code>)</td>
+<td><code>&amp;yen;</code></td>
+<td><code>&amp;#165;</code></td>
+</tr>
+<tr>
+<td><code>€</code></td>
+<td>欧元(<code>euro</code>)</td>
+<td><code>&amp;euro;</code></td>
+<td><code>&amp;#8364;</code></td>
+</tr>
+<tr>
+<td><code>§</code></td>
+<td>小节</td>
+<td><code>&amp;sect;</code></td>
+<td><code>&amp;#167;</code></td>
+</tr>
+<tr>
+<td><code>©</code></td>
+<td>版权(<code>copyright</code>)</td>
+<td><code>&amp;copy;</code></td>
+<td><code>&amp;#169;</code></td>
+</tr>
+<tr>
+<td><code>®</code></td>
+<td>注册商标</td>
+<td><code>&amp;reg;</code></td>
+<td><code>&amp;#174;</code></td>
+</tr>
+</tbody></table>
+<p>规则：所有的字符实体和实体编号都是以&amp;开头，以;结尾的。</p>
+<p>建议</p>
+<ul>
+<li>使用实体名称，好处是名称易于记忆。不过坏处是，浏览器也许并不支持所有实体名称（对实体数字的支持却很好）。</li>
+<li>不需要强制记忆所有的字符实体，只需要记忆常用的几个字符实体名称即可，其他可以通过手册进行查询。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>表单元素</title>
+    <url>/2022/08/29ab1fdd5e20/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="input"><a href="#input" class="headerlink" title="input"></a>input</h3><p>input标签是最重要的一个表单元素。</p>
+<p>input标签为单标签，本身相当于一个特殊的文本。</p>
+<p>input标签需要通过标签属性实现各种功能。</p>
+<table>
+    <tr>
+        <th>属性名</th>
+        <th>属性值</th>
+        <th>描述</th>  
+    </tr>
+    <tr>
+        <td rowspan="10">type</td>
+        <td>text</td>
+        <td>单行文本输入框</td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td>密码输入框</td>
+    </tr>
+    <tr>
+        <td>radio</td>
+        <td>单选框</td>
+    </tr>
+    <tr>
+        <td>checkbox</td>
+        <td>复选框</td>
+    </tr>
+    <tr>
+        <td>button</td>
+        <td>普通按钮</td>
+    </tr>
+    <tr>
+        <td>reset</td>
+        <td>重置按钮</td>
+    </tr>
+    <tr>
+        <td>submit</td>
+        <td>提交按钮</td>
+    </tr>
+    <tr>
+        <td>image</td>
+        <td>图像形式的按钮</td>
+    </tr>
+    <tr>
+        <td>file</td>
+        <td>定义输入字段和“浏览"按钮，供文件上传。</td>
+    </tr>
+    <tr>
+        <td>hidden</td>
+        <td>定义隐藏的输入字段</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>自定义</td>
+        <td>定义控件的名称</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td>自定义</td>
+        <td>定义控件的默认文本值</td>
+    </tr>
+    <tr>
+        <td>size</td>
+        <td>数字</td>
+        <td>定义控件的宽度</td>
+    </tr>
+    <tr>
+        <td>checked</td>
+        <td>checked</td>
+        <td>定义选框控件的默认被选中项</td>
+    </tr>
+    <tr>
+        <td>maxlength</td>
+        <td>数字</td>
+        <td>定义允许输入的最多字符数</td>
+    </tr>
+</table>
+
+<p>其中，type属性的值不同，决定了input标签的形态不同。</p>
+<h4 id="单行文本输入框：text"><a href="#单行文本输入框：text" class="headerlink" title="单行文本输入框：text"></a>单行文本输入框：text</h4><p>input标签的type属性值为text。</p>
+<p>定义提供用户输入的单行文本的输入框，不能输入多行文字。</p>
+<p>常用value属性定义默认的输入文字。</p>
+<h4 id="密码输入框：password"><a href="#密码输入框：password" class="headerlink" title="密码输入框：password"></a>密码输入框：password</h4><p>input标签的type属性值为password。</p>
+<p>定义提供用户输入的密码框。</p>
+<p>password 字段中的字符会被做掩码处理（显示为星号或实心圆）。</p>
+<h4 id="单选框：radio"><a href="#单选框：radio" class="headerlink" title="单选框：radio"></a>单选框：radio</h4><p>input标签的type属性值为radio。</p>
+<p>定义提供用户点击选择的单选框。</p>
+<p>单选框一般都是成组出现，多个单选框组成一组选择的情况。</p>
+<p>同一组单选框之间必须是互斥的关系，通过给同一组单选框都设置相同的name属性值实现。</p>
+<p>默认选中设置</p>
+<ul>
+<li>单选框和复选框都可以提前设置默认选中项。</li>
+<li>input标签有一个checked属性，如果不设置表示默认没有选中。属性值如果设置为”checked”，表示该项默认被选中。</li>
+</ul>
+<h4 id="复选框：checkbox"><a href="#复选框：checkbox" class="headerlink" title="复选框：checkbox"></a>复选框：checkbox</h4><p>input标签的type属性值为checkbox。</p>
+<p>定义提供用户点击选择的多选框。</p>
+<p>复选框允许用户在有限数量的选项中选择零个或多个选项。</p>
+<p>同一组复选框最好也设置相同的name属性。</p>
+<p>默认选中设置</p>
+<ul>
+<li>单选框和复选框都可以提前设置默认选中项。</li>
+<li>input标签有一个checked属性，如果不设置表示默认没有选中。属性值如果设置为”checked”，表示该项默认被选中。</li>
+</ul>
+<h4 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h4><p>input标签有四种形式的按钮</p>
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th>名称</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>button</td>
+<td>普通按钮</td>
+<td>没有任何特殊功能</td>
+</tr>
+<tr>
+<td>reset</td>
+<td>重置按钮</td>
+<td>将同一个form中填写的表单内容清空，恢复成默认</td>
+</tr>
+<tr>
+<td>submit</td>
+<td>提交按钮</td>
+<td>将填写数据提交到form中指定的后台服务器，并重置清空form中填写的信息</td>
+</tr>
+<tr>
+<td>image</td>
+<td>图片按钮</td>
+<td>默认与提交按钮的效果相同，使用的图片需要利用src属性查找正确路径。</td>
+</tr>
+</tbody></table>
+<h4 id="文件上传：file"><a href="#文件上传：file" class="headerlink" title="文件上传：file"></a>文件上传：file</h4><p>input标签的type属性值为file。</p>
+<p>定义文件上传按钮，可以提供用户选择本地文件进行上传服务器。</p>
+<p>使用input的multiple属性，可以决定是否可以选择多个文件。</p>
+<h3 id="textarea"><a href="#textarea" class="headerlink" title="textarea"></a>textarea</h3><p>文本域使用textarea标签定义，制作可以输入多行文本的区域。</p>
+<p>textarea标签为双标签，本身相当于一个特殊的文字。</p>
+<p>文本域可以设置默认输入的文字，在双标签之间书写默认文字。</p>
+<p>textarea属性</p>
+<ul>
+<li>textarea有两个标签属性，可以设置显示区域大小。</li>
+<li>rows：行，属性值是数字，数字是几表示文本框显示的最大行数，如果超过了行数，会被隐藏并且出现滚动条。</li>
+<li>cols：列，属性值是数字，数字是几，表示在出现滚动条之后，每一行显示的最大字节数（一个汉字按2字节计算）。</li>
+</ul>
+<h3 id="下拉菜单"><a href="#下拉菜单" class="headerlink" title="下拉菜单"></a>下拉菜单</h3><p>HTML中的下拉菜单提前设置一些选项，然后可以通过点击选择其中一项。</p>
+<p>下拉菜单需要至少两个标签完成结构：</p>
+<ul>
+<li>select：选择，表示定义下拉菜单整体结构。</li>
+<li>option：选项，表示定义下拉菜单的每一项。</li>
+<li>两个标签都是双标签，文本级标签。</li>
+<li>关系：select&gt;option，option可以有任意多项。</li>
+</ul>
+<p>默认选中项</p>
+<ul>
+<li>默认情况下，选中的是第一项。</li>
+<li>下拉菜单可以通过给option标签设置selected属性，属性值为selected，更改默认选中项。</li>
+</ul>
+<p>分组管理</p>
+<ul>
+<li>下拉菜单中如果选项变得复杂，可以将option进行分组管理。</li>
+<li>可以使用optgroup标签对选项进行分组，optgroup是一个双标签。</li>
+<li>关系：select&gt;optgroup&gt;option</li>
+<li>optgroup可以设置一个label属性，表示给这一组选项添加一个分组标签名，分组标签optgroup是不能被点击选择的。</li>
+</ul>
+<h3 id="label标签"><a href="#label标签" class="headerlink" title="label标签"></a>label标签</h3><p>所有的表单元素都可以通过绑定其他内容去扩大触发点击范围，这时需要使用一个label标签。</p>
+<p>label标签的作用是帮表单元素定义标注（标记）。</p>
+<p>如果将表单控件与提示内容使用label进行绑定后，当用户鼠标点击label内的提示内容时，浏览器就会自动将焦点转到和标签相关的表单控件上。</p>
+<p>绑定方法一</p>
+<ul>
+<li>给表单元素设置id属性。</li>
+<li>然后将需要绑定的其他内容用label标签包裹。</li>
+<li>给label标签设置for属性，属性值为绑定的表单元素的id属性值。</li>
+</ul>
+<p>绑定方法二</p>
+<ul>
+<li>如果绑定内容和表单元素写在一起，可以化简绑定写法。</li>
+<li>直接使用label标签将绑定内容与表单元素一起进行嵌套。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>表单域</title>
+    <url>/2022/08/e665f48673e3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>HTML表单域使用form标签进行定义。</p>
+<p>form标签是一个功能性标签，填写的表单信息要想正确的提交到后台服务器，必须放在一个form标签之内。</p>
+<p>form标签为双标签，容器级标签。</p>
+<h3 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h3><p>form标签通过对应属性规定提交数据的方法和提交位置。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>action</td>
+<td>url</td>
+<td>指定接收并处理表单数据的服务器程序的url地址</td>
+</tr>
+<tr>
+<td>method</td>
+<td>get/post</td>
+<td>用于设置表单数据的提交方式</td>
+</tr>
+<tr>
+<td>name</td>
+<td>自定义名称</td>
+<td>规定表单的名称</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>表单</title>
+    <url>/2022/08/d94ae2f69558/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>表单是用来收集用户输入信息的。</p>
+<h3 id="表单的组成"><a href="#表单的组成" class="headerlink" title="表单的组成"></a>表单的组成</h3><p>HTML表单用于搜集不同类型的用户输入，表单元素就是网页中提供用户进行输入或点击的小控件。</p>
+<p>在HTML中，一个完整的表单通常由表单域、提示信息和表单控件（也称为表单元素）3个部分构成。</p>
+<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><p><strong>表单域</strong>：相当于一个容器，用来容纳所有的表单控件和提示信息，可以通过他定义处理表单数据所用程序的url地址，以及数据提交到服务器的方法。如果不定义表单域，表单中的数据就无法传送到后台服务器。</p>
+<p><strong>提示信息</strong>：一个表单中通常还需要包含一些说明性的文字，提示用户进行填写和操作。</p>
+<p><strong>表单控件</strong>：包含了具体的表单功能项，如单行文本输入框、密码输入框、复选框、提交按钮、重置按钮等。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>表格</title>
+    <url>/2022/08/04b326bc64aa/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="表格基础"><a href="#表格基础" class="headerlink" title="表格基础"></a>表格基础</h3><p>创建一个简单的表格至少有三个标签组成，分别是table、tr、td标签。</p>
+<ul>
+<li><strong>table</strong>：表格，定义的是整个的表格大结构。</li>
+<li><strong>tr</strong>：table rows，表格的行，定义的是表格由多少行组成。</li>
+<li><strong>td</strong>：table data，表格数据，也叫表格单元格，定义的是每一行内部的单元格。</li>
+</ul>
+<p><strong>三者的关系</strong>：table&gt;tr&gt;td。一个表格中有多个行，每个行中有多个单元格。</p>
+<h3 id="table的属性"><a href="#table的属性" class="headerlink" title="table的属性"></a>table的属性</h3><p>table标签可以添加border边框属性。</p>
+<ul>
+<li><strong>属性值</strong>：数字，表示像素值。</li>
+</ul>
+<p>表格的单元格之间有默认的空隙，会导致双线边框。</p>
+<ul>
+<li><strong>解决方法</strong>：设置标签样式属性style。</li>
+<li><strong>属性值</strong>：<strong>border-collapse : collapse;</strong> 表示边框塌陷。</li>
+</ul>
+<h3 id="表头单元格"><a href="#表头单元格" class="headerlink" title="表头单元格"></a>表头单元格</h3><ul>
+<li>如果要绘制表头，使用标签th，table head data，表头单元格。</li>
+<li>在表格中绘制的时候，替换的是td的位置。</li>
+<li>th标签中自带默认的css样式效果，文字显示粗体居中。</li>
+</ul>
+<h3 id="合并单元格"><a href="#合并单元格" class="headerlink" title="合并单元格"></a>合并单元格</h3><p>常见的表格操作中，有一种叫做合并单元格，可以通过单元格属性进行设置。</p>
+<h4 id="单元格属性"><a href="#单元格属性" class="headerlink" title="单元格属性"></a>单元格属性</h4><ul>
+<li>表格的单元格可以进行合并，通过th和td的两个属性可以进行合并设置。</li>
+<li><strong>rowspan</strong>：跨行和并。上下的合并。</li>
+<li><strong>colspan</strong>：跨列合并。左右的合并。</li>
+<li><strong>属性值</strong>：数字，数字是几表示跨几行或跨几列合并。</li>
+</ul>
+<h4 id="制作技巧"><a href="#制作技巧" class="headerlink" title="制作技巧"></a>制作技巧</h4><ul>
+<li>先列出所有行tr，以最小单元格为标准。</li>
+<li>再添加每一行的td或th单元格。</li>
+<li>划分单元格所在行时，顶边对齐的属于同一行。</li>
+<li>将所有行和列写完后，再查看哪个单元格有跨行或跨列，属性值的个数要参考最小的单元格。</li>
+</ul>
+<h3 id="表格分区"><a href="#表格分区" class="headerlink" title="表格分区"></a>表格分区</h3><p>一个完整的表格分为四个大的区域：表格标题、表格头部、表格主体、表格页脚。</p>
+<h4 id="分区标签"><a href="#分区标签" class="headerlink" title="分区标签"></a>分区标签</h4><p>table内部最直接的子级包含四个分区标签，他们都是双标签。</p>
+<ul>
+<li><strong>caption</strong>：表格的标题，内部书写标题文字。</li>
+<li><strong>thead</strong>：table head，表格的头部。内部嵌套tr&gt;th。</li>
+<li><strong>tbody</strong>：table body，表格的主体。内部嵌套tr&gt;td。</li>
+<li><strong>tfoot</strong>：table foot，表格的页脚。内部嵌套tr&gt;td。</li>
+</ul>
+<p>四个分区可以选择性的进行组合。</p>
+<p>注意：不论书写顺序如何颠倒，浏览器中的加载顺序都是自动按照caption、thead、tbody、tfoot执行的。</p>
+<h4 id="制作技巧-1"><a href="#制作技巧-1" class="headerlink" title="制作技巧"></a>制作技巧</h4><ul>
+<li>先书写大分区标签结构。</li>
+<li>填充每个分区的内部内容。</li>
+<li>如果有合并单元格内容，进行单元格合并。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>布局标签</title>
+    <url>/2022/08/5277673da78e/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="布局标签"><a href="#布局标签" class="headerlink" title="布局标签"></a>布局标签</h3><p>div和span标签常用作布局工具，我们俗称盒子，后期h5也增加了更多的布局标签。</p>
+<p>div和span都是没有具体明确的语义的。</p>
+<h4 id="div标签"><a href="#div标签" class="headerlink" title="div标签"></a>div标签</h4><ul>
+<li><strong>div</strong>：全称division，分隔、区域、跨度的意思。俗称大盒子。</li>
+<li>div是双标签，是最经典的容器级标签，内部可以放置任意内容。</li>
+<li>作用：多用于划分网页区域，进行结构布局。一般将相关的内容使用div包裹起来，整体设置大的布局效果。</li>
+</ul>
+<h4 id="span标签"><a href="#span标签" class="headerlink" title="span标签"></a>span标签</h4><ul>
+<li><strong>span</strong>：小区域、小跨度的意思。俗称小盒子。</li>
+<li>span也是双标签，容器级标签。</li>
+<li>作用：在不改变整体效果的情况下，可以辅助进行局部调整。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>列表</title>
     <url>/2022/08/512ac1494c66/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>列表用于制作HTML中的一系列项目。</p>
