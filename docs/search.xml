@@ -1,188 +1,827 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>互联网原理</title>
-    <url>/2022/08/47b2f661c6ea/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="互联网的运行过程"><a href="#互联网的运行过程" class="headerlink" title="互联网的运行过程"></a>互联网的运行过程</h3><p>开发人员将网页源文件上传到服务器进行存储，用户后期通过客户端（如浏览器软件）发送HTTP请求到服务器，服务器接收请求后进行响应，将存储的相关文件通过HTTP响应回传到用户本地客户端，最终通过客户端将网页文件进行渲染，显示出最终用户看到的网页效果。</p>
-<h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><ul>
-<li>服务器（server），就是一种特殊的计算机，也包括处理器、硬盘、内存、系统总线等，但是由于需要提供更可靠的服务，因此在处理能力、稳定性、可靠性、安全性等方面要求较高。</li>
-<li>作用：对于WEB来讲，用于存储开发人员上传的网页数据，且需要响应服务请求，并进行处理。</li>
-<li>要求：对于网站服务器来说，为了让用户随时进行访问，必须24小时不间断工作。</li>
-</ul>
-<h3 id="云服务器"><a href="#云服务器" class="headerlink" title="云服务器"></a>云服务器</h3><p>目前绝大多数网站都采用的是云服务器（Elastic Compute Service, ECS)，云服务器是一种简单高效、安全可靠、处理能力可弹性伸缩的计算服务。其管理方式比物理服务器更简单高效。用户无需提前购买硬件，即可迅速创建或释放任意多台云服务器。</p>
-<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><ul>
-<li>客户端（Client）也叫用户端，指的是普通用户使用的终端，客户端有多种形式，比如最常用的就是浏览器、app等，而web开发最主要的客户端形式还是浏览器。</li>
-<li>浏览器(Browser)，是一种用户上网搜索、查看信息资源的应用程序。</li>
-<li>功能：用于发送HTTP请求到服务器，接收服务器发回的HTTP响应，渲染HTML网页。</li>
-</ul>
-<h3 id="主流浏览器"><a href="#主流浏览器" class="headerlink" title="主流浏览器"></a>主流浏览器</h3><p>主流的Web页面浏览器有：微软的IE和Microsoft Edge、Mozilla的Firefox、苹果公司的Safari、Google的Chrome及Opera软件公司的Opera。</p>
-<h3 id="主流浏览器内核"><a href="#主流浏览器内核" class="headerlink" title="主流浏览器内核"></a>主流浏览器内核</h3><p>因为不同浏览器使用内核及所支持的HTML等网页语言标准不同，对网页的渲染效果会有差异。</p>
+    <title>display</title>
+    <url>/2022/08/153b3414d900/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>标准流中的元素有自己默认的浏览器加载模式，但是加载模式不是一成不变的，后期可以通过 display 属性更改一个标签的显示模式。 </p>
+<p>属性值：元素根据属性值不同，可以加载对应元素等级的显示模式的特点。</p>
 <table>
 <thead>
 <tr>
-<th align="center">浏览器</th>
-<th align="center">渲染引擎（内核）</th>
-<th align="center">说明</th>
+<th>属性值</th>
+<th>作用</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">IE/Edge</td>
-<td align="center">Trident</td>
-<td align="center">IE内核</td>
+<td>block</td>
+<td>表示元素要以块级元素模式加载，具备块级特点</td>
 </tr>
 <tr>
-<td align="center">FireFox</td>
-<td align="center">Gecko</td>
-<td align="center">Firefox内核</td>
+<td>inline</td>
+<td>表示元素要以行内元素模式加载，具备行内特点</td>
 </tr>
 <tr>
-<td align="center">Safari</td>
-<td align="center">Webkit</td>
-<td align="center"></td>
+<td>inline-block</td>
+<td>表示标签要以行内块模式加载，具备行内块特点</td>
 </tr>
 <tr>
-<td align="center">Chrome</td>
-<td align="center">Webkit→Blink</td>
-<td align="center">统称为Chromium内核或Chrome内核</td>
-</tr>
-<tr>
-<td align="center">Opera</td>
-<td align="center">Presto→Webkit→Blink</td>
-<td align="center"></td>
+<td>none</td>
+<td>表示标签及内部内容直接隐藏，让出原有标准流的位置</td>
 </tr>
 </tbody></table>
-<p>推荐：使用Chrome浏览器。（渲染效果好、市场占有率高、自带开发者调试工具）。</p>
-<h3 id="浏览器功能"><a href="#浏览器功能" class="headerlink" title="浏览器功能"></a>浏览器功能</h3><ul>
-<li>发送HTTP请求，发送的方式是在浏览器地址栏输入对应网址，或者点击超级链接。</li>
-<li>接收服务器发回的HTTP响应，服务器会发回一个HTML给浏览器。</li>
-<li>将接收到的HTML进行解析并显示。</li>
-</ul>
-<h3 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h3><p>Hypertext Transfer Protocol：超文本传输协议。是客户端浏览器或其他程序与WEB服务器之间的应用层通信协议。</p>
-<h4 id="HTTP请求"><a href="#HTTP请求" class="headerlink" title="HTTP请求"></a>HTTP请求</h4><ul>
-<li>request，浏览器根据网址向对应的服务器发送请求。</li>
-<li>发起请求的方法：在浏览器地址栏中输入网址，或者点击网址链接。</li>
-<li>HTML页面解析过程中，会发出多个http请求，包含网页的图片、视频、音频等文件请求。</li>
-</ul>
-<h4 id="HTTP响应"><a href="#HTTP响应" class="headerlink" title="HTTP响应"></a>HTTP响应</h4><ul>
-<li>response，服务器根据请求响应一个HTML文件，将HTML传输给客户端，在浏览器中进行HTML网页的渲染。</li>
-</ul>
+<p><strong>脱离标准流</strong></p>
+<p>display 属性更改的显示模式并没有改变标准流本质性质，页面还是只能从上往下加载，存在空白折叠现象等微观性质。要想实现更多的界面布局效果需要脱离标准流的限制。</p>
+<p>标签元素脱离标准流的方法包括：浮动、绝对定位、固定定位。 </p>
 ]]></content>
       <categories>
-        <category>前端基础</category>
+        <category>HTML</category>
+        <category>样式</category>
       </categories>
       <tags>
         <tag>技术</tag>
       </tags>
   </entry>
   <entry>
-    <title>纯文本格式</title>
-    <url>/2022/08/036c8e9a5c83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>纯文本格式，就是没有任何文本修饰的，没有任何粗体，下划线，斜体，图形，符号或特殊字符及特殊打印格式的文本，只保存文本，不保存其格式设置。</p>
-<h3 id="格式对比"><a href="#格式对比" class="headerlink" title="格式对比"></a>格式对比</h3><h4 id="纯文本格式"><a href="#纯文本格式" class="headerlink" title="纯文本格式"></a>纯文本格式</h4><ul>
-<li>最常见的是.txt文件。</li>
-<li>只能保存文本，不保存其他的格式或非文本内容。</li>
-<li>文件小，有利于网络传输。</li>
-<li>可以通过直接更改扩展名的方式更改保存格式。</li>
-<li>可以使用任意的纯文本编辑器进行查看和编辑。</li>
-<li>html、css、js文件都是纯文本格式文件。</li>
-</ul>
-<h4 id="富文本格式"><a href="#富文本格式" class="headerlink" title="富文本格式"></a>富文本格式</h4><ul>
-<li>最常见的是.rtf文件，类似.doc文件。</li>
-<li>内部可以保存文本的样式、图片等。</li>
-</ul>
+    <title>标准文档流</title>
+    <url>/2022/08/5b76ab03b4e8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在我们遇到的 HTML 元素中，有的标签元素如 div、p 等在浏览器中加载时必须独自占满一行，有的标签元素如 a 、span等则不会独占一行，原因是什么？</p>
+<h3 id="标准文档流"><a href="#标准文档流" class="headerlink" title="标准文档流"></a>标准文档流</h3><p>标准文档流，指的是元素排版布局过程中，元素会默认自动从左往右，从上往下的流式排列方式。前面内容发生了变化，后面的内容位置也会随着发生变化。</p>
+<p>HTML就是一种标准文档流文件。 </p>
+<p>HTML中的标准文档流特点通过两种方式体现：微观现象和元素等级。</p>
+<h4 id="微观现象"><a href="#微观现象" class="headerlink" title="微观现象"></a>微观现象</h4><p>空白折叠现象。</p>
+<p>文字类的元素如果排在一行会出现一种高低不齐、底边对齐效果。</p>
+<p>自动换行，元素内一行内容写满元素的 width 时会自动进行换行。</p>
+<h4 id="元素等级"><a href="#元素等级" class="headerlink" title="元素等级"></a>元素等级</h4><p>在标准流中，大部分元素是区分等级的，习惯将元素划分为几种常见的加载级别：块级元素、行内元素、行内块元素等。 </p>
+<p>块级元素：大部分容器级标签包括p标签都是块级元素，比如 div 、h1 等。</p>
+<p>行内元素：大部分的文本级标签，比如 span、a、b 等。</p>
+<p>行内块元素：比如 img、input 等。</p>
+<p>各种等级的元素有自己的加载特点。</p>
+<h4 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h4><p><strong>块级元素可以设置宽高，在浏览器中正常加载。</strong></p>
+<p><strong>块级元素必须独占一行，不能与其他任何标签并排一行。</strong></p>
+<p>块级元素如果不设置宽度，会自动撑满父级的 <code>width</code> 区域；高度不设置，会被内容自动撑开高度。</p>
+<h4 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h4><p><strong>行内元素不能正常加载宽度和高度属性，其他的盒模型属性虽然能设置，但是容易出现加载问题。</strong></p>
+<p><strong>行内元素可以与其他的行内或行内块元素并排一行显示。</strong></p>
+<p>行内元素不论是否设置宽高，宽度和高度都只能被内容自动撑开。</p>
+<h4 id="行内块元素"><a href="#行内块元素" class="headerlink" title="行内块元素"></a>行内块元素</h4><p><strong>行内块元素可以设置宽度和高度。</strong></p>
+<p><strong>行内块元素可以与其他的行内或行内块并排一行显示</strong>。</p>
+<p><strong>行内块元素如果不设置宽高，要么以原始尺寸加载要么被内容自动撑开。</strong></p>
+<p><strong>行内块依旧具有标准流的微观性质，例如空白折叠现象。</strong></p>
 ]]></content>
       <categories>
-        <category>前端基础</category>
+        <category>HTML</category>
+        <category>样式</category>
       </categories>
       <tags>
         <tag>技术</tag>
       </tags>
   </entry>
   <entry>
-    <title>网页的认识</title>
-    <url>/2022/08/6b01bb54f24e/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="网页的制作"><a href="#网页的制作" class="headerlink" title="网页的制作"></a>网页的制作</h3><ul>
-<li>HTML就是用来制作网页文件的。</li>
-<li>浏览器查看的网页都是.html或.htm文件。</li>
-<li>HTML叫做超文本标记语言(Hypertext Markup Language)，用于搭建网页的结构。</li>
+    <title>盒模型拓展</title>
+    <url>/2022/08/df54999b81ec/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>虽然我们了解了盒模型的五个属性的基本语法，但是在实际工作中还有更多的方法和技巧需要掌握，因此，我们需要扩展对盒模型的应用知识。</p>
+<h3 id="清除默认样式"><a href="#清除默认样式" class="headerlink" title="清除默认样式"></a>清除默认样式</h3><p>大部分标签都有一个浏览器加载的默认样式，会对布局造成一些影响。为了避免默认样式对整体布局效果造成影响，一定要清除默认样式。</p>
+<p>盒模型属性中内外边距：大部分容器级标签都有默认边距，要么用标签选择器的并集方式，要么通配符清除。</p>
+<p>ul 和 ol 两种列表有默认的列表前缀：清除 list-style 属性。 </p>
+<p>a 标签的默认样式，顺带设置页面中常用的a的公共样式：设置 color 和 text-decoration。</p>
+<p>清除默认加粗效果：设置font-weight。</p>
+<p>还可以给 body 标签设置整体文字样式，让大部分后代标签全部去继承。</p>
+<h3 id="高度-height-应用"><a href="#高度-height-应用" class="headerlink" title="高度 height 应用"></a>高度 height 应用</h3><p>根据不同的需求，高度属性可以设置也可以不设置。</p>
+<p>如果设置了高度：盒子占有的高度位置就确定死了，后面的同级元素会紧挨着加载。</p>
+<p>如果不设置高度：会根据标签内部内容高度自动撑开。</p>
+<p>以 div 标签为例，根据情况不同选择是否设置高度</p>
+<p><strong>必须设置高度</strong></p>
+<p>设计图中盒子高度占位是固定的，后面同级元素在高度下面加载。</p>
+<p>自身盒子内部内容过多会溢出盒子区域。</p>
+<p><strong>overflow 属性</strong></p>
+<p>设置了高度的盒子，如果内部元素的加载高度超过父级，会出现溢出效果。</p>
+<p>可以通过一个溢出的属性 overflow，进行溢出部分内容的显示效果设置。</p>
+<p><strong>必须不设置高度</strong></p>
+<p>要求盒子高度必须自适应内部内容的高度。</p>
+<p>或者设置height的属性值是自动的。</p>
+<h3 id="居中"><a href="#居中" class="headerlink" title="居中"></a>居中</h3><p>在网页中经常见到元素或者文字居中的效果。</p>
+<p><strong>文本水平居中</strong></p>
+<p>水平居中：text-align属性。</p>
+<p>不论单行或多行都可以设置。</p>
+<p><strong>文本垂直居中</strong></p>
+<p>单行文本垂直居中：让文字行高 line-height 等于盒子高度 height。</p>
+<p>多行文本垂直居中：让元素高度自适应或者正好等于多行文字的高度，设置元素内边距上下值相同。</p>
+<p><strong>元素垂直居中</strong></p>
+<p>个元素内部嵌套的子元素，在父元素中居中。</p>
+<p>垂直居中：与多行文字类似，让父元素高度自适应，子元素高度自动撑开父级的高度，再给父元素设置相同的上下边距。 </p>
+<p><strong>元素水平居中</strong></p>
+<p>针对类似 div 样式上必须独占一行的盒子，如果<strong>子盒子宽度低于父盒子宽度</strong>，可以设置子盒子的 margin 值，水平方向的值都设置为 auto。</p>
+<p>原因：auto 只在水平方向有作用，水平方向的 margin 如果设置为 auto，边距会自动无限增大，直到撑满整个父元素除了子元素宽度之外剩余的区域，如果两个水平方向都是 auto，两边都要无限大，只能达到一个平衡，两边距离相同，导致盒子居中。</p>
+<h3 id="父子盒模型"><a href="#父子盒模型" class="headerlink" title="父子盒模型"></a>父子盒模型</h3><p>一般情况下，一个父元素内部可以放一个或多个子元素，而且多个子元素要排成一行显示，必须保证父元素的宽度一定要足够（不考虑溢出情况），需要遵循一个设置尺寸的规律：所有子元素的宽度加在一起不能大于父元素的宽度 width。</p>
+<p>父元素的width ≥ 所有子元素width + padding + border + margin 如果不满足条件：要么多余的子元素掉下来不能在一排，要么溢出父元素</p>
+<p>特殊情况：盒模型自动内减</p>
+<ul>
+<li>父子盒模型中，只有一个子元素，且子元素是类似 div 标签必须占一行的。</li>
+<li>不设置子元素的 width 属性，子元素的 width 属性值会自动加载父级元素的 width。</li>
+<li>如果同时设置了子元素水平方向的 padding 和 border 、margin，不需要手动去进行内减，子元素的 width 会自动收缩尺寸。子元素所有的水平方向的位置所有属性的加和等于父元素的 width 。</li>
 </ul>
-<h3 id="网页的组成"><a href="#网页的组成" class="headerlink" title="网页的组成"></a>网页的组成</h3><ul>
-<li>前端三层：HTML(结构层)、CSS(样式层)、JavaScript(行为层)。</li>
-<li>其他多媒体内容：图片、视频、音频、超级链接等。</li>
-<li>所有的网页文件都是真实的、物理存在的文件。</li>
-</ul>
+<h3 id="margin-塌陷现象"><a href="#margin-塌陷现象" class="headerlink" title="margin 塌陷现象"></a>margin 塌陷现象</h3><p>在垂直方向如果有两个元素的外边距有相遇的，浏览器中加载的真正的外边距不是两个间距的加和，而是两个边距中值较大的，边距值小的塌陷到了边距值大的值内部。</p>
+<p><strong>同级元素塌陷</strong></p>
+<p>上面的元素有下边距，下面的元素有上边距，两个边距相遇，真正的盒子间距离是较大的那个值。</p>
+<p><strong>父子元素塌陷</strong></p>
+<p>父子元素之间也会出现 margin 塌陷，父元素和子元素都设置了同方向的 margin-top 值，两个属性之间没有其他的内容进行隔离，导致两个属性相遇，发生 margin 塌陷。</p>
+<p>本身父元素与上一个元素的距离是0，子元素如果设置了垂直方向的上边距，会带着父级一起掉下来。</p>
+<p><strong>解决 margin 塌陷问题的方法</strong> </p>
+<p>同级元素：如果两个元素垂直方向有间距，只需要设置给一个元素，不要进行拆分。 </p>
+<p>父子元素：让两个边距不要相遇，中间可以使用父元素 border 或 padding 将边距分隔开；更加常用的方法，父子盒模型之间的距离就不要用儿子的 margin 去踹出来，而是父级的 padding 挤出来。</p>
+<p><strong>另外注意：水平方向的 margin 没有塌陷现象。</strong></p>
 ]]></content>
       <categories>
-        <category>前端基础</category>
+        <category>HTML</category>
+        <category>样式</category>
       </categories>
       <tags>
         <tag>技术</tag>
       </tags>
   </entry>
   <entry>
-    <title>CSS概述</title>
-    <url>/2022/08/b98f9c4f4f02/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="产生背景"><a href="#产生背景" class="headerlink" title="产生背景"></a>产生背景</h3><p>从HTML被发明开始，样式就以各种形式存在，最初的HTML只包含很少的显示属性。</p>
-<p>随着HTML的成长，为了满足页面设计者的要求，HTML添加了很多显示功能，例如文本格式化标签。</p>
-<p>但是随着这些功能的增加，HTML变的越来越杂乱，而且HTML页面也越来越臃肿。</p>
-<p>于是CSS便诞生了。</p>
-<h3 id="发展过程"><a href="#发展过程" class="headerlink" title="发展过程"></a>发展过程</h3><table>
+    <title>盒模型</title>
+    <url>/2022/08/219c6c84b2aa/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>盒模型又叫框模型，包含了五个用来描述盒子位置、尺寸的属性，分别是宽度 width、高度 height、内边距 padding、 边框 border、外边距 margin。</p>
+<h3 id="常见盒模型区域"><a href="#常见盒模型区域" class="headerlink" title="常见盒模型区域"></a>常见盒模型区域</h3><ul>
+<li>盒模型的属性中，根据不同属性的效果，可以划分区域：</li>
+<li>书写元素内容区域：width+height</li>
+<li>盒子可以实体化的区域：width+height+padding+border </li>
+<li>盒子实际占位的位置：width+height+padding+border+margin</li>
+</ul>
+<h3 id="盒模型图"><a href="#盒模型图" class="headerlink" title="盒模型图"></a>盒模型图</h3><p>学习过程中，学会查看浏览器控制台中的盒模型图：</p>
+<p><img src="https://pic.imgdb.cn/item/616d17732ab3f51d91a045af.png"></p>
+<h3 id="宽度-width"><a href="#宽度-width" class="headerlink" title="宽度 width"></a>宽度 width</h3><p>作用：设置可以添加元素内容的区域的宽度。 </p>
+<p>属性值</p>
+<table>
 <thead>
 <tr>
-<th>版本</th>
+<th>属性值</th>
 <th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>CSS1</td>
-<td>1995年12月，层叠样式表的第一份正式标准（Cascading style Sheets Level 1）完成，成为 w3c 的推荐标准。</td>
+<td>auto</td>
+<td>默认值。浏览器可计算出实际的宽度。</td>
 </tr>
 <tr>
-<td>CSS2</td>
-<td>1997年初，W3C 组织负责 CSS 的工作组开始讨论第一版中没有涉及到的问题。其讨论结果组成了1998年5月出版的 CSS 规范第二版。</td>
+<td>px</td>
+<td>像素值定义的宽度。</td>
 </tr>
 <tr>
-<td>CSS3</td>
-<td>CSS3 是 CSS 层叠样式表技术的升级版本，于1999年开始制订，2001年5月23日 W3C 完成了 CSS3 的工作草案，主要包括盒子模型、列表模块、超链接方式、语言模块、背景和边框、文字特效、多栏布局等模块 。</td>
+<td>%</td>
+<td>定义参考父元素宽度width的百分比宽度。</td>
 </tr>
 </tbody></table>
-<h3 id="CSS-概念"><a href="#CSS-概念" class="headerlink" title="CSS 概念"></a>CSS 概念</h3><p>css 全称 cascading style sheets，层叠式样式表，是一种用来表现 HTML 的文件样式的计算机语言。</p>
-<p>作用：静态地修饰网页，并且可以配合各种脚本语言动态地对网页各元素进行格式化。</p>
-<p>CSS 的出现，实现了网页的结构和样式分离，拯救了混乱的 HTML，更加拯救了我们 web 开发者。</p>
-<p>CSS 可以说是网页的美容师， 让我们的网页更加美观。</p>
-<h3 id="前端三层技术"><a href="#前端三层技术" class="headerlink" title="前端三层技术"></a>前端三层技术</h3><p><strong>html</strong></p>
+<h4 id="特殊应用"><a href="#特殊应用" class="headerlink" title="特殊应用"></a>特殊应用</h4><p>如果一个元素不添加width 属性，默认属性值为auto，不同的元素浏览器会根据其特点自动计算出实际宽度，例如div 元素等独占一行的，其 width 属性的值会自动撑满父元素的 width 区域，如果是span 元素等不需要独占一行的，其 width 属性的值是内部元素内容自动撑开的宽度。</p>
+<p>body 元素比较特殊，不需要设置 width 属性，宽度会自动适应浏览器窗口的宽度。</p>
+<h3 id="高度-height"><a href="#高度-height" class="headerlink" title="高度 height"></a>高度 height</h3><p>作用：设置可以添加元素内容的区域的高度。 </p>
+<p>属性值</p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>auto</td>
+<td>默认。浏览器会计算出实际的高度。</td>
+</tr>
+<tr>
+<td>px</td>
+<td>像素值定义的而高度。</td>
+</tr>
+<tr>
+<td>%</td>
+<td>定义参考父元素高度height的百分比高度。</td>
+</tr>
+</tbody></table>
+<h3 id="特殊应用-1"><a href="#特殊应用-1" class="headerlink" title="特殊应用"></a>特殊应用</h3><p>如果一个元素不添加 height 属性，默认属性值为auto，浏览器会自动计算出实际高度，也就是是内部元素内容自动撑开的高度。元素的高度自适应内部内容的高度。</p>
+<h3 id="内边距-padding"><a href="#内边距-padding" class="headerlink" title="内边距 padding"></a>内边距 padding</h3><p>作用：设置的是元素的边框内部到宽高区域之间的距离。</p>
+<p>特点：可以去加载背景，不能书写嵌套的内容。 </p>
+<p>属性值：常用px为单位的数值。</p>
+<p>padding 是一个复合属性，可以根据内边距的方向不同划分为四个方向的单一属性。</p>
+<p>单一属性：书写四个方向单一属性时，一般是按照顺时针规律书写：上、右、下、左。</p>
+<h4 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h4><p>有时为了简化书写，一般习惯将四个方向的单一属性进行合写成 padding 属性。</p>
+<p>padding 属性值：可以有 1-4 个值，值之间用空格进行分隔。</p>
+<p>根据四个方向属性值不同，padding 有多种值的书写表示方法。</p>
+<p>根据 padding 的属性值的个数不同，区分了四种表示法</p>
 <ul>
-<li>结构层</li>
-<li>从语义的角度搭建网页结构</li>
+<li>四值法：设置四个属性值，分配方向上、右、下、左。</li>
+<li>三值法：设置三个值分配给上、左右、下。</li>
+<li>二值法：设置两个值，分配给上下、左右。</li>
+<li>单值法：设置属性值只有一个，分配方向上右下左，四边的值相同。</li>
 </ul>
-<p><strong>css</strong></p>
+<h3 id="边框-border"><a href="#边框-border" class="headerlink" title="边框 border"></a>边框 border</h3><p>作用：设置的是内边距外面的边界区域，作为盒子的实体化的最外层。 </p>
+<p>属性值：由三个值组成，分为线的宽度、线的形状、线的颜色 。</p>
+<p>border 属性是一个复合属性，根据划分依据不同可以有两种单一属性的划分方式。</p>
+<p>按照属性值的类型划分</p>
 <ul>
-<li>样式层</li>
-<li>从美观的角度描述页面样式</li>
+<li>线宽：border-width </li>
+<li>线型：border-style </li>
+<li>颜色：border-color</li>
 </ul>
-<p><strong>JavaScript</strong></p>
+<h3 id="线宽-border-width"><a href="#线宽-border-width" class="headerlink" title="线宽 border-width"></a>线宽 border-width</h3><p>作用：设置边框线的宽度。</p>
+<p>属性值：常用px形式的数值，四个方向都有边框，属性值类似于 padding，也有四种值的写法。</p>
+<h3 id="线型-border-style"><a href="#线型-border-style" class="headerlink" title="线型 border-style"></a>线型 border-style</h3><p>作用：设置边框的线条形状。</p>
+<p>属性值：形状的单词，总体也是类似 padding 的综合属性写法。</p>
+<p>属性值的单词可能性</p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>定义无边框。</td>
+</tr>
+<tr>
+<td>solid</td>
+<td>定义实线。</td>
+</tr>
+<tr>
+<td>dashed</td>
+<td>定义虚线。在大多数浏览器中呈现为实线。</td>
+</tr>
+<tr>
+<td>dotted</td>
+<td>定义点状边框。在大多数浏览器中呈现为实线。</td>
+</tr>
+<tr>
+<td>double</td>
+<td>定义双线。双线的宽度等于border-width的值。</td>
+</tr>
+<tr>
+<td>groove</td>
+<td>定义3D凹槽边框。其效果取决于border-color的值。</td>
+</tr>
+<tr>
+<td>ridge</td>
+<td>定义3D垄状边框。其效果取决于border-color的值。</td>
+</tr>
+<tr>
+<td>inset</td>
+<td>定义3D内容凹陷效果。其效果取决于border-color的值。</td>
+</tr>
+<tr>
+<td>outset</td>
+<td>定义3D内容凸出效果。其效果取决于border-color的值。</td>
+</tr>
+</tbody></table>
+<h3 id="边框颜色-border-color"><a href="#边框颜色-border-color" class="headerlink" title="边框颜色 border-color"></a>边框颜色 border-color</h3><p>作用：设置边框的颜色。</p>
+<p>属性值：颜色名或颜色值，整体类似 padding 综合属性写法。</p>
+<p>根据边框的方向划分</p>
 <ul>
-<li>行为层</li>
-<li>从交互的角度描述页面行为</li>
+<li>上边框：border-top</li>
+<li>右边框：border-right</li>
+<li>下边框：border-bottom</li>
+<li>左边框：border-left</li>
+<li>每个单一属性都必须与复合属性 border 一致，设置三个属性值。</li>
 </ul>
-<h3 id="CSS-的组成"><a href="#CSS-的组成" class="headerlink" title="CSS 的组成"></a>CSS 的组成</h3><p>层叠式：css 中贯穿始终的加载特性</p>
+<p>根据方向和类型，进一步细分</p>
 <ul>
-<li>层叠性</li>
-<li>继承性</li>
+<li>类似 border-top 的单一方向属性，也可以根据属性值类型继续进行单一属性划分。</li>
+<li>单一属性写法：border-方向-类型。</li>
+<li>注意：细分时必须先写方向划分再写类型划分，否则属性名错误。</li>
 </ul>
-<p>样式：定义如何显示 HTML 元素</p>
+<h3 id="外边距-margin"><a href="#外边距-margin" class="headerlink" title="外边距 margin"></a>外边距 margin</h3><p>作用：设置的是盒子与盒子之间的距离。</p>
+<p>特点：不能渲染背景。 </p>
+<p>属性值：常用 px 为单位的数值。</p>
+<p>外边距的设置方式与内边距 padding 一模一样的。</p>
+<p>单一属性</p>
 <ul>
-<li>文字文本</li>
-<li>背景</li>
-<li>盒模型</li>
-<li>浮动</li>
-<li>定位</li>
-<li>其他</li>
+<li>margin‐top: 20px;</li>
+<li>margin‐right: 20px;</li>
+<li>margin‐left: 20px;</li>
+<li>margin‐bottom: 10px;</li>
+</ul>
+<p>复合属性的四种值的写法</p>
+<ul>
+<li>margin: 10px 20px 30px 40px;</li>
+<li>margin: 10px 20px 30px;</li>
+<li>margin: 10px 20px;</li>
+<li>margin: 10px;</li>
 </ul>
 ]]></content>
       <categories>
         <category>HTML</category>
-        <category>基础</category>
+        <category>样式</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>text-indent</title>
+    <url>/2022/08/f260b9b3a9c5/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>作用：设置段落首行是否进行缩进。</p>
+<p>属性值</p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>px单位</td>
+<td>表示首行缩进多少像素</td>
+</tr>
+<tr>
+<td>em单位</td>
+<td>首行缩进几个中文字符的位置</td>
+</tr>
+<tr>
+<td>百分比</td>
+<td>表示缩进文字所在标签的父级标签的width属性值的百分比</td>
+</tr>
+</tbody></table>
+<p>实际工作中，最常使用 em 为单位的属性值。</p>
+<p>属性值区分正负，正数表示向右缩进，负数表示向左缩进。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>样式</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>text-decoration</title>
+    <url>/2022/08/61bf94979796/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>作用：设置文本整体是否有线条的修饰效果。</p>
+<p>属性值</p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>没有修饰，大部分标签的默认值</td>
+</tr>
+<tr>
+<td>overline</td>
+<td>上划线</td>
+</tr>
+<tr>
+<td>line-through</td>
+<td>中划线，删除线，del标签的默认值</td>
+</tr>
+<tr>
+<td>underline</td>
+<td>下划线，a标签的默认值</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>样式</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>text-align</title>
+    <url>/2022/08/c0d057d115ba/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>作用：设置文本水平方向的对齐。</p>
+<p>在盒子中，不论文本是单行还是多行，都会对应方向对齐。</p>
+<p>属性值：三个方向的单词 </p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>left</td>
+<td>居左对齐，大部分标签的默认值</td>
+</tr>
+<tr>
+<td>center</td>
+<td>居中对齐</td>
+</tr>
+<tr>
+<td>right</td>
+<td>居右对齐</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>样式</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>font</title>
+    <url>/2022/08/cc77d4a22db0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>字体、字号、行高、加粗、斜体都是font综合属性的单一属性。 </p>
+<p>font属性五个单一属性的值可以进行合写，属性值可以有2到多个，值之间用空格进行分隔。</p>
+<p><strong>写法</strong></p>
+<p>font进行综合书写时，<strong>必须有字号和字体参与</strong>，而且必须字号在前，字体在后，不能颠倒顺序。</p>
+<p>font属性经常对字体、字号、行高进行合写，书写顺序必须是字号、行高、字体，<strong>字号和行高之间必须用/进行分隔</strong>。</p>
+<p>如果font属性需要设置加粗和斜体，两个属性值只能写在最前面，两个值之间可以互换位置。后面的<strong>字号、行高、字体不能更改位置</strong>。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>样式</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>line-height</title>
+    <url>/2022/08/6d83ffb437a9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>作用：设置的是一行文字实际占有的高度，文字字号在行高中是垂直居中的。</p>
+<p>属性名：line-height，属于 font 属性的一个单一属性。</p>
+<p>属性值</p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>px像素值</td>
+<td>设置的行高的具体像素值</td>
+</tr>
+<tr>
+<td>百分比数值</td>
+<td>设置的本身字号像素值的百分比</td>
+</tr>
+</tbody></table>
+<p>实际应用中，行高的数值通过设计图获取，量取数值时需要使用一些辅助软件工具。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>样式</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>font-style</title>
+    <url>/2022/08/ff771ef68fab/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>作用：设置文字是否斜体显示。</p>
+<p>属性名：font-style，属于font属性的一个单一属性。</p>
+<p>属性值：单词。</p>
+<p>属性值</p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal</td>
+<td>设置正规的字体，大多数标签的默认值</td>
+</tr>
+<tr>
+<td>italic</td>
+<td>设置斜体的字体，主要针对英文，要求英文以字体中的斜体样式显示</td>
+</tr>
+<tr>
+<td>oblique</td>
+<td>设置倾斜的文字，只是将文字倾斜显示，与字体无关</td>
+</tr>
+</tbody></table>
+<p>实际应用中，更多的斜体效果习惯使用italic属性值。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>样式</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>font-weight</title>
+    <url>/2022/08/ee918e35cacc/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>作用：设置文字是否加粗显示。</p>
+<p>属性名：font-weight，属于 font 属性的一个单一属性。</p>
+<p>属性值有两种方式：单词类型、数字类型。</p>
+<p>单词类型</p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal</td>
+<td>默认值，定义标准的字体</td>
+</tr>
+<tr>
+<td>bold</td>
+<td>定义粗体字符，b、strong标签的默认值</td>
+</tr>
+<tr>
+<td>bolder</td>
+<td>定义更粗的字体</td>
+</tr>
+<tr>
+<td>lighter</td>
+<td>定义更细的字体</td>
+</tr>
+</tbody></table>
+<p><strong>数字类型</strong></p>
+<p>100-900 之间的整百数字。</p>
+<p>数字越大，文字显示越粗。</p>
+<p>其中 400 等价于 normal，700 等价于 bold。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>样式</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS层叠式</title>
+    <url>/2022/08/3c25b60647d2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>CSS 的概念中，除了前面提到的样式外，还有一个重要的概念就是层叠式，层叠式是贯穿整个css的一个性质，包含继承性和层叠性。 </p>
+<h3 id="继承性"><a href="#继承性" class="headerlink" title="继承性"></a>继承性</h3><p>如果一个标签没有设置过一些样式，它的某个祖先级曾经设置过，在浏览器中该标签也加载了这些样式，这些样式都是从祖先级继承而来，这种现象就是继承性。</p>
+<p>能够被继承的样式是所有的<strong>文字相关样式属性</strong>，其他的属性都不能被继承。</p>
+<p>继承性是一个很好的性质，可以将页面中出现最多的文字样式设置给一个较大的祖先级标签比如 body，后期所有的后代标签都可以从 body进行继承。</p>
+<h3 id="层叠性"><a href="#层叠性" class="headerlink" title="层叠性"></a>层叠性</h3><p>思考问题：同一个标签可以被多个选择器选中，如果选择器后面设置了相同的样式属性，标签最终该加载哪个？或者，在继承性中，如果多个祖先都设置了相同的文字样式，后代中该继承哪个祖先级的？</p>
+<p>解决方法：就是使用层叠性去解决冲突。多个选择器在进行对比的过程中，最终只有一个属性会成功加载，它会层叠、覆盖掉其他的属性。</p>
+<p>判断最终胜出的属性是谁，需要依赖判断<strong>优先级</strong>。</p>
+<h4 id="判断方法"><a href="#判断方法" class="headerlink" title="判断方法"></a>判断方法</h4><p><strong>选中目标标签</strong></p>
+<ul>
+<li><strong>第一步：比较多个选择器的权重，权重高的层叠权重低的。</strong></li>
+<li>基础选择器的权重：根据选择范围，范围越大权重越小，* &lt; 标签选择器 &lt; 类选择器 &lt; id 选择器。</li>
+<li>高级选择器权重比较方法：依次比较组成高级选择器的 id 的个数，类的个数，标签的个数，如果前面能够比较出大小就不再比较后面，如果前面相等就往后比较，直到比较出大小。</li>
+<li>比较顺序：( id 个数, 类的个数, 标签的个数 ) </li>
+<li><strong>第二步：如果选择器权重都相同，需要比较 CSS 中代码的书写顺序，后写的层叠先写的。</strong></li>
+</ul>
+<p><strong>选中目标标签的组先级</strong></p>
+<ul>
+<li>如果选择器选中的是祖先元素，文字的样式可以被继承。</li>
+<li>第一步：比较就近原则，比较选择器选中的祖先级在 HTML 结构中距离目标标签的远近，近的层叠远的。</li>
+<li>第二步：如果选中的祖先级距离目标一样近（同一个祖先级），比较选择器权重，权重大的层叠小的。</li>
+<li>第三步：如果距离一样近，权重也相同，最后比较 CSS 中的书写顺序，后面的层叠前面的。</li>
+</ul>
+<p><strong>!important 关键字</strong></p>
+<ul>
+<li>如果在比较选择器权重的过程中，遇见一个 !important 关键字，可以将某条 CSS 样式属性的权重提升到最大。 </li>
+<li>书写位置：在某个css属性的属性值后面空格加 !important 。</li>
+<li>注意：<ul>
+<li>就近原则中，不需要比较选择器权重，所有 important 会失效。</li>
+<li>important 不能提升选择器的权重，只能提升某条属性的权重到最大。</li>
+</ul>
+</li>
+</ul>
+<p><strong>行内式权重</strong></p>
+<ul>
+<li> 行内式样式与内嵌式或外链式样式比较权重时，行内式的权重最高。</li>
+<li> 但是，与 <code>!important</code> 关键字相比权重要低。</li>
+</ul>
+<p><strong>总结</strong><img src="https://pic.imgdb.cn/item/616581512ab3f51d91348fd8.png"></p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>语法</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>高级选择器</title>
+    <url>/2022/08/addd58661361/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>由于基础选择器不能实现所有选择情况，后期在基础选择器的基础上衍生出了几种高级选择器。高级选择器的组成部分是基础选择器。</p>
+<h3 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h3><p>通过标签之间存的嵌套关系（族谱关系）去选择元素，基本组成部分就是基础选择器。</p>
+<p>后代选择器也叫包含选择器。</p>
+<p>书写方式：空格表示后代，基础选择器中间使用空格分隔，空格前面的选择器选中的标签必须是后面选择器选中标签的祖先级。 </p>
+<p>选择范围：通过后代选择器中前面的一系列基础选择器缩小选择范围，最终由最后一个选择器确定选中的标签。</p>
+<p>注意：后代选择器必须满足所有的后代关系才能够被选中，后代关系不一定只能是父子关系。</p>
+<p>优点：减少 class 属性的定义使用，选择效率更高。</p>
+<h3 id="交集选择器"><a href="#交集选择器" class="headerlink" title="交集选择器"></a>交集选择器</h3><p>通过一个标签之上满足所有的基础选择器的需求去选择标签。</p>
+<p>书写方式：基础选择器进行连续书写，如果有标签选择器参与交集，必须书写在开头。</p>
+<p>选择范围：选择的是满足所有基础选择器需求的标签，如果一个条件不满足都不能被选中。</p>
+<p>比较常见的是标签与类的交集。</p>
+<h4 id="更多写法"><a href="#更多写法" class="headerlink" title="更多写法"></a>更多写法</h4><p>交集选择器可以进行类名的连续交集，需要满足更多的条件才能选中标签。</p>
+<p>IE6 不支持类名连续交集写法。</p>
+<p>交集选择器可以作为其他高级选择器的组成部分。</p>
+<h3 id="并集选择器"><a href="#并集选择器" class="headerlink" title="并集选择器"></a>并集选择器</h3><p>不同选择器选中的元素都要设置相同的样式，多次书写相同的样式属性对代码造成浪费，可以将前面六种选择器可以进行并集书写，相当于一种简化写法。</p>
+<p>书写方式：将多个选择器中间用逗号进行分隔，最后一个后面不能加逗号。</p>
+<p>选择范围：是所有的单独选择器选中的标签的并集集合。</p>
+<h4 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h4><p>如果多个标签具有公共样式，但是不能用一个选择器选中，可以使用并集写法。</p>
+<p>可以使用标签选择器的并集写法，进行默认样式的清除，替换通配符的功能。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>选择器</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基础选择器</title>
+    <url>/2022/08/14363d7c18da/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="id-选择器"><a href="#id-选择器" class="headerlink" title="id 选择器"></a>id 选择器</h3><p>通过标签上的 id 属性去选择标签。</p>
+<p>书写方式：#id 属性值 </p>
+<p>选择范围：只能选中一个标签。</p>
+<p>id 命名规则：必须以字母开头，后面可以有字母、数字、下划线、横线，严格区分大小写。每个 id 属性值必须是唯一的，不能与其他的 id 同名。</p>
+<p>注意：如果希望多个标签设置相同的样式，使用id选择器的话，必须给这多个标签取不同的 id 名，分别选中设置。</p>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><p>缺点：id 选择器只能实现单选，不能帮我们完成多选的功能。</p>
+<h3 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h3><p>通过标签的 class 属性去选择标签。</p>
+<p>书写方式：.class属性值。</p>
+<p>选择范围：是页面中所有 class 属性值相同的标签。 </p>
+<p>class 命名规则：必须以字母开头，后面可以有字母、数字、下划线、横线，严格区分大小写。class 属性值可以与其他的class相同。</p>
+<h4 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h4><p>多个不同的标签，不区分标签类型，只要 class 属性值相同，都可以被同一个类选择器选中。</p>
+<p>一个标签的 class 属性可以有多个属性值，值之间用空格分隔，每个属性值组成的选择器，都可以选中这一个标签，每个选择器后面的样式都会添加给同一个标签。 </p>
+<p><strong>特殊应用</strong></p>
+<p>原子类：在css中提前设置一些类名，每个类选择器后面只添加一条css样式属性，这些属性会在页面中常被使用，后期可以不需要多次书写属性，只要将对应的类名添加给需要的标签即可。</p>
+<p><strong>优点</strong></p>
+<p>通过一个类选择器进行多选，选中多个标签，添加公共样式。</p>
+<p>个标签可以被多个类选择器选中，可以将所有样式进行分离，分别提取公共样式和单独样式，节省代码量。</p>
+<p>实际工作中，通常我们有一个使用规律：类上样式(CSS)，id 上行为(JavaScript)。</p>
+<h3 id="通配符选择器"><a href="#通配符选择器" class="headerlink" title="通配符选择器"></a>通配符选择器</h3><p>通过一个特殊符号选择页面内所有的标签。</p>
+<p>书写方式：* </p>
+<p>选择范围：包含 html标签在内的所有标签。</p>
+<h4 id="特点和应用"><a href="#特点和应用" class="headerlink" title="特点和应用"></a>特点和应用</h4><p>优点：可以实现全选，简化书写。</p>
+<p>缺点：通配符选择效率低，设置的部分公共样式不是所有标签都需要添加，如果使用通配符选择，会让不需要的标签也加载一次样式，导致浏览器多做无用的工作。</p>
+<p>注意：实际上线的网站不允许使用 * 去清除默认内外边距。</p>
+<p>不过普通的案例，代码量较少时，为了节省书写，可以使用通配符。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>选择器</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>标签选择器</title>
+    <url>/2022/08/aae1eb06d820/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>通过标签名去选择标签元素。</p>
+<p>书写方式：标签名。 </p>
+<p>选择范围：选中的是HTML文件中所有的同名标签。</p>
+<p>注意：标签选择器可以选择所有的同名标签，会忽视 HTML 元素的嵌套关系，不管嵌套多深，都能被选中。</p>
+<p>优点：可以选中所有的同名标签，设置所有同名标签的公共样式。</p>
+<p>缺点：只能实现全选，不能对局部的标签添加特殊样式。 </p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>选择器</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>选择器概念</title>
+    <url>/2022/08/9b754f2a69c0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在内嵌式和外部css中，要想将 CSS 样式应用于特定的 HTML 元素，首先需要找到该目标元素，这时需要用到 CSS 中的选择器。 </p>
+<p>选择器：选择要添加样式的 HTML 标签的一种方法、模式。 </p>
+<p>css2.1 版本的七种选择器</p>
+<p>基础选择器：标签选择器、id 选择器、类选择器、通配符选择器。</p>
+<p>高级选择器：后代选择器、交集选择器、并集选择器。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>选择器</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实体化属性</title>
+    <url>/2022/08/72e487ce5fc9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>如果想在浏览器中具体看到一个盒子占有的实际位置，需要设置盒子可以实体化的三属性。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>width</td>
+<td>px单位的数值</td>
+<td>定义元素占有的宽度</td>
+</tr>
+<tr>
+<td>height</td>
+<td>px单位的数值</td>
+<td>定义元素占有的高度</td>
+</tr>
+<tr>
+<td>background-color</td>
+<td>颜色名、颜色值</td>
+<td>定义元素的背景颜色</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>语法</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>font-size</title>
+    <url>/2022/08/34803298320c/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>作用：设置文字的大小。</p>
+<p>属性名 k ：font-size，字号属于 font 综合属性的一个单一属性。 </p>
+<p>属性值 v ：可以使用相对长度单位，也可以使用绝对长度单位。推荐使用相对长度单位。</p>
+<h3 id="单位"><a href="#单位" class="headerlink" title="单位"></a>单位</h3><table>
+<thead>
+<tr>
+<th>相对长度单位</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>px</td>
+<td>像素值，最常使用的单位</td>
+</tr>
+<tr>
+<td>em</td>
+<td>倍数，继承自祖先元素设置的字号的倍数</td>
+</tr>
+<tr>
+<td>%</td>
+<td>百分比，继承自祖先元素设置的字号的百分比</td>
+</tr>
+<tr>
+<td><strong>绝对长度单位</strong></td>
+<td><strong>说明</strong></td>
+</tr>
+<tr>
+<td>in</td>
+<td>英寸</td>
+</tr>
+<tr>
+<td>cm</td>
+<td>厘米</td>
+</tr>
+<tr>
+<td>mm</td>
+<td>毫米</td>
+</tr>
+<tr>
+<td>pt</td>
+<td>点</td>
+</tr>
+</tbody></table>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>如果 HTML 中不设置字号，不同的浏览器有自己默认的加载字号，比如 chrome、IE，默认显示字号为 16px。</p>
+<p>不同的浏览器也有自己最小加载显示字号，如果设置的字号低于最小字号，都以最小字号加载，0除外。chrome 浏览器最小加载显示字号为8px，IE 浏览器最小可以支持1px的字号。</p>
+<h4 id="实际应用"><a href="#实际应用" class="headerlink" title="实际应用"></a>实际应用</h4><p>网页中最小设置字号必须是12px，如果低于12px会出现兼容问题。现在网页中普遍使用14px+。</p>
+<p>尽量使用12px、14px、16px等偶数的数字字号，ie6 等老式浏览器支持奇数会有 bug。</p>
+<p>实际工作中的字号，需要以设计图为准。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>样式</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>font-family</title>
+    <url>/2022/08/814842f7f206/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>作用：定义元素内文字的字体。</p>
+<p>属性名 k ：font-family，字体属于 font 综合属性的一个单一属性。</p>
+<p>属性值 v ：字体名称，必须包裹在一对引号中，属性值可以有多个，值之间用逗号分隔。</p>
+<h3 id="常用字体"><a href="#常用字体" class="headerlink" title="常用字体"></a>常用字体</h3><h4 id="常用的中文字体"><a href="#常用的中文字体" class="headerlink" title="常用的中文字体"></a>常用的中文字体</h4><p>宋体 SimSun</p>
+<p>微软雅黑 Microsoft Yahei </p>
+<h4 id="常用的英文字体"><a href="#常用的英文字体" class="headerlink" title="常用的英文字体"></a>常用的英文字体</h4><p>Arial</p>
+<p>consolas</p>
+<p>如果不设置字体属性，不同的浏览器有自己的默认字体。</p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>font-family 可以设置多个字体名称，在实际加载时只会选择一种加载，选择的依据是按书写顺序进行，如果浏览器不支持第一个字体，则会尝试下一个，直到找到第一个支持的字体。</p>
+<p>浏览器中加载的字体是用户机器中自带的，如果用户的电脑中没有设置的字体则加载失败，需要查找下一个，因此，必须在最后设置一个所有机器都具备的通用字体作为后路。</p>
+<p>中文字体中一般带有英文可以加载的字体效果，为了避免对英文字的字体影响，建议将英文字体写在属性值最前面。</p>
+<h4 id="实际应用"><a href="#实际应用" class="headerlink" title="实际应用"></a>实际应用</h4><p>首选字体需要根据设计图确定，最后需要设置备用字体。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>样式</category>
       </categories>
       <tags>
         <tag>技术</tag>
@@ -337,130 +976,29 @@
       </tags>
   </entry>
   <entry>
-    <title>font-family</title>
-    <url>/2022/08/814842f7f206/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>作用：定义元素内文字的字体。</p>
-<p>属性名 k ：font-family，字体属于 font 综合属性的一个单一属性。</p>
-<p>属性值 v ：字体名称，必须包裹在一对引号中，属性值可以有多个，值之间用逗号分隔。</p>
-<h3 id="常用字体"><a href="#常用字体" class="headerlink" title="常用字体"></a>常用字体</h3><h4 id="常用的中文字体"><a href="#常用的中文字体" class="headerlink" title="常用的中文字体"></a>常用的中文字体</h4><p>宋体 SimSun</p>
-<p>微软雅黑 Microsoft Yahei </p>
-<h4 id="常用的英文字体"><a href="#常用的英文字体" class="headerlink" title="常用的英文字体"></a>常用的英文字体</h4><p>Arial</p>
-<p>consolas</p>
-<p>如果不设置字体属性，不同的浏览器有自己的默认字体。</p>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>font-family 可以设置多个字体名称，在实际加载时只会选择一种加载，选择的依据是按书写顺序进行，如果浏览器不支持第一个字体，则会尝试下一个，直到找到第一个支持的字体。</p>
-<p>浏览器中加载的字体是用户机器中自带的，如果用户的电脑中没有设置的字体则加载失败，需要查找下一个，因此，必须在最后设置一个所有机器都具备的通用字体作为后路。</p>
-<p>中文字体中一般带有英文可以加载的字体效果，为了避免对英文字的字体影响，建议将英文字体写在属性值最前面。</p>
-<h4 id="实际应用"><a href="#实际应用" class="headerlink" title="实际应用"></a>实际应用</h4><p>首选字体需要根据设计图确定，最后需要设置备用字体。</p>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>样式</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>font-size</title>
-    <url>/2022/08/34803298320c/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>作用：设置文字的大小。</p>
-<p>属性名 k ：font-size，字号属于 font 综合属性的一个单一属性。 </p>
-<p>属性值 v ：可以使用相对长度单位，也可以使用绝对长度单位。推荐使用相对长度单位。</p>
-<h3 id="单位"><a href="#单位" class="headerlink" title="单位"></a>单位</h3><table>
-<thead>
-<tr>
-<th>相对长度单位</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>px</td>
-<td>像素值，最常使用的单位</td>
-</tr>
-<tr>
-<td>em</td>
-<td>倍数，继承自祖先元素设置的字号的倍数</td>
-</tr>
-<tr>
-<td>%</td>
-<td>百分比，继承自祖先元素设置的字号的百分比</td>
-</tr>
-<tr>
-<td><strong>绝对长度单位</strong></td>
-<td><strong>说明</strong></td>
-</tr>
-<tr>
-<td>in</td>
-<td>英寸</td>
-</tr>
-<tr>
-<td>cm</td>
-<td>厘米</td>
-</tr>
-<tr>
-<td>mm</td>
-<td>毫米</td>
-</tr>
-<tr>
-<td>pt</td>
-<td>点</td>
-</tr>
-</tbody></table>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>如果 HTML 中不设置字号，不同的浏览器有自己默认的加载字号，比如 chrome、IE，默认显示字号为 16px。</p>
-<p>不同的浏览器也有自己最小加载显示字号，如果设置的字号低于最小字号，都以最小字号加载，0除外。chrome 浏览器最小加载显示字号为8px，IE 浏览器最小可以支持1px的字号。</p>
-<h4 id="实际应用"><a href="#实际应用" class="headerlink" title="实际应用"></a>实际应用</h4><p>网页中最小设置字号必须是12px，如果低于12px会出现兼容问题。现在网页中普遍使用14px+。</p>
-<p>尽量使用12px、14px、16px等偶数的数字字号，ie6 等老式浏览器支持奇数会有 bug。</p>
-<p>实际工作中的字号，需要以设计图为准。</p>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>样式</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS层叠式</title>
-    <url>/2022/08/3c25b60647d2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>CSS 的概念中，除了前面提到的样式外，还有一个重要的概念就是层叠式，层叠式是贯穿整个css的一个性质，包含继承性和层叠性。 </p>
-<h3 id="继承性"><a href="#继承性" class="headerlink" title="继承性"></a>继承性</h3><p>如果一个标签没有设置过一些样式，它的某个祖先级曾经设置过，在浏览器中该标签也加载了这些样式，这些样式都是从祖先级继承而来，这种现象就是继承性。</p>
-<p>能够被继承的样式是所有的<strong>文字相关样式属性</strong>，其他的属性都不能被继承。</p>
-<p>继承性是一个很好的性质，可以将页面中出现最多的文字样式设置给一个较大的祖先级标签比如 body，后期所有的后代标签都可以从 body进行继承。</p>
-<h3 id="层叠性"><a href="#层叠性" class="headerlink" title="层叠性"></a>层叠性</h3><p>思考问题：同一个标签可以被多个选择器选中，如果选择器后面设置了相同的样式属性，标签最终该加载哪个？或者，在继承性中，如果多个祖先都设置了相同的文字样式，后代中该继承哪个祖先级的？</p>
-<p>解决方法：就是使用层叠性去解决冲突。多个选择器在进行对比的过程中，最终只有一个属性会成功加载，它会层叠、覆盖掉其他的属性。</p>
-<p>判断最终胜出的属性是谁，需要依赖判断<strong>优先级</strong>。</p>
-<h4 id="判断方法"><a href="#判断方法" class="headerlink" title="判断方法"></a>判断方法</h4><p><strong>选中目标标签</strong></p>
-<ul>
-<li><strong>第一步：比较多个选择器的权重，权重高的层叠权重低的。</strong></li>
-<li>基础选择器的权重：根据选择范围，范围越大权重越小，* &lt; 标签选择器 &lt; 类选择器 &lt; id 选择器。</li>
-<li>高级选择器权重比较方法：依次比较组成高级选择器的 id 的个数，类的个数，标签的个数，如果前面能够比较出大小就不再比较后面，如果前面相等就往后比较，直到比较出大小。</li>
-<li>比较顺序：( id 个数, 类的个数, 标签的个数 ) </li>
-<li><strong>第二步：如果选择器权重都相同，需要比较 CSS 中代码的书写顺序，后写的层叠先写的。</strong></li>
-</ul>
-<p><strong>选中目标标签的组先级</strong></p>
-<ul>
-<li>如果选择器选中的是祖先元素，文字的样式可以被继承。</li>
-<li>第一步：比较就近原则，比较选择器选中的祖先级在 HTML 结构中距离目标标签的远近，近的层叠远的。</li>
-<li>第二步：如果选中的祖先级距离目标一样近（同一个祖先级），比较选择器权重，权重大的层叠小的。</li>
-<li>第三步：如果距离一样近，权重也相同，最后比较 CSS 中的书写顺序，后面的层叠前面的。</li>
-</ul>
-<p><strong>!important 关键字</strong></p>
-<ul>
-<li>如果在比较选择器权重的过程中，遇见一个 !important 关键字，可以将某条 CSS 样式属性的权重提升到最大。 </li>
-<li>书写位置：在某个css属性的属性值后面空格加 !important 。</li>
-<li>注意：<ul>
-<li>就近原则中，不需要比较选择器权重，所有 important 会失效。</li>
-<li>important 不能提升选择器的权重，只能提升某条属性的权重到最大。</li>
-</ul>
-</li>
-</ul>
-<p><strong>行内式权重</strong></p>
-<ul>
-<li> 行内式样式与内嵌式或外链式样式比较权重时，行内式的权重最高。</li>
-<li> 但是，与 <code>!important</code> 关键字相比权重要低。</li>
-</ul>
-<p><strong>总结</strong><img src="https://pic.imgdb.cn/item/616581512ab3f51d91348fd8.png"></p>
+    <title>CSS样式规则</title>
+    <url>/2022/08/d5e716173516/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="样式规则"><a href="#样式规则" class="headerlink" title="样式规则"></a>样式规则</h3><p><strong>以内嵌式样式表为例</strong></p>
+<p>所有的 css 代码都必须书写在 head 标签内部的一对 style 标签内。</p>
+<p>css 在给某个标签设置样式前，必须使用选择器先选中标签。</p>
+<p>css 样式的属性，属性名和属性值的键值对写法为 k:v; 。 </p>
+<p>给每个选择器添加的样式属性都必须写在一对大括号 {} 之内。</p>
+<p>给一个标签添加的所有需要的样式，都要在 {} 内部一一罗列出来 </p>
+<p><strong>注意事项</strong></p>
+<p>分号必要性：每条属性后面的分号必须写，如果不写，会导致后面所有的代码加载错误。</p>
+<p>css 中所有属性与属性之间对空格、换行、缩进不敏感。</p>
+<h3 id="CSS-注释语法"><a href="#CSS-注释语法" class="headerlink" title="CSS 注释语法"></a>CSS 注释语法</h3><p>一个清晰易读的 CSS 代码，离不开 CSS 注释的合理添加。</p>
+<p>语法格式：<code>/*中间部分为注释内容*/</code></p>
+<p>vs code快捷键：ctrl+/ 。</p>
+<h3 id="CSS-样式格式"><a href="#CSS-样式格式" class="headerlink" title="CSS 样式格式"></a>CSS 样式格式</h3><p>代码风格是实际开发中的书写方式，并非强制标准。</p>
+<p>展开格式：开发过程使用，代码可读性强，便于调错。</p>
+<p>紧凑格式：上传服务器时使用，减少不必要的空白字符，压缩文件大小，利于传输。</p>
+<p><strong>英文大小写</strong></p>
+<p>CSS 中的英文可以使用大写，也可以使用小写。</p>
+<p>建议：css 中的选择器和样式属性名、属性值等都使用小写英文，特殊情况除外。</p>
+<p><strong>空格规范</strong></p>
+<p>选择器与大括号 {} 之间保留一个空格。</p>
+<p>冒号后面，属性值前面，保留一个空格。 </p>
 ]]></content>
       <categories>
         <category>HTML</category>
@@ -547,373 +1085,69 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS样式规则</title>
-    <url>/2022/08/d5e716173516/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="样式规则"><a href="#样式规则" class="headerlink" title="样式规则"></a>样式规则</h3><p><strong>以内嵌式样式表为例</strong></p>
-<p>所有的 css 代码都必须书写在 head 标签内部的一对 style 标签内。</p>
-<p>css 在给某个标签设置样式前，必须使用选择器先选中标签。</p>
-<p>css 样式的属性，属性名和属性值的键值对写法为 k:v; 。 </p>
-<p>给每个选择器添加的样式属性都必须写在一对大括号 {} 之内。</p>
-<p>给一个标签添加的所有需要的样式，都要在 {} 内部一一罗列出来 </p>
-<p><strong>注意事项</strong></p>
-<p>分号必要性：每条属性后面的分号必须写，如果不写，会导致后面所有的代码加载错误。</p>
-<p>css 中所有属性与属性之间对空格、换行、缩进不敏感。</p>
-<h3 id="CSS-注释语法"><a href="#CSS-注释语法" class="headerlink" title="CSS 注释语法"></a>CSS 注释语法</h3><p>一个清晰易读的 CSS 代码，离不开 CSS 注释的合理添加。</p>
-<p>语法格式：<code>/*中间部分为注释内容*/</code></p>
-<p>vs code快捷键：ctrl+/ 。</p>
-<h3 id="CSS-样式格式"><a href="#CSS-样式格式" class="headerlink" title="CSS 样式格式"></a>CSS 样式格式</h3><p>代码风格是实际开发中的书写方式，并非强制标准。</p>
-<p>展开格式：开发过程使用，代码可读性强，便于调错。</p>
-<p>紧凑格式：上传服务器时使用，减少不必要的空白字符，压缩文件大小，利于传输。</p>
-<p><strong>英文大小写</strong></p>
-<p>CSS 中的英文可以使用大写，也可以使用小写。</p>
-<p>建议：css 中的选择器和样式属性名、属性值等都使用小写英文，特殊情况除外。</p>
-<p><strong>空格规范</strong></p>
-<p>选择器与大括号 {} 之间保留一个空格。</p>
-<p>冒号后面，属性值前面，保留一个空格。 </p>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>语法</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>实体化属性</title>
-    <url>/2022/08/72e487ce5fc9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>如果想在浏览器中具体看到一个盒子占有的实际位置，需要设置盒子可以实体化的三属性。</p>
-<table>
+    <title>CSS概述</title>
+    <url>/2022/08/b98f9c4f4f02/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="产生背景"><a href="#产生背景" class="headerlink" title="产生背景"></a>产生背景</h3><p>从HTML被发明开始，样式就以各种形式存在，最初的HTML只包含很少的显示属性。</p>
+<p>随着HTML的成长，为了满足页面设计者的要求，HTML添加了很多显示功能，例如文本格式化标签。</p>
+<p>但是随着这些功能的增加，HTML变的越来越杂乱，而且HTML页面也越来越臃肿。</p>
+<p>于是CSS便诞生了。</p>
+<h3 id="发展过程"><a href="#发展过程" class="headerlink" title="发展过程"></a>发展过程</h3><table>
 <thead>
 <tr>
-<th>属性名</th>
-<th>属性值</th>
+<th>版本</th>
 <th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>width</td>
-<td>px单位的数值</td>
-<td>定义元素占有的宽度</td>
+<td>CSS1</td>
+<td>1995年12月，层叠样式表的第一份正式标准（Cascading style Sheets Level 1）完成，成为 w3c 的推荐标准。</td>
 </tr>
 <tr>
-<td>height</td>
-<td>px单位的数值</td>
-<td>定义元素占有的高度</td>
+<td>CSS2</td>
+<td>1997年初，W3C 组织负责 CSS 的工作组开始讨论第一版中没有涉及到的问题。其讨论结果组成了1998年5月出版的 CSS 规范第二版。</td>
 </tr>
 <tr>
-<td>background-color</td>
-<td>颜色名、颜色值</td>
-<td>定义元素的背景颜色</td>
+<td>CSS3</td>
+<td>CSS3 是 CSS 层叠样式表技术的升级版本，于1999年开始制订，2001年5月23日 W3C 完成了 CSS3 的工作草案，主要包括盒子模型、列表模块、超链接方式、语言模块、背景和边框、文字特效、多栏布局等模块 。</td>
 </tr>
 </tbody></table>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>语法</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基础选择器</title>
-    <url>/2022/08/14363d7c18da/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="id-选择器"><a href="#id-选择器" class="headerlink" title="id 选择器"></a>id 选择器</h3><p>通过标签上的 id 属性去选择标签。</p>
-<p>书写方式：#id 属性值 </p>
-<p>选择范围：只能选中一个标签。</p>
-<p>id 命名规则：必须以字母开头，后面可以有字母、数字、下划线、横线，严格区分大小写。每个 id 属性值必须是唯一的，不能与其他的 id 同名。</p>
-<p>注意：如果希望多个标签设置相同的样式，使用id选择器的话，必须给这多个标签取不同的 id 名，分别选中设置。</p>
-<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><p>缺点：id 选择器只能实现单选，不能帮我们完成多选的功能。</p>
-<h3 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h3><p>通过标签的 class 属性去选择标签。</p>
-<p>书写方式：.class属性值。</p>
-<p>选择范围：是页面中所有 class 属性值相同的标签。 </p>
-<p>class 命名规则：必须以字母开头，后面可以有字母、数字、下划线、横线，严格区分大小写。class 属性值可以与其他的class相同。</p>
-<h4 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h4><p>多个不同的标签，不区分标签类型，只要 class 属性值相同，都可以被同一个类选择器选中。</p>
-<p>一个标签的 class 属性可以有多个属性值，值之间用空格分隔，每个属性值组成的选择器，都可以选中这一个标签，每个选择器后面的样式都会添加给同一个标签。 </p>
-<p><strong>特殊应用</strong></p>
-<p>原子类：在css中提前设置一些类名，每个类选择器后面只添加一条css样式属性，这些属性会在页面中常被使用，后期可以不需要多次书写属性，只要将对应的类名添加给需要的标签即可。</p>
-<p><strong>优点</strong></p>
-<p>通过一个类选择器进行多选，选中多个标签，添加公共样式。</p>
-<p>个标签可以被多个类选择器选中，可以将所有样式进行分离，分别提取公共样式和单独样式，节省代码量。</p>
-<p>实际工作中，通常我们有一个使用规律：类上样式(CSS)，id 上行为(JavaScript)。</p>
-<h3 id="通配符选择器"><a href="#通配符选择器" class="headerlink" title="通配符选择器"></a>通配符选择器</h3><p>通过一个特殊符号选择页面内所有的标签。</p>
-<p>书写方式：* </p>
-<p>选择范围：包含 html标签在内的所有标签。</p>
-<h4 id="特点和应用"><a href="#特点和应用" class="headerlink" title="特点和应用"></a>特点和应用</h4><p>优点：可以实现全选，简化书写。</p>
-<p>缺点：通配符选择效率低，设置的部分公共样式不是所有标签都需要添加，如果使用通配符选择，会让不需要的标签也加载一次样式，导致浏览器多做无用的工作。</p>
-<p>注意：实际上线的网站不允许使用 * 去清除默认内外边距。</p>
-<p>不过普通的案例，代码量较少时，为了节省书写，可以使用通配符。</p>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>选择器</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>标签选择器</title>
-    <url>/2022/08/aae1eb06d820/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>通过标签名去选择标签元素。</p>
-<p>书写方式：标签名。 </p>
-<p>选择范围：选中的是HTML文件中所有的同名标签。</p>
-<p>注意：标签选择器可以选择所有的同名标签，会忽视 HTML 元素的嵌套关系，不管嵌套多深，都能被选中。</p>
-<p>优点：可以选中所有的同名标签，设置所有同名标签的公共样式。</p>
-<p>缺点：只能实现全选，不能对局部的标签添加特殊样式。 </p>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>选择器</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>选择器概念</title>
-    <url>/2022/08/9b754f2a69c0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在内嵌式和外部css中，要想将 CSS 样式应用于特定的 HTML 元素，首先需要找到该目标元素，这时需要用到 CSS 中的选择器。 </p>
-<p>选择器：选择要添加样式的 HTML 标签的一种方法、模式。 </p>
-<p>css2.1 版本的七种选择器</p>
-<p>基础选择器：标签选择器、id 选择器、类选择器、通配符选择器。</p>
-<p>高级选择器：后代选择器、交集选择器、并集选择器。</p>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>选择器</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>高级选择器</title>
-    <url>/2022/08/addd58661361/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>由于基础选择器不能实现所有选择情况，后期在基础选择器的基础上衍生出了几种高级选择器。高级选择器的组成部分是基础选择器。</p>
-<h3 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h3><p>通过标签之间存的嵌套关系（族谱关系）去选择元素，基本组成部分就是基础选择器。</p>
-<p>后代选择器也叫包含选择器。</p>
-<p>书写方式：空格表示后代，基础选择器中间使用空格分隔，空格前面的选择器选中的标签必须是后面选择器选中标签的祖先级。 </p>
-<p>选择范围：通过后代选择器中前面的一系列基础选择器缩小选择范围，最终由最后一个选择器确定选中的标签。</p>
-<p>注意：后代选择器必须满足所有的后代关系才能够被选中，后代关系不一定只能是父子关系。</p>
-<p>优点：减少 class 属性的定义使用，选择效率更高。</p>
-<h3 id="交集选择器"><a href="#交集选择器" class="headerlink" title="交集选择器"></a>交集选择器</h3><p>通过一个标签之上满足所有的基础选择器的需求去选择标签。</p>
-<p>书写方式：基础选择器进行连续书写，如果有标签选择器参与交集，必须书写在开头。</p>
-<p>选择范围：选择的是满足所有基础选择器需求的标签，如果一个条件不满足都不能被选中。</p>
-<p>比较常见的是标签与类的交集。</p>
-<h4 id="更多写法"><a href="#更多写法" class="headerlink" title="更多写法"></a>更多写法</h4><p>交集选择器可以进行类名的连续交集，需要满足更多的条件才能选中标签。</p>
-<p>IE6 不支持类名连续交集写法。</p>
-<p>交集选择器可以作为其他高级选择器的组成部分。</p>
-<h3 id="并集选择器"><a href="#并集选择器" class="headerlink" title="并集选择器"></a>并集选择器</h3><p>不同选择器选中的元素都要设置相同的样式，多次书写相同的样式属性对代码造成浪费，可以将前面六种选择器可以进行并集书写，相当于一种简化写法。</p>
-<p>书写方式：将多个选择器中间用逗号进行分隔，最后一个后面不能加逗号。</p>
-<p>选择范围：是所有的单独选择器选中的标签的并集集合。</p>
-<h4 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h4><p>如果多个标签具有公共样式，但是不能用一个选择器选中，可以使用并集写法。</p>
-<p>可以使用标签选择器的并集写法，进行默认样式的清除，替换通配符的功能。</p>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>选择器</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML元素</title>
-    <url>/2022/08/ad76fb3327df/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>HTML元素指的是从开始标签到结束标签的所有内容，包含开始标签、元素内容、结束标签。</p>
-<h3 id="元素内容"><a href="#元素内容" class="headerlink" title="元素内容"></a>元素内容</h3><ul>
-<li><p>元素内容可以是纯文本，也可以是其他的HTML元素。这种元素内容包含其他HTML元素的情况，我们可以称为嵌套，也就是div标签元素内部嵌套了p标签元素。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>div元素内部嵌套<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>一个HTML元素div的内容可能是多个其他元素组成，例如p和h1，此时我们习惯称div是p和h1的父级元素，p和h1是div的子级元素，而p和h1属于同级元素，这种嵌套关系可以有多层。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>div元素内部嵌套p元素<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>div元素内部嵌套的h1元素<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>单标签是不能添加其他元素内容的，可以称为空元素。</p>
-</li>
-</ul>
-<h3 id="标签级别"><a href="#标签级别" class="headerlink" title="标签级别"></a>标签级别</h3><p>根据标签内容可以存放的元素内容不同，可以将双标签划分为两个级别</p>
+<h3 id="CSS-概念"><a href="#CSS-概念" class="headerlink" title="CSS 概念"></a>CSS 概念</h3><p>css 全称 cascading style sheets，层叠式样式表，是一种用来表现 HTML 的文件样式的计算机语言。</p>
+<p>作用：静态地修饰网页，并且可以配合各种脚本语言动态地对网页各元素进行格式化。</p>
+<p>CSS 的出现，实现了网页的结构和样式分离，拯救了混乱的 HTML，更加拯救了我们 web 开发者。</p>
+<p>CSS 可以说是网页的美容师， 让我们的网页更加美观。</p>
+<h3 id="前端三层技术"><a href="#前端三层技术" class="headerlink" title="前端三层技术"></a>前端三层技术</h3><p><strong>html</strong></p>
 <ul>
-<li>容器级：标签内部可以存放任意内容，包含容器级标签。比如h1，div等。</li>
-<li>文本级：标签内部只能存放文字或类似文字的内容，比如存放图片、表单元素等。比如p等。</li>
+<li>结构层</li>
+<li>从语义的角度搭建网页结构</li>
 </ul>
-<h3 id="HTML元素的特性"><a href="#HTML元素的特性" class="headerlink" title="HTML元素的特性"></a>HTML元素的特性</h3><p>元素间对空格、换行、缩进形成的空白不敏感，有无空白对在浏览器中加载的效果没有影响。浏览器识别的是元素的开始和结束以及相互之间的嵌套关系。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p>空白折叠现象：元素内容如果是文本，所有文字（类似文字内容）之间如果有空格、换行、缩进等空白字符，在浏览器中加载时，链接在一起的空白会折叠成一个空格显示，这就是空白折叠现象。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>HTML中所有文字内容之间的空    格、换</span><br><span class="line">行、缩				进都会被折叠成一个空格显示。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>元素</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>列表</title>
-    <url>/2022/08/512ac1494c66/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>列表用于制作HTML中的一系列项目。</p>
-<p>通常我们会将内容相关、结构相似、样式相近的内容使用列表结构进行搭建。</p>
-<p>根据项目的内容不同，可以有三种语义的列表结构：无序列表、有序列表、定义列表。</p>
-<h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>无序列表需要两个标签参与，分别是ul和li。</p>
+<p><strong>css</strong></p>
 <ul>
-<li><strong>ul</strong>：unordered list，表示定义一个无序列表的大结构。</li>
-<li><strong>li</strong>：list item，列表项，定义的是无序列表内的某一项。</li>
+<li>样式层</li>
+<li>从美观的角度描述页面样式</li>
 </ul>
-<p>ul和li是嵌套关系，快捷键：ul&gt;li。</p>
-<p>一个列表中可以有任意个列表项。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
-<li>ul内部只能嵌套li，li标签不能脱离ul单独书写。</li>
-<li>li标签是一个经典的容器级标签，内部可以放置任意内容，甚至可以放一组ul&gt;li无序列表结构。</li>
-<li>无序列表的列表项li之间，没有顺序的先后之分，它们的重要程度是相同的。</li>
-<li>无序列表的作用只是搭建列表结构，没有添加样式前缀的功能，样式是由css负责。</li>
-</ul>
-<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>有序列表的语法与无序列表非常类似，只是在语义上有差异。</p>
-<p>有序列表由两个标签组成，分别是ol和li。</p>
+<p><strong>JavaScript</strong></p>
 <ul>
-<li><strong>ol</strong>：ordered list，表示定义一个有序的列表的大结构。</li>
-<li><strong>li</strong>：list item，定义的是有序列表的每一项。ol和li是嵌套关系，快捷键：ol&gt;li。</li>
+<li>行为层</li>
+<li>从交互的角度描述页面行为</li>
 </ul>
-<p>ol标签内部可以嵌套任意多个li标签。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="注意事项-1"><a href="#注意事项-1" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
-<li>ol内部只能嵌套li标签，而li不能脱离ol单独书写。</li>
-<li>li标签是一个经典的容器级标签，内部可以放置任何内容，甚至可以放ol&gt;li。</li>
-<li>有序列表的列表项li之间，存在顺序先后之分，根据内容的顺序需要合理调整书写位置。</li>
-<li>有序列表的作用只是搭建有顺序的列表结构，前面的数字排序样式不是ol标签的作用，而是css负责的。</li>
-</ul>
-<h3 id="定义列表"><a href="#定义列表" class="headerlink" title="定义列表"></a>定义列表</h3><p>自定义列表不仅仅是一列项目，而是项目及其注释的组合。</p>
-<p>由三个标签组成完整的结构，包含dl、dt和dd。</p>
+<h3 id="CSS-的组成"><a href="#CSS-的组成" class="headerlink" title="CSS 的组成"></a>CSS 的组成</h3><p>层叠式：css 中贯穿始终的加载特性</p>
 <ul>
-<li><strong>dl</strong>：definition list，表示定义一个自定义列表的大结构。</li>
-<li><strong>dt</strong>：definition term，表示定义自定义列表中的一个主题或者术语。</li>
-<li><strong>dd</strong>：definition description，定义解释项，表示描述或解释前面的定义主题。</li>
+<li>层叠性</li>
+<li>继承性</li>
 </ul>
-<p>dl内部只能嵌套dt和dd，dt和dd是同级关系。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>主题<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>解释项<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="注意事项-2"><a href="#注意事项-2" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
-<li>dl内部只能嵌套dt和dd，dt与dd不能脱离dl单独书写。</li>
-<li>dl内部可以放多组dt和dd，每个dd解释说明的是前面的距离最近的一个dt。</li>
-<li>每个dt候面可以有0到多个解释项的dd，每个dd解释的都是前面距离最近的一个dt。</li>
-<li>dt和dd标签也是容器级标签，内部可以放置任意内容。</li>
-<li>定义列表中的缩进样式由css主责，标签只负责搭建语义结构。</li>
-<li>配合着css布局效果，最好每个dl中只添加一组dt和dd，便于后期管理。</li>
+<p>样式：定义如何显示 HTML 元素</p>
+<ul>
+<li>文字文本</li>
+<li>背景</li>
+<li>盒模型</li>
+<li>浮动</li>
+<li>定位</li>
+<li>其他</li>
 </ul>
 ]]></content>
       <categories>
         <category>HTML</category>
-        <category>元素</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图像</title>
-    <url>/2022/08/2160b72b2670/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul>
-<li>图像（image）由img标签进行定义。</li>
-<li>img标签是单标签，本身相当于一个特殊的文本。</li>
-<li>img标签的作用是在指定的位置插入一张图片。</li>
-<li>在HTML文件，常用的插入图片类型有：jpg、png、gif。</li>
-</ul>
-<h3 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h3><p>由于img为单标签，所以它只能通过属性进行相关的图像设置。</p>
-<table>
-<thead>
-<tr>
-<th>属性名</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>src</td>
-<td>表示图片的路径</td>
-</tr>
-<tr>
-<td>width</td>
-<td>表示图片的宽度</td>
-</tr>
-<tr>
-<td>height</td>
-<td>表示图片的高度</td>
-</tr>
-<tr>
-<td>border</td>
-<td>边框属性；它的值可以设置边框的厚度</td>
-</tr>
-<tr>
-<td>title</td>
-<td>设置提示文本</td>
-</tr>
-<tr>
-<td>alt</td>
-<td>设置图像没有找到时候的替代文本</td>
-</tr>
-</tbody></table>
-<h3 id="src属性和路径"><a href="#src属性和路径" class="headerlink" title="src属性和路径"></a>src属性和路径</h3><ul>
-<li>如果需要插入一张图片到HTML中，img标签必须设置src属性。</li>
-<li><strong>src</strong>：全称source资源，属性值是图片查找的路径。</li>
-<li><strong>路径</strong>：指的是寻找文件时所历经的线路，在HTML中有特殊的书写语法。</li>
-<li>路径分为相对路径和绝对路径，不同的方式出发点和参考位置不同。</li>
-</ul>
-<h4 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h4><p>相对路径查找文件时，需要从HTML文件本身出发，根据相对的位置进行查找，包括三种方向。</p>
-<ul>
-<li><strong>同级查找</strong>：指目标文件与HTML文件位于同一级，直接书写文件名+后缀格式。</li>
-<li><strong>子级查找</strong>：指目标文件在与HTML文件同一级的文件夹的内部，需要先查找文件夹名称，然后通过关闭符号**/<strong>进入文件夹查找里面的文件；如果有多层文件夹，需要</strong>/**进入多层。</li>
-<li><strong>上级查找</strong>：指目标文件在HTML文件所在文件夹的更上一级，需要跳出当前文件夹到上一层，路径写法利用**../<strong>表示跳出一级，如果跳出多级书写多次</strong>../**，直到找到文件。</li>
-</ul>
-<h4 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h4><ul>
-<li>绝对路径查找文件时，不需要从HTML文件出发，而是直接从电脑的盘符出发进行查找，或者使用网址形式查找。</li>
-<li><strong>盘符出发</strong>：例如从c盘或者d盘触发查找图片，书写时以**c:/**开头，后续类似子级查找写法直至找到目标文件。</li>
-<li><strong>网址形式</strong>：要查找的文件是来自网络资源，路径写法以**http://**开头。</li>
-<li>从盘符出发的绝对路径的缺点<ul>
-<li>盘符出发的路径不可移植，不可移动。</li>
-<li>盘符出发的路径容易出现中文字符，中文的路径容易出现错误。</li>
-</ul>
-</li>
-<li>路径实际应用<ul>
-<li>建议多使用相对路径，可以适当使用网址形式的绝对路径。</li>
-<li>使用相对路径必须将图片或文件与HTML同时上传，而且需要保持相对位置不变。</li>
-</ul>
-</li>
-</ul>
-<h3 id="宽度和高度"><a href="#宽度和高度" class="headerlink" title="宽度和高度"></a>宽度和高度</h3><ul>
-<li><strong>width</strong>：图片的宽度。</li>
-<li><strong>height</strong>：图片的高度。</li>
-<li><strong>属性值</strong>：以px为单位的数值，或者省略px不写。</li>
-<li>如果不设置两个属性，会以图片的原始尺寸加载。</li>
-<li>如果设置属性<ul>
-<li>只设置了其中一个，另一个会等比例变换。</li>
-<li>如果两个都设置，按照设置值加载。</li>
-</ul>
-</li>
-</ul>
-<h3 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h3><ul>
-<li><strong>border</strong>：设置图片的边框。</li>
-<li><strong>属性值</strong>：数值、数值是几表示边框为几像素。</li>
-<li>注意：border属性可以使用css进行设置，css中的边框有更多的设置效果。</li>
-</ul>
-<h3 id="提示文本"><a href="#提示文本" class="headerlink" title="提示文本"></a>提示文本</h3><ul>
-<li><strong>title</strong>：设置的是鼠标悬停时的提示文本。</li>
-<li><strong>属性值</strong>：自定义的提示文字内容。</li>
-</ul>
-<h4 id="替换文本"><a href="#替换文本" class="headerlink" title="替换文本"></a>替换文本</h4><ul>
-<li><strong>alt</strong>：设置的时图片查找错误时，出现的替换文本。如果能正常找到图片，替换文本是不显示的。</li>
-<li><strong>属性值</strong>：自定义的替换内容。</li>
-</ul>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>img标签最为重要的属性为src，尽量使用alt属性对图片进行说明，添加相对关键词可以有利于SEO搜索引擎优化。其他属性可以根据需求进行设置。</p>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>元素</category>
+        <category>基础</category>
       </categories>
       <tags>
         <tag>技术</tag>
@@ -1019,188 +1253,6 @@
 <li>使用实体名称，好处是名称易于记忆。不过坏处是，浏览器也许并不支持所有实体名称（对实体数字的支持却很好）。</li>
 <li>不需要强制记忆所有的字符实体，只需要记忆常用的几个字符实体名称即可，其他可以通过手册进行查询。</li>
 </ul>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>元素</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>布局标签</title>
-    <url>/2022/08/5277673da78e/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="布局标签"><a href="#布局标签" class="headerlink" title="布局标签"></a>布局标签</h3><p>div和span标签常用作布局工具，我们俗称盒子，后期h5也增加了更多的布局标签。</p>
-<p>div和span都是没有具体明确的语义的。</p>
-<h4 id="div标签"><a href="#div标签" class="headerlink" title="div标签"></a>div标签</h4><ul>
-<li><strong>div</strong>：全称division，分隔、区域、跨度的意思。俗称大盒子。</li>
-<li>div是双标签，是最经典的容器级标签，内部可以放置任意内容。</li>
-<li>作用：多用于划分网页区域，进行结构布局。一般将相关的内容使用div包裹起来，整体设置大的布局效果。</li>
-</ul>
-<h4 id="span标签"><a href="#span标签" class="headerlink" title="span标签"></a>span标签</h4><ul>
-<li><strong>span</strong>：小区域、小跨度的意思。俗称小盒子。</li>
-<li>span也是双标签，容器级标签。</li>
-<li>作用：在不改变整体效果的情况下，可以辅助进行局部调整。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>元素</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文本格式化</title>
-    <url>/2022/08/dd97a23080d4/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>HTML中有部分标签是用来对文字进行格式化显示设置的，比如粗体和斜体等。</p>
-<p>但是在HTML4.0版本规范后，结构和样式进行了分离，HTML只负责搭建结构，CSS负责格式化样式，所以大部分文本格式化标签被废弃，但是在HTML4.01和XHTML1.0 transitional版本中依旧可以使用。</p>
-<p>文本格式化的标签均为双标签，且为文本级标签，内部只能书写文字。</p>
-<table>
-<thead>
-<tr>
-<th align="left">标签</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">b</td>
-<td>定义粗体文本，bold</td>
-</tr>
-<tr>
-<td align="left">big</td>
-<td>定义大号字</td>
-</tr>
-<tr>
-<td align="left">em</td>
-<td>定义着重文字，emphasis，自带斜体效果</td>
-</tr>
-<tr>
-<td align="left">i</td>
-<td>定义斜体字，italic</td>
-</tr>
-<tr>
-<td align="left">small</td>
-<td>定义小号字</td>
-</tr>
-<tr>
-<td align="left">strong</td>
-<td>定义加重语气，自带加粗效果</td>
-</tr>
-<tr>
-<td align="left">sub</td>
-<td>定义下标字，subscript</td>
-</tr>
-<tr>
-<td align="left">sup</td>
-<td>定义上标字，superscript</td>
-</tr>
-<tr>
-<td align="left">ins</td>
-<td>定义插入字，自带下划线效果，insert</td>
-</tr>
-<tr>
-<td align="left">del</td>
-<td>定义删除字，delete</td>
-</tr>
-<tr>
-<td align="left">s</td>
-<td>不赞成使用，使用del代替，strike的简化</td>
-</tr>
-<tr>
-<td align="left">strike</td>
-<td>不赞成使用，使用del代替</td>
-</tr>
-<tr>
-<td align="left">u</td>
-<td>定义下划字，不赞成使用，使用css中样式代替，underline</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>元素</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>标题</title>
-    <url>/2022/08/f94e8f5866d3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>标题</strong>（Heading），是通过h1-h6六个标签分别来对应六个级别的标题进行定义的。</p>
-<p>h1定义最大的标题，h6定义最小的标题。</p>
-<p>h1-h6标签都是双标签，且是容器级标签。</p>
-<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>给标签内部的元素内容添加对应级别的标题的语义，不负责文字的粗体、字号等样式，样式是由CSS设定的。</p>
-<h3 id="级别"><a href="#级别" class="headerlink" title="级别"></a>级别</h3><p>标题标签之间是不能互相嵌套的，下一级标题与上一级标题之间通过同级关系书写，下一级标题解释说明的是前面距离最近的上一级标题</p>
-<h3 id="权重"><a href="#权重" class="headerlink" title="权重"></a>权重</h3><ul>
-<li>标题标签对于呈现文档结构非常重要，使用时要根据标签的重要成都进行选择，其中h1标签最重要，h2标签次重要，以此类推。</li>
-<li>h1在整个HTML中的权重非常高，内部应该放置HTML中最重要的内容，比如logo。</li>
-<li>h1由于非常重要，内部的文字对于提高搜索引擎排名也非常重要，为了防止作弊，如果一个页面出现多个h1，反而降低权重。约定俗成的，一个页面中只会出现一个h1。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>元素</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>段落和换行</title>
-    <url>/2022/08/c90220decc6b/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h3><ul>
-<li>段落（paragraph）是通过p标签定义的。</li>
-<li>p标签是双标签，且为文本级标签。内部只能放置文本、图片、表单元素，或者废弃的font标签等。</li>
-<li>每一对儿p标签内部的元素为一个完整的段落，如果有多个段落，需要分别使用不同的p标签进行定义。</li>
-</ul>
-<h3 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h3><ul>
-<li>br（breaking）标签是HTML中一个简单的换行符。</li>
-<li>br标签是一个单标签。</li>
-<li>在需要换行的位置可以使用br标签书写，但是br与p不同，br没有建立新的段落的语义，只是简单的进行强制转换。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>元素</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>注释</title>
-    <url>/2022/08/c76ef35f17ed/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在很多代码技术中都可以添加注释内容，我们也可以向HTML源代码添加注释</p>
-<h3 id="HTML注释语法"><a href="#HTML注释语法" class="headerlink" title="HTML注释语法"></a>HTML注释语法</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 注释内容 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 快捷键：ctrl+/ --&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>注释只在源代码中可见，在浏览器窗口是不显示的</p>
-<h3 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h3><ul>
-<li>在源代码中添加描述性的提示信息，便于我们阅读代码。</li>
-<li>对于HTML纠错也大有帮助，可以通过注释某一行HTML代码，一边检索错误的位置。</li>
-<li>暂时注释掉一部分不用的代码，便于后期恢复代码。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>元素</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>表单</title>
-    <url>/2022/08/d94ae2f69558/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>表单是用来收集用户输入信息的。</p>
-<h3 id="表单的组成"><a href="#表单的组成" class="headerlink" title="表单的组成"></a>表单的组成</h3><p>HTML表单用于搜集不同类型的用户输入，表单元素就是网页中提供用户进行输入或点击的小控件。</p>
-<p>在HTML中，一个完整的表单通常由表单域、提示信息和表单控件（也称为表单元素）3个部分构成。</p>
-<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><p><strong>表单域</strong>：相当于一个容器，用来容纳所有的表单控件和提示信息，可以通过他定义处理表单数据所用程序的url地址，以及数据提交到服务器的方法。如果不定义表单域，表单中的数据就无法传送到后台服务器。</p>
-<p><strong>提示信息</strong>：一个表单中通常还需要包含一些说明性的文字，提示用户进行填写和操作。</p>
-<p><strong>表单控件</strong>：包含了具体的表单功能项，如单行文本输入框、密码输入框、复选框、提交按钮、重置按钮等。</p>
 ]]></content>
       <categories>
         <category>HTML</category>
@@ -1441,6 +1493,24 @@
       </tags>
   </entry>
   <entry>
+    <title>表单</title>
+    <url>/2022/08/d94ae2f69558/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>表单是用来收集用户输入信息的。</p>
+<h3 id="表单的组成"><a href="#表单的组成" class="headerlink" title="表单的组成"></a>表单的组成</h3><p>HTML表单用于搜集不同类型的用户输入，表单元素就是网页中提供用户进行输入或点击的小控件。</p>
+<p>在HTML中，一个完整的表单通常由表单域、提示信息和表单控件（也称为表单元素）3个部分构成。</p>
+<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><p><strong>表单域</strong>：相当于一个容器，用来容纳所有的表单控件和提示信息，可以通过他定义处理表单数据所用程序的url地址，以及数据提交到服务器的方法。如果不定义表单域，表单中的数据就无法传送到后台服务器。</p>
+<p><strong>提示信息</strong>：一个表单中通常还需要包含一些说明性的文字，提示用户进行填写和操作。</p>
+<p><strong>表单控件</strong>：包含了具体的表单功能项，如单行文本输入框、密码输入框、复选框、提交按钮、重置按钮等。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>表格</title>
     <url>/2022/08/04b326bc64aa/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="表格基础"><a href="#表格基础" class="headerlink" title="表格基础"></a>表格基础</h3><p>创建一个简单的表格至少有三个标签组成，分别是table、tr、td标签。</p>
@@ -1491,6 +1561,93 @@
 <li>先书写大分区标签结构。</li>
 <li>填充每个分区的内部内容。</li>
 <li>如果有合并单元格内容，进行单元格合并。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>布局标签</title>
+    <url>/2022/08/5277673da78e/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="布局标签"><a href="#布局标签" class="headerlink" title="布局标签"></a>布局标签</h3><p>div和span标签常用作布局工具，我们俗称盒子，后期h5也增加了更多的布局标签。</p>
+<p>div和span都是没有具体明确的语义的。</p>
+<h4 id="div标签"><a href="#div标签" class="headerlink" title="div标签"></a>div标签</h4><ul>
+<li><strong>div</strong>：全称division，分隔、区域、跨度的意思。俗称大盒子。</li>
+<li>div是双标签，是最经典的容器级标签，内部可以放置任意内容。</li>
+<li>作用：多用于划分网页区域，进行结构布局。一般将相关的内容使用div包裹起来，整体设置大的布局效果。</li>
+</ul>
+<h4 id="span标签"><a href="#span标签" class="headerlink" title="span标签"></a>span标签</h4><ul>
+<li><strong>span</strong>：小区域、小跨度的意思。俗称小盒子。</li>
+<li>span也是双标签，容器级标签。</li>
+<li>作用：在不改变整体效果的情况下，可以辅助进行局部调整。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>列表</title>
+    <url>/2022/08/512ac1494c66/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>列表用于制作HTML中的一系列项目。</p>
+<p>通常我们会将内容相关、结构相似、样式相近的内容使用列表结构进行搭建。</p>
+<p>根据项目的内容不同，可以有三种语义的列表结构：无序列表、有序列表、定义列表。</p>
+<h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>无序列表需要两个标签参与，分别是ul和li。</p>
+<ul>
+<li><strong>ul</strong>：unordered list，表示定义一个无序列表的大结构。</li>
+<li><strong>li</strong>：list item，列表项，定义的是无序列表内的某一项。</li>
+</ul>
+<p>ul和li是嵌套关系，快捷键：ul&gt;li。</p>
+<p>一个列表中可以有任意个列表项。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li>ul内部只能嵌套li，li标签不能脱离ul单独书写。</li>
+<li>li标签是一个经典的容器级标签，内部可以放置任意内容，甚至可以放一组ul&gt;li无序列表结构。</li>
+<li>无序列表的列表项li之间，没有顺序的先后之分，它们的重要程度是相同的。</li>
+<li>无序列表的作用只是搭建列表结构，没有添加样式前缀的功能，样式是由css负责。</li>
+</ul>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>有序列表的语法与无序列表非常类似，只是在语义上有差异。</p>
+<p>有序列表由两个标签组成，分别是ol和li。</p>
+<ul>
+<li><strong>ol</strong>：ordered list，表示定义一个有序的列表的大结构。</li>
+<li><strong>li</strong>：list item，定义的是有序列表的每一项。ol和li是嵌套关系，快捷键：ol&gt;li。</li>
+</ul>
+<p>ol标签内部可以嵌套任意多个li标签。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>列表项3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="注意事项-1"><a href="#注意事项-1" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li>ol内部只能嵌套li标签，而li不能脱离ol单独书写。</li>
+<li>li标签是一个经典的容器级标签，内部可以放置任何内容，甚至可以放ol&gt;li。</li>
+<li>有序列表的列表项li之间，存在顺序先后之分，根据内容的顺序需要合理调整书写位置。</li>
+<li>有序列表的作用只是搭建有顺序的列表结构，前面的数字排序样式不是ol标签的作用，而是css负责的。</li>
+</ul>
+<h3 id="定义列表"><a href="#定义列表" class="headerlink" title="定义列表"></a>定义列表</h3><p>自定义列表不仅仅是一列项目，而是项目及其注释的组合。</p>
+<p>由三个标签组成完整的结构，包含dl、dt和dd。</p>
+<ul>
+<li><strong>dl</strong>：definition list，表示定义一个自定义列表的大结构。</li>
+<li><strong>dt</strong>：definition term，表示定义自定义列表中的一个主题或者术语。</li>
+<li><strong>dd</strong>：definition description，定义解释项，表示描述或解释前面的定义主题。</li>
+</ul>
+<p>dl内部只能嵌套dt和dd，dt和dd是同级关系。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>主题<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>解释项<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="注意事项-2"><a href="#注意事项-2" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li>dl内部只能嵌套dt和dd，dt与dd不能脱离dl单独书写。</li>
+<li>dl内部可以放多组dt和dd，每个dd解释说明的是前面的距离最近的一个dt。</li>
+<li>每个dt候面可以有0到多个解释项的dd，每个dd解释的都是前面距离最近的一个dt。</li>
+<li>dt和dd标签也是容器级标签，内部可以放置任意内容。</li>
+<li>定义列表中的缩进样式由css主责，标签只负责搭建语义结构。</li>
+<li>配合着css布局效果，最好每个dl中只添加一组dt和dd，便于后期管理。</li>
 </ul>
 ]]></content>
       <categories>
@@ -1603,6 +1760,249 @@
       </tags>
   </entry>
   <entry>
+    <title>图像</title>
+    <url>/2022/08/2160b72b2670/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul>
+<li>图像（image）由img标签进行定义。</li>
+<li>img标签是单标签，本身相当于一个特殊的文本。</li>
+<li>img标签的作用是在指定的位置插入一张图片。</li>
+<li>在HTML文件，常用的插入图片类型有：jpg、png、gif。</li>
+</ul>
+<h3 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h3><p>由于img为单标签，所以它只能通过属性进行相关的图像设置。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>src</td>
+<td>表示图片的路径</td>
+</tr>
+<tr>
+<td>width</td>
+<td>表示图片的宽度</td>
+</tr>
+<tr>
+<td>height</td>
+<td>表示图片的高度</td>
+</tr>
+<tr>
+<td>border</td>
+<td>边框属性；它的值可以设置边框的厚度</td>
+</tr>
+<tr>
+<td>title</td>
+<td>设置提示文本</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>设置图像没有找到时候的替代文本</td>
+</tr>
+</tbody></table>
+<h3 id="src属性和路径"><a href="#src属性和路径" class="headerlink" title="src属性和路径"></a>src属性和路径</h3><ul>
+<li>如果需要插入一张图片到HTML中，img标签必须设置src属性。</li>
+<li><strong>src</strong>：全称source资源，属性值是图片查找的路径。</li>
+<li><strong>路径</strong>：指的是寻找文件时所历经的线路，在HTML中有特殊的书写语法。</li>
+<li>路径分为相对路径和绝对路径，不同的方式出发点和参考位置不同。</li>
+</ul>
+<h4 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h4><p>相对路径查找文件时，需要从HTML文件本身出发，根据相对的位置进行查找，包括三种方向。</p>
+<ul>
+<li><strong>同级查找</strong>：指目标文件与HTML文件位于同一级，直接书写文件名+后缀格式。</li>
+<li><strong>子级查找</strong>：指目标文件在与HTML文件同一级的文件夹的内部，需要先查找文件夹名称，然后通过关闭符号**/<strong>进入文件夹查找里面的文件；如果有多层文件夹，需要</strong>/**进入多层。</li>
+<li><strong>上级查找</strong>：指目标文件在HTML文件所在文件夹的更上一级，需要跳出当前文件夹到上一层，路径写法利用**../<strong>表示跳出一级，如果跳出多级书写多次</strong>../**，直到找到文件。</li>
+</ul>
+<h4 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h4><ul>
+<li>绝对路径查找文件时，不需要从HTML文件出发，而是直接从电脑的盘符出发进行查找，或者使用网址形式查找。</li>
+<li><strong>盘符出发</strong>：例如从c盘或者d盘触发查找图片，书写时以**c:/**开头，后续类似子级查找写法直至找到目标文件。</li>
+<li><strong>网址形式</strong>：要查找的文件是来自网络资源，路径写法以**http://**开头。</li>
+<li>从盘符出发的绝对路径的缺点<ul>
+<li>盘符出发的路径不可移植，不可移动。</li>
+<li>盘符出发的路径容易出现中文字符，中文的路径容易出现错误。</li>
+</ul>
+</li>
+<li>路径实际应用<ul>
+<li>建议多使用相对路径，可以适当使用网址形式的绝对路径。</li>
+<li>使用相对路径必须将图片或文件与HTML同时上传，而且需要保持相对位置不变。</li>
+</ul>
+</li>
+</ul>
+<h3 id="宽度和高度"><a href="#宽度和高度" class="headerlink" title="宽度和高度"></a>宽度和高度</h3><ul>
+<li><strong>width</strong>：图片的宽度。</li>
+<li><strong>height</strong>：图片的高度。</li>
+<li><strong>属性值</strong>：以px为单位的数值，或者省略px不写。</li>
+<li>如果不设置两个属性，会以图片的原始尺寸加载。</li>
+<li>如果设置属性<ul>
+<li>只设置了其中一个，另一个会等比例变换。</li>
+<li>如果两个都设置，按照设置值加载。</li>
+</ul>
+</li>
+</ul>
+<h3 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h3><ul>
+<li><strong>border</strong>：设置图片的边框。</li>
+<li><strong>属性值</strong>：数值、数值是几表示边框为几像素。</li>
+<li>注意：border属性可以使用css进行设置，css中的边框有更多的设置效果。</li>
+</ul>
+<h3 id="提示文本"><a href="#提示文本" class="headerlink" title="提示文本"></a>提示文本</h3><ul>
+<li><strong>title</strong>：设置的是鼠标悬停时的提示文本。</li>
+<li><strong>属性值</strong>：自定义的提示文字内容。</li>
+</ul>
+<h4 id="替换文本"><a href="#替换文本" class="headerlink" title="替换文本"></a>替换文本</h4><ul>
+<li><strong>alt</strong>：设置的时图片查找错误时，出现的替换文本。如果能正常找到图片，替换文本是不显示的。</li>
+<li><strong>属性值</strong>：自定义的替换内容。</li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>img标签最为重要的属性为src，尽量使用alt属性对图片进行说明，添加相对关键词可以有利于SEO搜索引擎优化。其他属性可以根据需求进行设置。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文本格式化</title>
+    <url>/2022/08/dd97a23080d4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>HTML中有部分标签是用来对文字进行格式化显示设置的，比如粗体和斜体等。</p>
+<p>但是在HTML4.0版本规范后，结构和样式进行了分离，HTML只负责搭建结构，CSS负责格式化样式，所以大部分文本格式化标签被废弃，但是在HTML4.01和XHTML1.0 transitional版本中依旧可以使用。</p>
+<p>文本格式化的标签均为双标签，且为文本级标签，内部只能书写文字。</p>
+<table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">b</td>
+<td>定义粗体文本，bold</td>
+</tr>
+<tr>
+<td align="left">big</td>
+<td>定义大号字</td>
+</tr>
+<tr>
+<td align="left">em</td>
+<td>定义着重文字，emphasis，自带斜体效果</td>
+</tr>
+<tr>
+<td align="left">i</td>
+<td>定义斜体字，italic</td>
+</tr>
+<tr>
+<td align="left">small</td>
+<td>定义小号字</td>
+</tr>
+<tr>
+<td align="left">strong</td>
+<td>定义加重语气，自带加粗效果</td>
+</tr>
+<tr>
+<td align="left">sub</td>
+<td>定义下标字，subscript</td>
+</tr>
+<tr>
+<td align="left">sup</td>
+<td>定义上标字，superscript</td>
+</tr>
+<tr>
+<td align="left">ins</td>
+<td>定义插入字，自带下划线效果，insert</td>
+</tr>
+<tr>
+<td align="left">del</td>
+<td>定义删除字，delete</td>
+</tr>
+<tr>
+<td align="left">s</td>
+<td>不赞成使用，使用del代替，strike的简化</td>
+</tr>
+<tr>
+<td align="left">strike</td>
+<td>不赞成使用，使用del代替</td>
+</tr>
+<tr>
+<td align="left">u</td>
+<td>定义下划字，不赞成使用，使用css中样式代替，underline</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>段落和换行</title>
+    <url>/2022/08/c90220decc6b/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h3><ul>
+<li>段落（paragraph）是通过p标签定义的。</li>
+<li>p标签是双标签，且为文本级标签。内部只能放置文本、图片、表单元素，或者废弃的font标签等。</li>
+<li>每一对儿p标签内部的元素为一个完整的段落，如果有多个段落，需要分别使用不同的p标签进行定义。</li>
+</ul>
+<h3 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h3><ul>
+<li>br（breaking）标签是HTML中一个简单的换行符。</li>
+<li>br标签是一个单标签。</li>
+<li>在需要换行的位置可以使用br标签书写，但是br与p不同，br没有建立新的段落的语义，只是简单的进行强制转换。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>标题</title>
+    <url>/2022/08/f94e8f5866d3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>标题</strong>（Heading），是通过h1-h6六个标签分别来对应六个级别的标题进行定义的。</p>
+<p>h1定义最大的标题，h6定义最小的标题。</p>
+<p>h1-h6标签都是双标签，且是容器级标签。</p>
+<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>给标签内部的元素内容添加对应级别的标题的语义，不负责文字的粗体、字号等样式，样式是由CSS设定的。</p>
+<h3 id="级别"><a href="#级别" class="headerlink" title="级别"></a>级别</h3><p>标题标签之间是不能互相嵌套的，下一级标题与上一级标题之间通过同级关系书写，下一级标题解释说明的是前面距离最近的上一级标题</p>
+<h3 id="权重"><a href="#权重" class="headerlink" title="权重"></a>权重</h3><ul>
+<li>标题标签对于呈现文档结构非常重要，使用时要根据标签的重要成都进行选择，其中h1标签最重要，h2标签次重要，以此类推。</li>
+<li>h1在整个HTML中的权重非常高，内部应该放置HTML中最重要的内容，比如logo。</li>
+<li>h1由于非常重要，内部的文字对于提高搜索引擎排名也非常重要，为了防止作弊，如果一个页面出现多个h1，反而降低权重。约定俗成的，一个页面中只会出现一个h1。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>注释</title>
+    <url>/2022/08/c76ef35f17ed/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在很多代码技术中都可以添加注释内容，我们也可以向HTML源代码添加注释</p>
+<h3 id="HTML注释语法"><a href="#HTML注释语法" class="headerlink" title="HTML注释语法"></a>HTML注释语法</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 注释内容 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 快捷键：ctrl+/ --&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>注释只在源代码中可见，在浏览器窗口是不显示的</p>
+<h3 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h3><ul>
+<li>在源代码中添加描述性的提示信息，便于我们阅读代码。</li>
+<li>对于HTML纠错也大有帮助，可以通过注释某一行HTML代码，一边检索错误的位置。</li>
+<li>暂时注释掉一部分不用的代码，便于后期恢复代码。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>字符集</title>
     <url>/2022/08/75c47f879da5/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>head标签内部的meta标签通过http-equiv属性定义了当前的网页所使用的字符编码。char：character，字符。set：集合。</p>
@@ -1628,23 +2028,28 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML属性</title>
-    <url>/2022/08/2d4ccce33e96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>HTML标签可以添加属性，属性可以提供关于HTML元素的更多信息。</p>
-<h3 id="HTML属性规范"><a href="#HTML属性规范" class="headerlink" title="HTML属性规范"></a>HTML属性规范</h3><ul>
-<li><p>书写位置：必须写在开始标签或者单标签之内，与标签名之间用空格进行分隔。</p>
+    <title>命名空间</title>
+    <url>/2022/08/987d8a0698d5/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>html元素表示整个网页文档，在开始标签上设置了命名空间xmlns属性</p>
+<h3 id="不同版本的命名空间"><a href="#不同版本的命名空间" class="headerlink" title="不同版本的命名空间"></a>不同版本的命名空间</h3><h4 id="XHTML1-0版本"><a href="#XHTML1-0版本" class="headerlink" title="XHTML1.0版本"></a>XHTML1.0版本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="attr">xml:lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="HTML5版本"><a href="#HTML5版本" class="headerlink" title="HTML5版本"></a>HTML5版本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="命名空间xmlns"><a href="#命名空间xmlns" class="headerlink" title="命名空间xmlns"></a>命名空间xmlns</h3><ul>
+<li><strong>xml</strong>：可拓展标记语言，使用在传输过程中的规范。被设计用来传输和存储数据，是html的补充。</li>
+<li><strong>xmlns</strong>：全称叫做XML NameSpace，NameSpace叫做命名空间，浏览器会将此命名空间用于该属性所在元素内的所有内容</li>
+<li>html元素的命名空间规定了在不同用户的浏览器中标签语义遵循的统一标准，避免出现标签名冲突，这个标准使用的就是一个固定的网址<a href="http://www.w3.org/1999/xhtml%E4%B8%AD%E7%9A%84%E8%A7%84%E8%8C%83%E3%80%82">http://www.w3.org/1999/xhtml中的规范。</a></li>
+</ul>
+<h3 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h3><ul>
+<li><p>xml:lang=”en”和lang=”en”表示所有的标签元素内容的语言都是英文，对搜索引擎和浏览器是有帮助的</p>
 </li>
-<li><p>属性包括：属性名（key）、属性值（value）。属性名与属性值之间的写法通常称作键值对写法，HTML标签属性的键值对写法是k=”v”，XHTML要求属性值必须在双引号内部。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">k</span>=<span class="string">&quot;v&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>一个标签内可以设置多个不同的属性，属性与属性之间使用空格进行分隔，每个属性的键值对写法都是k=”v”。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">k</span>=<span class="string">&quot;v&quot;</span> <span class="attr">k</span>=<span class="string">&quot;v&quot;</span> <span class="attr">k</span>=<span class="string">&quot;v&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>部分标签属性k可以设置多个属性值v，所有属性值v都必须写在同一对双引号内，值与值之间需要使用空格分隔。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">k</span>=<span class="string">&quot;v1 v2 v3 v4&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>lang=”zh-cn”表示中文（中国）</p>
+</li>
 </ul>
 ]]></content>
       <categories>
         <category>HTML</category>
-        <category>属性</category>
+        <category>基础</category>
       </categories>
       <tags>
         <tag>技术</tag>
@@ -1705,166 +2110,6 @@
       <categories>
         <category>HTML</category>
         <category>基础</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML规范版本和标签语法</title>
-    <url>/2022/08/e3534ecf4d38/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="HTML规范版本"><a href="#HTML规范版本" class="headerlink" title="HTML规范版本"></a>HTML规范版本</h3><ul>
-<li><p><strong>W3C</strong>：<strong>world wide web consortium</strong>，万维网联盟。专门发布和维护互联网的规范和标准。</p>
-</li>
-<li><table>
-<thead>
-<tr>
-<th>版本</th>
-<th>发布时间</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>HTML1.0</td>
-<td>1993.06</td>
-<td>互联网工程小组（IETF）发布的工作草案</td>
-</tr>
-<tr>
-<td>HTML2.0</td>
-<td>1995.01</td>
-<td>2000年6月发布之后被宣布已经过时</td>
-</tr>
-<tr>
-<td>HTML3.2</td>
-<td>1997.01.14</td>
-<td>W3C推荐标准</td>
-</tr>
-<tr>
-<td>HTML4.0</td>
-<td>1997.12.18</td>
-<td>W3C推荐标准，引入了样式表CSS，实现了结构和样式分离</td>
-</tr>
-<tr>
-<td>HTML4.01</td>
-<td>1999.12.24</td>
-<td>W3C推荐标准，修复了HTML4.0中的漏洞</td>
-</tr>
-<tr>
-<td>XHTML1.0</td>
-<td>2000.01.20</td>
-<td>在HTML4.01基础上进行的升级拓展和严格化</td>
-</tr>
-<tr>
-<td>HTML5</td>
-<td>2008.01.22</td>
-<td>HTML5在2012年已形成稳定的版本</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h3 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h3><p>HTML标记通常被成为HTML标签（HTML tag）。标签在书写和使用过程中，必须遵循特定的语法。</p>
-<ul>
-<li><p>标签名必须书写在一堆尖括号&lt;&gt;内部。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>标签分为单标签和双标签，双标签必须成对出现。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 双标签 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 单标签 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>双标签包含开始标签和结束标签，结束标签必须书写关闭符号**/**，单标签也需要进行自封闭书写。在HTML5中，单标签可以不写关闭符号。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 错误写法 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- &lt;div&gt;&lt;div&gt; --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- &lt;br&gt; --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 正确写法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>基础</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML的概念</title>
-    <url>/2022/08/bcec9513a4dd/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul>
-<li><strong>Hypertext Markup Language</strong>：<strong>超文本标记语言</strong>。是用来制作网页的一种标记语言。<ul>
-<li><strong>超文本</strong>：是超级文本的缩写，简单来说超文本就是用于链接另一个文本或多媒体内容的文本，比如链接到图片、链接、音频、视频、程序等。</li>
-<li><strong>标记</strong>：又叫做标签（HTML tag），有特殊的书写规范，是写给浏览器的一种语法格式，结合普通的文字信息，实现特殊的语义或显示内容。在编辑器中可以编辑和查看，在浏览器中不显示。</li>
-</ul>
-</li>
-<li><strong>纯文本格式的文件</strong>，内部只能书写文字内容，不能添加图片、音频、视频等，但是在网页中给用户呈现的效果却包含了文字以外的内容，这种效果就是HTML语言区别于其他文件的不同之处。</li>
-<li><strong>功能</strong>：利用标记给普通的文本添加语义、描述超文本内容，搭建网页的基本结构。</li>
-<li><strong>语义化</strong><ul>
-<li>HTML文件中，如果没有使用特殊语义的标记，也可以实现网页显示效果，但是利用标记给普通的文字添加了不同的语义，能够让网站的结构划分更加清晰。</li>
-</ul>
-</li>
-<li><strong>语义化优势</strong><ul>
-<li>方便代码的阅读和后期维护。</li>
-<li>便于浏览器或是网络爬虫更好地解析网站内容。</li>
-<li>使用语义化标签有利于SEO搜索引擎优化，提高网站的搜索排名。</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>基础</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>命名空间</title>
-    <url>/2022/08/987d8a0698d5/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>html元素表示整个网页文档，在开始标签上设置了命名空间xmlns属性</p>
-<h3 id="不同版本的命名空间"><a href="#不同版本的命名空间" class="headerlink" title="不同版本的命名空间"></a>不同版本的命名空间</h3><h4 id="XHTML1-0版本"><a href="#XHTML1-0版本" class="headerlink" title="XHTML1.0版本"></a>XHTML1.0版本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="attr">xml:lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="HTML5版本"><a href="#HTML5版本" class="headerlink" title="HTML5版本"></a>HTML5版本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="命名空间xmlns"><a href="#命名空间xmlns" class="headerlink" title="命名空间xmlns"></a>命名空间xmlns</h3><ul>
-<li><strong>xml</strong>：可拓展标记语言，使用在传输过程中的规范。被设计用来传输和存储数据，是html的补充。</li>
-<li><strong>xmlns</strong>：全称叫做XML NameSpace，NameSpace叫做命名空间，浏览器会将此命名空间用于该属性所在元素内的所有内容</li>
-<li>html元素的命名空间规定了在不同用户的浏览器中标签语义遵循的统一标准，避免出现标签名冲突，这个标准使用的就是一个固定的网址<a href="http://www.w3.org/1999/xhtml%E4%B8%AD%E7%9A%84%E8%A7%84%E8%8C%83%E3%80%82">http://www.w3.org/1999/xhtml中的规范。</a></li>
-</ul>
-<h3 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h3><ul>
-<li><p>xml:lang=”en”和lang=”en”表示所有的标签元素内容的语言都是英文，对搜索引擎和浏览器是有帮助的</p>
-</li>
-<li><p>lang=”zh-cn”表示中文（中国）</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>基础</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>video.js</title>
-    <url>/2022/08/8762987745d8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="video-js概述"><a href="#video-js概述" class="headerlink" title="video.js概述"></a>video.js概述</h3><ul>
-<li>video.js是一个通用的在网页上嵌入视频播放器的JS库。video.js旨在增强HTML5中的video元素，它的嵌入代码只是一个video元素。video.js将video元素包装在一个div中，该div用于放置控件和播放器所需的任何其他内容。</li>
-<li>官网地址：<a href="https://videojs.com/">https://videojs.com/</a></li>
-</ul>
-<h3 id="video-js使用"><a href="#video-js使用" class="headerlink" title="video.js使用"></a>video.js使用</h3><h4 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;https://vjs.zencdn.net/7.20.2/video-js.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- If you&#x27;d like to support IE8 (for Video.js versions prior to v7) --&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- &lt;script src=&quot;https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js&quot;&gt;&lt;/script&gt; --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">video</span></span></span><br><span class="line"><span class="tag">           <span class="attr">id</span>=<span class="string">&quot;my-video&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">class</span>=<span class="string">&quot;video-js&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">controls</span></span></span><br><span class="line"><span class="tag">           <span class="attr">preload</span>=<span class="string">&quot;auto&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">width</span>=<span class="string">&quot;640&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">height</span>=<span class="string">&quot;264&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">poster</span>=<span class="string">&quot;MY_VIDEO_POSTER.jpg&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">data-setup</span>=<span class="string">&quot;&#123;&#125;&quot;</span></span></span><br><span class="line"><span class="tag">           &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;MY_VIDEO.mp4&quot;</span> <span class="attr">type</span>=<span class="string">&quot;video/mp4&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;MY_VIDEO.webm&quot;</span> <span class="attr">type</span>=<span class="string">&quot;video/webm&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;vjs-no-js&quot;</span>&gt;</span></span><br><span class="line">            To view this video please enable JavaScript, and consider upgrading to a</span><br><span class="line">            web browser that</span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://videojs.com/html5-video-support/&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span></span></span><br><span class="line"><span class="tag">               &gt;</span>supports HTML5 video&lt;/a</span><br><span class="line">                &gt;</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://vjs.zencdn.net/7.20.2/video.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> player = <span class="title function_">videojs</span>(<span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.video-js&#x27;</span>))</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install --save-dev video.js</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">id</span>=<span class="string">&quot;my-video&quot;</span> <span class="attr">class</span>=<span class="string">&quot;video-js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> videojs <span class="keyword">from</span> <span class="string">&#x27;video.js&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;video.js/dist/video-js.css&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> player = <span class="title function_">videojs</span>(<span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.video-js&#x27;</span>));</span><br></pre></td></tr></table></figure>
-
-<h4 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> player = <span class="title function_">videojs</span>(<span class="string">&#x27;my-video&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">autoplay</span>: <span class="string">&#x27;muted&#x27;</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// or</span></span><br><span class="line">player.<span class="title function_">autoplay</span>(<span class="string">&#x27;muted&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<h4 id="常用配置"><a href="#常用配置" class="headerlink" title="常用配置"></a>常用配置</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title function_">videojs</span>(<span class="string">&#x27;my-video&#x27;</span>, &#123;</span><br><span class="line">    <span class="attr">autoplay</span>: <span class="literal">true</span>, <span class="comment">// 自动播放(如果video存在autoplay属性，则会被忽略)</span></span><br><span class="line">        <span class="comment">// false: 不会自动播放</span></span><br><span class="line">        <span class="comment">// true: 自动播放(受浏览器自动播放策略的限制)</span></span><br><span class="line">        <span class="comment">// &#x27;muted&#x27;: 将video元素静音，在加载启动时调用play()</span></span><br><span class="line">        <span class="comment">// &#x27;play&#x27;: 将在加载启动时调用play()，类似于浏览器自动播放</span></span><br><span class="line">        <span class="comment">// &#x27;any&#x27;: 在加载启动时调用play()，如果失败，会将video元素静音，然后调用play()</span></span><br><span class="line">    <span class="attr">controls</span>: <span class="literal">true</span>, <span class="comment">// 显示控件</span></span><br><span class="line">    <span class="attr">loop</span>: <span class="literal">false</span>, <span class="comment">// 循环</span></span><br><span class="line">    <span class="attr">muted</span>: <span class="literal">false</span>, <span class="comment">// 静音</span></span><br><span class="line">    <span class="attr">poster</span>: <span class="string">&#x27;&#x27;</span>, <span class="comment">// 封面</span></span><br><span class="line">    <span class="attr">width</span>: <span class="number">320</span>, <span class="comment">// 宽</span></span><br><span class="line">    <span class="attr">height</span>: <span class="number">180</span>, <span class="comment">// 高</span></span><br><span class="line">    <span class="attr">src</span>: <span class="string">&#x27;&#x27;</span>, <span class="comment">// 视频源URL</span></span><br><span class="line">    <span class="attr">preload</span>: <span class="string">&#x27;auto&#x27;</span>, <span class="comment">// 是否在加载video元素之后立即下载视频数据</span></span><br><span class="line">        <span class="comment">// &#x27;auto&#x27;: 立即加载视频数据(如果浏览器支持)</span></span><br><span class="line">        <span class="comment">// &#x27;metadata&#x27;: 只加载视频的meta数据，如duration、dimensions等</span></span><br><span class="line">        <span class="comment">// &#x27;none&#x27;: 不预加载任何数据</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p>更多配置项请查看官方ApiDocs：<a href="https://videojs.com/guides/options/">Video.js Options Reference | Video.js (videojs.com)</a></p>
-]]></content>
-      <categories>
-        <category>库</category>
-        <category>JS</category>
       </categories>
       <tags>
         <tag>技术</tag>
@@ -1975,6 +2220,314 @@
       <categories>
         <category>研发工具</category>
         <category>编辑器</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML属性</title>
+    <url>/2022/08/2d4ccce33e96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>HTML标签可以添加属性，属性可以提供关于HTML元素的更多信息。</p>
+<h3 id="HTML属性规范"><a href="#HTML属性规范" class="headerlink" title="HTML属性规范"></a>HTML属性规范</h3><ul>
+<li><p>书写位置：必须写在开始标签或者单标签之内，与标签名之间用空格进行分隔。</p>
+</li>
+<li><p>属性包括：属性名（key）、属性值（value）。属性名与属性值之间的写法通常称作键值对写法，HTML标签属性的键值对写法是k=”v”，XHTML要求属性值必须在双引号内部。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">k</span>=<span class="string">&quot;v&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>一个标签内可以设置多个不同的属性，属性与属性之间使用空格进行分隔，每个属性的键值对写法都是k=”v”。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">k</span>=<span class="string">&quot;v&quot;</span> <span class="attr">k</span>=<span class="string">&quot;v&quot;</span> <span class="attr">k</span>=<span class="string">&quot;v&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>部分标签属性k可以设置多个属性值v，所有属性值v都必须写在同一对双引号内，值与值之间需要使用空格分隔。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">k</span>=<span class="string">&quot;v1 v2 v3 v4&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>属性</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML元素</title>
+    <url>/2022/08/ad76fb3327df/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>HTML元素指的是从开始标签到结束标签的所有内容，包含开始标签、元素内容、结束标签。</p>
+<h3 id="元素内容"><a href="#元素内容" class="headerlink" title="元素内容"></a>元素内容</h3><ul>
+<li><p>元素内容可以是纯文本，也可以是其他的HTML元素。这种元素内容包含其他HTML元素的情况，我们可以称为嵌套，也就是div标签元素内部嵌套了p标签元素。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>div元素内部嵌套<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>一个HTML元素div的内容可能是多个其他元素组成，例如p和h1，此时我们习惯称div是p和h1的父级元素，p和h1是div的子级元素，而p和h1属于同级元素，这种嵌套关系可以有多层。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>div元素内部嵌套p元素<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>div元素内部嵌套的h1元素<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>单标签是不能添加其他元素内容的，可以称为空元素。</p>
+</li>
+</ul>
+<h3 id="标签级别"><a href="#标签级别" class="headerlink" title="标签级别"></a>标签级别</h3><p>根据标签内容可以存放的元素内容不同，可以将双标签划分为两个级别</p>
+<ul>
+<li>容器级：标签内部可以存放任意内容，包含容器级标签。比如h1，div等。</li>
+<li>文本级：标签内部只能存放文字或类似文字的内容，比如存放图片、表单元素等。比如p等。</li>
+</ul>
+<h3 id="HTML元素的特性"><a href="#HTML元素的特性" class="headerlink" title="HTML元素的特性"></a>HTML元素的特性</h3><p>元素间对空格、换行、缩进形成的空白不敏感，有无空白对在浏览器中加载的效果没有影响。浏览器识别的是元素的开始和结束以及相互之间的嵌套关系。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>空白折叠现象：元素内容如果是文本，所有文字（类似文字内容）之间如果有空格、换行、缩进等空白字符，在浏览器中加载时，链接在一起的空白会折叠成一个空格显示，这就是空白折叠现象。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>HTML中所有文字内容之间的空    格、换</span><br><span class="line">行、缩				进都会被折叠成一个空格显示。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>元素</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML规范版本和标签语法</title>
+    <url>/2022/08/e3534ecf4d38/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="HTML规范版本"><a href="#HTML规范版本" class="headerlink" title="HTML规范版本"></a>HTML规范版本</h3><ul>
+<li><p><strong>W3C</strong>：<strong>world wide web consortium</strong>，万维网联盟。专门发布和维护互联网的规范和标准。</p>
+</li>
+<li><table>
+<thead>
+<tr>
+<th>版本</th>
+<th>发布时间</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>HTML1.0</td>
+<td>1993.06</td>
+<td>互联网工程小组（IETF）发布的工作草案</td>
+</tr>
+<tr>
+<td>HTML2.0</td>
+<td>1995.01</td>
+<td>2000年6月发布之后被宣布已经过时</td>
+</tr>
+<tr>
+<td>HTML3.2</td>
+<td>1997.01.14</td>
+<td>W3C推荐标准</td>
+</tr>
+<tr>
+<td>HTML4.0</td>
+<td>1997.12.18</td>
+<td>W3C推荐标准，引入了样式表CSS，实现了结构和样式分离</td>
+</tr>
+<tr>
+<td>HTML4.01</td>
+<td>1999.12.24</td>
+<td>W3C推荐标准，修复了HTML4.0中的漏洞</td>
+</tr>
+<tr>
+<td>XHTML1.0</td>
+<td>2000.01.20</td>
+<td>在HTML4.01基础上进行的升级拓展和严格化</td>
+</tr>
+<tr>
+<td>HTML5</td>
+<td>2008.01.22</td>
+<td>HTML5在2012年已形成稳定的版本</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h3><p>HTML标记通常被成为HTML标签（HTML tag）。标签在书写和使用过程中，必须遵循特定的语法。</p>
+<ul>
+<li><p>标签名必须书写在一堆尖括号&lt;&gt;内部。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>标签分为单标签和双标签，双标签必须成对出现。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 双标签 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 单标签 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>双标签包含开始标签和结束标签，结束标签必须书写关闭符号**/**，单标签也需要进行自封闭书写。在HTML5中，单标签可以不写关闭符号。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 错误写法 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- &lt;div&gt;&lt;div&gt; --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- &lt;br&gt; --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 正确写法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>基础</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML的概念</title>
+    <url>/2022/08/bcec9513a4dd/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ul>
+<li><strong>Hypertext Markup Language</strong>：<strong>超文本标记语言</strong>。是用来制作网页的一种标记语言。<ul>
+<li><strong>超文本</strong>：是超级文本的缩写，简单来说超文本就是用于链接另一个文本或多媒体内容的文本，比如链接到图片、链接、音频、视频、程序等。</li>
+<li><strong>标记</strong>：又叫做标签（HTML tag），有特殊的书写规范，是写给浏览器的一种语法格式，结合普通的文字信息，实现特殊的语义或显示内容。在编辑器中可以编辑和查看，在浏览器中不显示。</li>
+</ul>
+</li>
+<li><strong>纯文本格式的文件</strong>，内部只能书写文字内容，不能添加图片、音频、视频等，但是在网页中给用户呈现的效果却包含了文字以外的内容，这种效果就是HTML语言区别于其他文件的不同之处。</li>
+<li><strong>功能</strong>：利用标记给普通的文本添加语义、描述超文本内容，搭建网页的基本结构。</li>
+<li><strong>语义化</strong><ul>
+<li>HTML文件中，如果没有使用特殊语义的标记，也可以实现网页显示效果，但是利用标记给普通的文字添加了不同的语义，能够让网站的结构划分更加清晰。</li>
+</ul>
+</li>
+<li><strong>语义化优势</strong><ul>
+<li>方便代码的阅读和后期维护。</li>
+<li>便于浏览器或是网络爬虫更好地解析网站内容。</li>
+<li>使用语义化标签有利于SEO搜索引擎优化，提高网站的搜索排名。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>基础</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>纯文本格式</title>
+    <url>/2022/08/036c8e9a5c83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>纯文本格式，就是没有任何文本修饰的，没有任何粗体，下划线，斜体，图形，符号或特殊字符及特殊打印格式的文本，只保存文本，不保存其格式设置。</p>
+<h3 id="格式对比"><a href="#格式对比" class="headerlink" title="格式对比"></a>格式对比</h3><h4 id="纯文本格式"><a href="#纯文本格式" class="headerlink" title="纯文本格式"></a>纯文本格式</h4><ul>
+<li>最常见的是.txt文件。</li>
+<li>只能保存文本，不保存其他的格式或非文本内容。</li>
+<li>文件小，有利于网络传输。</li>
+<li>可以通过直接更改扩展名的方式更改保存格式。</li>
+<li>可以使用任意的纯文本编辑器进行查看和编辑。</li>
+<li>html、css、js文件都是纯文本格式文件。</li>
+</ul>
+<h4 id="富文本格式"><a href="#富文本格式" class="headerlink" title="富文本格式"></a>富文本格式</h4><ul>
+<li>最常见的是.rtf文件，类似.doc文件。</li>
+<li>内部可以保存文本的样式、图片等。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>前端基础</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>互联网原理</title>
+    <url>/2022/08/47b2f661c6ea/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="互联网的运行过程"><a href="#互联网的运行过程" class="headerlink" title="互联网的运行过程"></a>互联网的运行过程</h3><p>开发人员将网页源文件上传到服务器进行存储，用户后期通过客户端（如浏览器软件）发送HTTP请求到服务器，服务器接收请求后进行响应，将存储的相关文件通过HTTP响应回传到用户本地客户端，最终通过客户端将网页文件进行渲染，显示出最终用户看到的网页效果。</p>
+<h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><ul>
+<li>服务器（server），就是一种特殊的计算机，也包括处理器、硬盘、内存、系统总线等，但是由于需要提供更可靠的服务，因此在处理能力、稳定性、可靠性、安全性等方面要求较高。</li>
+<li>作用：对于WEB来讲，用于存储开发人员上传的网页数据，且需要响应服务请求，并进行处理。</li>
+<li>要求：对于网站服务器来说，为了让用户随时进行访问，必须24小时不间断工作。</li>
+</ul>
+<h3 id="云服务器"><a href="#云服务器" class="headerlink" title="云服务器"></a>云服务器</h3><p>目前绝大多数网站都采用的是云服务器（Elastic Compute Service, ECS)，云服务器是一种简单高效、安全可靠、处理能力可弹性伸缩的计算服务。其管理方式比物理服务器更简单高效。用户无需提前购买硬件，即可迅速创建或释放任意多台云服务器。</p>
+<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><ul>
+<li>客户端（Client）也叫用户端，指的是普通用户使用的终端，客户端有多种形式，比如最常用的就是浏览器、app等，而web开发最主要的客户端形式还是浏览器。</li>
+<li>浏览器(Browser)，是一种用户上网搜索、查看信息资源的应用程序。</li>
+<li>功能：用于发送HTTP请求到服务器，接收服务器发回的HTTP响应，渲染HTML网页。</li>
+</ul>
+<h3 id="主流浏览器"><a href="#主流浏览器" class="headerlink" title="主流浏览器"></a>主流浏览器</h3><p>主流的Web页面浏览器有：微软的IE和Microsoft Edge、Mozilla的Firefox、苹果公司的Safari、Google的Chrome及Opera软件公司的Opera。</p>
+<h3 id="主流浏览器内核"><a href="#主流浏览器内核" class="headerlink" title="主流浏览器内核"></a>主流浏览器内核</h3><p>因为不同浏览器使用内核及所支持的HTML等网页语言标准不同，对网页的渲染效果会有差异。</p>
+<table>
+<thead>
+<tr>
+<th align="center">浏览器</th>
+<th align="center">渲染引擎（内核）</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">IE/Edge</td>
+<td align="center">Trident</td>
+<td align="center">IE内核</td>
+</tr>
+<tr>
+<td align="center">FireFox</td>
+<td align="center">Gecko</td>
+<td align="center">Firefox内核</td>
+</tr>
+<tr>
+<td align="center">Safari</td>
+<td align="center">Webkit</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Chrome</td>
+<td align="center">Webkit→Blink</td>
+<td align="center">统称为Chromium内核或Chrome内核</td>
+</tr>
+<tr>
+<td align="center">Opera</td>
+<td align="center">Presto→Webkit→Blink</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p>推荐：使用Chrome浏览器。（渲染效果好、市场占有率高、自带开发者调试工具）。</p>
+<h3 id="浏览器功能"><a href="#浏览器功能" class="headerlink" title="浏览器功能"></a>浏览器功能</h3><ul>
+<li>发送HTTP请求，发送的方式是在浏览器地址栏输入对应网址，或者点击超级链接。</li>
+<li>接收服务器发回的HTTP响应，服务器会发回一个HTML给浏览器。</li>
+<li>将接收到的HTML进行解析并显示。</li>
+</ul>
+<h3 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h3><p>Hypertext Transfer Protocol：超文本传输协议。是客户端浏览器或其他程序与WEB服务器之间的应用层通信协议。</p>
+<h4 id="HTTP请求"><a href="#HTTP请求" class="headerlink" title="HTTP请求"></a>HTTP请求</h4><ul>
+<li>request，浏览器根据网址向对应的服务器发送请求。</li>
+<li>发起请求的方法：在浏览器地址栏中输入网址，或者点击网址链接。</li>
+<li>HTML页面解析过程中，会发出多个http请求，包含网页的图片、视频、音频等文件请求。</li>
+</ul>
+<h4 id="HTTP响应"><a href="#HTTP响应" class="headerlink" title="HTTP响应"></a>HTTP响应</h4><ul>
+<li>response，服务器根据请求响应一个HTML文件，将HTML传输给客户端，在浏览器中进行HTML网页的渲染。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>前端基础</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网页的认识</title>
+    <url>/2022/08/6b01bb54f24e/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="网页的制作"><a href="#网页的制作" class="headerlink" title="网页的制作"></a>网页的制作</h3><ul>
+<li>HTML就是用来制作网页文件的。</li>
+<li>浏览器查看的网页都是.html或.htm文件。</li>
+<li>HTML叫做超文本标记语言(Hypertext Markup Language)，用于搭建网页的结构。</li>
+</ul>
+<h3 id="网页的组成"><a href="#网页的组成" class="headerlink" title="网页的组成"></a>网页的组成</h3><ul>
+<li>前端三层：HTML(结构层)、CSS(样式层)、JavaScript(行为层)。</li>
+<li>其他多媒体内容：图片、视频、音频、超级链接等。</li>
+<li>所有的网页文件都是真实的、物理存在的文件。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>前端基础</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>video.js</title>
+    <url>/2022/08/8762987745d8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="video-js概述"><a href="#video-js概述" class="headerlink" title="video.js概述"></a>video.js概述</h3><ul>
+<li>video.js是一个通用的在网页上嵌入视频播放器的JS库。video.js旨在增强HTML5中的video元素，它的嵌入代码只是一个video元素。video.js将video元素包装在一个div中，该div用于放置控件和播放器所需的任何其他内容。</li>
+<li>官网地址：<a href="https://videojs.com/">https://videojs.com/</a></li>
+</ul>
+<h3 id="video-js使用"><a href="#video-js使用" class="headerlink" title="video.js使用"></a>video.js使用</h3><h4 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;https://vjs.zencdn.net/7.20.2/video-js.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- If you&#x27;d like to support IE8 (for Video.js versions prior to v7) --&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- &lt;script src=&quot;https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js&quot;&gt;&lt;/script&gt; --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">video</span></span></span><br><span class="line"><span class="tag">           <span class="attr">id</span>=<span class="string">&quot;my-video&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">class</span>=<span class="string">&quot;video-js&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">controls</span></span></span><br><span class="line"><span class="tag">           <span class="attr">preload</span>=<span class="string">&quot;auto&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">width</span>=<span class="string">&quot;640&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">height</span>=<span class="string">&quot;264&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">poster</span>=<span class="string">&quot;MY_VIDEO_POSTER.jpg&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">data-setup</span>=<span class="string">&quot;&#123;&#125;&quot;</span></span></span><br><span class="line"><span class="tag">           &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;MY_VIDEO.mp4&quot;</span> <span class="attr">type</span>=<span class="string">&quot;video/mp4&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;MY_VIDEO.webm&quot;</span> <span class="attr">type</span>=<span class="string">&quot;video/webm&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;vjs-no-js&quot;</span>&gt;</span></span><br><span class="line">            To view this video please enable JavaScript, and consider upgrading to a</span><br><span class="line">            web browser that</span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://videojs.com/html5-video-support/&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span></span></span><br><span class="line"><span class="tag">               &gt;</span>supports HTML5 video&lt;/a</span><br><span class="line">                &gt;</span><br><span class="line">        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://vjs.zencdn.net/7.20.2/video.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="keyword">var</span> player = <span class="title function_">videojs</span>(<span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.video-js&#x27;</span>))</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install --save-dev video.js</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">id</span>=<span class="string">&quot;my-video&quot;</span> <span class="attr">class</span>=<span class="string">&quot;video-js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> videojs <span class="keyword">from</span> <span class="string">&#x27;video.js&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;video.js/dist/video-js.css&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> player = <span class="title function_">videojs</span>(<span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.video-js&#x27;</span>));</span><br></pre></td></tr></table></figure>
+
+<h4 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> player = <span class="title function_">videojs</span>(<span class="string">&#x27;my-video&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">autoplay</span>: <span class="string">&#x27;muted&#x27;</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// or</span></span><br><span class="line">player.<span class="title function_">autoplay</span>(<span class="string">&#x27;muted&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<h4 id="常用配置"><a href="#常用配置" class="headerlink" title="常用配置"></a>常用配置</h4><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title function_">videojs</span>(<span class="string">&#x27;my-video&#x27;</span>, &#123;</span><br><span class="line">    <span class="attr">autoplay</span>: <span class="literal">true</span>, <span class="comment">// 自动播放(如果video存在autoplay属性，则会被忽略)</span></span><br><span class="line">        <span class="comment">// false: 不会自动播放</span></span><br><span class="line">        <span class="comment">// true: 自动播放(受浏览器自动播放策略的限制)</span></span><br><span class="line">        <span class="comment">// &#x27;muted&#x27;: 将video元素静音，在加载启动时调用play()</span></span><br><span class="line">        <span class="comment">// &#x27;play&#x27;: 将在加载启动时调用play()，类似于浏览器自动播放</span></span><br><span class="line">        <span class="comment">// &#x27;any&#x27;: 在加载启动时调用play()，如果失败，会将video元素静音，然后调用play()</span></span><br><span class="line">    <span class="attr">controls</span>: <span class="literal">true</span>, <span class="comment">// 显示控件</span></span><br><span class="line">    <span class="attr">loop</span>: <span class="literal">false</span>, <span class="comment">// 循环</span></span><br><span class="line">    <span class="attr">muted</span>: <span class="literal">false</span>, <span class="comment">// 静音</span></span><br><span class="line">    <span class="attr">poster</span>: <span class="string">&#x27;&#x27;</span>, <span class="comment">// 封面</span></span><br><span class="line">    <span class="attr">width</span>: <span class="number">320</span>, <span class="comment">// 宽</span></span><br><span class="line">    <span class="attr">height</span>: <span class="number">180</span>, <span class="comment">// 高</span></span><br><span class="line">    <span class="attr">src</span>: <span class="string">&#x27;&#x27;</span>, <span class="comment">// 视频源URL</span></span><br><span class="line">    <span class="attr">preload</span>: <span class="string">&#x27;auto&#x27;</span>, <span class="comment">// 是否在加载video元素之后立即下载视频数据</span></span><br><span class="line">        <span class="comment">// &#x27;auto&#x27;: 立即加载视频数据(如果浏览器支持)</span></span><br><span class="line">        <span class="comment">// &#x27;metadata&#x27;: 只加载视频的meta数据，如duration、dimensions等</span></span><br><span class="line">        <span class="comment">// &#x27;none&#x27;: 不预加载任何数据</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>更多配置项请查看官方ApiDocs：<a href="https://videojs.com/guides/options/">Video.js Options Reference | Video.js (videojs.com)</a></p>
+]]></content>
+      <categories>
+        <category>库</category>
+        <category>JS</category>
       </categories>
       <tags>
         <tag>技术</tag>
